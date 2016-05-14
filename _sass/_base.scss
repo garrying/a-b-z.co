@@ -1,5 +1,14 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 body {
   font-family: $font-family;
+}
+
+p {
+  @extend %ot-features;
 }
 
 // Links

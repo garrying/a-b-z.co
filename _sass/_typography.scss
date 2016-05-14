@@ -1,4 +1,16 @@
+// Opentype Mixin
+
+%ot-features {
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "alt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
 // Normalized Font Weight
 h1, h2, h3, h4, h5, h6, strong, b {
+  @extend %ot-features;
   font-weight: normal;
 }
