@@ -26,6 +26,7 @@ button, html [type="button"], [type="reset"], [type="submit"] {
   padding: 0.85em 1em 1em;
 
   &:focus {
+    outline-width: 0.4vw;
     outline-offset: 1vw;
     outline-style: dashed;
     outline-color: $black;
