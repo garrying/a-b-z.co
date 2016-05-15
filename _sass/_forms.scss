@@ -9,7 +9,7 @@ button, html [type="button"], [type="reset"], [type="submit"] {
   border: 0;
   background: $white;
   color: $black;
-  margin-left: -1vw;
+  margin-left: -0.4vw;
   box-shadow: inset 0 0 0 0.4vw $black;
   cursor: pointer;
   -webkit-appearance: none;
@@ -29,6 +29,8 @@ button, html [type="button"], [type="reset"], [type="submit"] {
     outline-offset: 1vw;
     outline-style: dashed;
     outline-color: $black;
+    position: relative;
+    z-index: 1;
   }
 }
 
