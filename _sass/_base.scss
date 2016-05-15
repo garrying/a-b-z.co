@@ -1,14 +1,44 @@
 html {
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: $font-family;
+  font-size: 3vw;
+  margin: 3% 7% 10%;
+  
+  @media (max-width: $small-vp) {
+    font-size: 1em;
+  }
 }
 
 p {
   @extend %ot-features;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+// Selection
+::-moz-selection {
+  background: $black;
+  color: $white;
+  text-shadow: none;
+}
+
+::selection {
+  background: $black;
+  color: $white;
+  text-shadow: none;
 }
 
 // Links
@@ -16,4 +46,15 @@ p {
 a {
   color: $text-color;
   text-decoration: none;
+  display: inline-flex;
+
+  &:hover, &:focus {
+    transform-origin: bottom left;
+    transform: skew(45deg);
+  }
+
+  &:focus {
+    outline-style: dashed;
+    outline-color: $black;
+  }
 }

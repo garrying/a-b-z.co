@@ -13,4 +13,24 @@
 h1, h2, h3, h4, h5, h6, strong, b {
   @extend %ot-features;
   font-weight: normal;
+  margin: 0;
+}
+
+h1, h2, .small {
+  font-size: 0.5em;
+
+  @media (max-width: $small-vp) {
+    font-size: 0.75em;
+  }
+}
+
+.line-up {
+  font-size: 1.89em;
+  line-height: 1.25em;
+
+  @media (max-width: $small-vp) {
+    a {
+      width: 100%;
+    }
+  }
 }
