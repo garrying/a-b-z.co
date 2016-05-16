@@ -1,6 +1,6 @@
 // Opentype Mixin
 
-%ot-features {
+@mixin ot-features {
   font-kerning: normal;
   font-variant-ligatures: common-ligatures contextual;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -10,13 +10,22 @@
 }
 
 // Normalized Font Weight
-h1, h2, h3, h4, h5, h6, strong, b {
-  @extend %ot-features;
-  font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  @include ot-features;
   margin: 0;
+  font-weight: normal;
 }
 
-h1, h2, .small {
+h1,
+h2,
+.small {
   font-size: 0.5em;
 
   @media (max-width: $small-vp) {

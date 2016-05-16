@@ -4,57 +4,57 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
+  margin: 3% 7% 10%;
   font-family: $font-family;
   font-size: 3vw;
-  margin: 3% 7% 10%;
-  
+
   @media (max-width: $small-vp) {
     font-size: 1em;
   }
 }
 
 p {
-  @extend %ot-features;
+  @include ot-features;
 }
 
 ul {
-  list-style: none;
   padding: 0;
   margin-top: 0;
+  list-style: none;
 }
 
 // Selection
 ::-moz-selection {
-  background: $black;
   color: $white;
   text-shadow: none;
+  background: $black;
 }
 
 ::selection {
-  background: $black;
   color: $white;
   text-shadow: none;
+  background: $black;
 }
 
 // Links
 
 a {
+  display: inline-flex;
   color: $text-color;
   text-decoration: none;
-  display: inline-flex;
 
-  &:hover, &:focus {
-    transform-origin: bottom left;
-    transform: skew(45deg);
-  }
-
+  &:hover,
   &:focus {
     outline-style: dashed;
     outline-color: $black;
+    transform: skew(45deg);
+    transform-origin: bottom left;
   }
 }
