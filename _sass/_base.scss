@@ -30,6 +30,17 @@ ul {
   list-style: none;
 }
 
+.horizontal {
+  margin-top: .5em;
+
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: .5em;
+    }
+  }
+}
+
 // Selection
 ::-moz-selection {
   color: $white;
@@ -46,7 +57,7 @@ ul {
 // Links
 
 a {
-  display: inline-flex;
+  display: inline-block;
   color: $text-color;
   text-decoration: none;
 
