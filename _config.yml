@@ -20,11 +20,3 @@ markdown: kramdown
 # Asset compiling
 sass:
   style: :compressed
-
-twitter:
-  username: abz_co
-
-logo: /img/logo.png
-
-gems:
-  - jekyll-seo-tag
