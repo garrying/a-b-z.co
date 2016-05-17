@@ -10,7 +10,7 @@ title: A-B-Z
 email: mail@a-b-z.co
 description: A-SCHOOL-FOR-21st-CENTURY-TYPOGRAPHY. TORONTO-INTERACCESS. AUG-18–21-2016.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://a-b-z.co/" # the base hostname & protocol for your site
+url: "http://a-b-z.co" # the base hostname & protocol for your site
 twitter_username: abc_co
 
 # Build settings

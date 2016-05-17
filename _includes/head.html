@@ -8,27 +8,26 @@
   <meta property="og:title" content="{{ site.title | escape }}" />
   <meta name="description" content="{{ site.description }}" />
   <meta property="og:description" content="{{ site.description }}" />
-  <link rel="canonical" href="{{ site.url }}" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:site_name" content="{{ site.title | escape }}" />
-  <meta property="og:image" content="http://a-b-z.co/img/logo.png" />
+  <meta property="og:image" content="{{ site.url }}/img/logo.png" />
   <meta name="twitter:title" content="{{ site.title | escape }}" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@abz_co" />
-  <meta name="twitter:image" content="http://a-b-z.co/img/logo.png" />
+  <meta name="twitter:image" content="{{ site.url }}/img/logo.png" />
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "WebSite",
       "name": "A-B-Z",
       "headline": "A-B-Z",
-      "image": "http://a-b-z.co/img/logo.png",
+      "image": "{{ site.url }}/img/logo.png",
       "description": "{{ site.description }}",
-      "logo": "http://a-b-z.co/img/logo.png",
+      "logo": "{{ site.url }}/img/logo.png",
       "url": "{{ site.url }}"
     }
   </script>
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
