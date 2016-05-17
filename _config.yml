@@ -24,7 +24,7 @@ sass:
 twitter:
   username: abz_co
 
-logo: /img/logo.jpg
+logo: /img/logo.png
 
 gems:
   - jekyll-seo-tag
