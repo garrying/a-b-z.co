@@ -6,14 +6,16 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
   <meta property="og:title" content="{{ site.title | escape }}" />
-  <meta name="description" content="A-SCHOOL-FOR-21st-CENTURY-TYPOGRAPHY. TORONTO-INTERACCESS. AUG-18–21-2016." />
-  <meta property="og:description" content="A-SCHOOL-FOR-21st-CENTURY-TYPOGRAPHY. TORONTO-INTERACCESS. AUG-18–21-2016." />
-  <link rel="canonical" href="http://a-b-z.co/" />
-  <meta property="og:url" content="http://a-b-z.co/" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <link rel="canonical" href="{{ site.url }}" />
+  <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:site_name" content="{{ site.title | escape }}" />
   <meta property="og:image" content="http://a-b-z.co/img/logo.png" />
+  <meta name="twitter:title" content="{{ site.title | escape }}" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@abz_co" />
+  <meta name="twitter:image" content="http://a-b-z.co/img/logo.png" />
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -21,9 +23,9 @@
       "name": "A-B-Z",
       "headline": "A-B-Z",
       "image": "http://a-b-z.co/img/logo.png",
-      "description": "A-SCHOOL-FOR-21st-CENTURY-TYPOGRAPHY. TORONTO-INTERACCESS. AUG-18–21-2016.",
+      "description": "{{ site.description }}",
       "logo": "http://a-b-z.co/img/logo.png",
-      "url": "http://a-b-z.co/"
+      "url": "{{ site.url }}"
     }
   </script>
 
