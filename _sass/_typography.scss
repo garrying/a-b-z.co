@@ -36,11 +36,4 @@ h2,
 .line-up {
   font-size: 1.89em;
   line-height: 1.25em;
-
-  @media (max-width: $small-vp) {
-    a {
-      width: 100%;
-      white-space: nowrap;
-    }
-  }
 }
