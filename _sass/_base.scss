@@ -37,6 +37,12 @@ ul {
   @media (max-width: $small-vp) {
     flex-wrap: wrap;
   }
+
+  @media (max-width: $smallest-vp) {
+    li {
+      width: 50%;
+    }
+  }
 }
 
 // Selection
