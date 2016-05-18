@@ -34,8 +34,12 @@ ul {
   display: flex;
   margin-top: 0.5em;
 
-  @media (max-width: $small-vp) {
+  @media (max-width: $smallest-vp) {
     flex-wrap: wrap;
+
+    li {
+      width: 50%;
+    }
   }
 }
 
