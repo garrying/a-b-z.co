@@ -37,3 +37,22 @@ h2,
   font-size: 1.89em;
   line-height: 1.25em;
 }
+
+// Footnotes
+
+.footnotes {
+  margin-top: 3%;
+  padding: 3% 0;
+  column-count: 2;
+  background: $black;
+  color: $white;
+  font-size: 0.35em;
+
+  a {
+    color: $white;
+  }
+}
+
+.footnotes-list {
+  margin: 0;
+}

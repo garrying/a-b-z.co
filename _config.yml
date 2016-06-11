@@ -19,3 +19,11 @@ markdown: kramdown
 # Asset compiling
 sass:
   style: :compressed
+
+# Exclude from build
+exclude: [Gemfile, Gemfile.lock, node_modules, speakers, package.json, webpack.config.js, webpack.config.production.js]
+
+# Speakers List
+collections:
+  speakers:
+    output: true
