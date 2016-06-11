@@ -2,6 +2,7 @@
 name: Michèle Champagne
 twitter: https://twitter.com/michhham
 website: http://michelechampagne.com
+location: Toronto
 ---
 
 Michèle is a designer and writer in Toronto. She works independently with cultural institutions, publishers and broadcasters on projects for identity, publication, and public engagement.   

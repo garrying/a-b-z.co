@@ -2,6 +2,7 @@
 name: Steph Davidson
 twitter: https://twitter.com/stephcd
 website: http://stephdavidson.com
+location: New York
 ---
 
 Stephanie Davidson was born in Toronto and attended the University of Western Ontario. She is an art director for web at Bloomberg.

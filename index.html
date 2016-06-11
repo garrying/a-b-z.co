@@ -3,10 +3,24 @@ layout: default
 ---
 
 {% for speaker in site.speakers %}
-  <li>
-    {{ speaker.name }}
-    {{ speaker.twitter }}
-    {{ speaker.website }}
-    {{ speaker.content }}
-  </li>
+  <div class="speaker-unit">
+    <span class="speaker-name">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span>
+    <div class="speaker-unit-meta">
+      {% if speaker.twitter %}
+        <span class="twitter"><a href="{{ speaker.twitter }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span> ¦¦ 
+      {% endif %}
+      {% if speaker.website %}
+        <span class="website"><a href="{{ speaker.website }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a></span>
+      {% endif %}
+    </div>
+    <div class="speaker-unit-content">
+      {{ speaker.content }}
+    </div>
+  </div>
 {% endfor %}
+
+<div class="apply-unit">
+  <p>Accepting Applications until July 31</p>
+  <a href="http://goo.gl/forms/pAeSJs13aDiV4UrH2" target="_blank" class="btn form-item">Apply Now</a>
+  <p class="small">A-B-Z INVITES PROFESSIONALS AND RECENT GRADUATES TO OUR UPCOMING 4-DAY TYPOGRAPHY SCHOOL. SIGN UP TO BE THE FIRST TO LEARN ABOUT OUR  OPEN CALL FOR PARTICIPATION IN JUNE. WE ARE LOOKING FOR DESIGNERS, DEVELOPERS, LINGUISTS, WRITERS, EDITORS—JOIN US!</p>
+</div>

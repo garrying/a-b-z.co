@@ -51,8 +51,35 @@
 	(function () {
 	  var app = {
 	    init: function init() {
-	      console.log('hello world');
+	      app.scrollHelper();
+	    },
+	    scrollHelper: function scrollHelper() {
+	      var lastScrollY = 0;
+	      var ticking = false;
+
+	      var update = function update(event) {
+	        console.log(event, lastScrollY);
+	        ticking = false;
+	      };
+
+	      var requestTick = function requestTick() {
+	        var scrollEvent = event;
+	        if (!ticking) {
+	          window.requestAnimationFrame(function () {
+	            update(scrollEvent);
+	          });
+	          ticking = true;
+	        }
+	      };
+
+	      var onScroll = function onScroll() {
+	        lastScrollY = window.scrollY;
+	        requestTick();
+	      };
+
+	      $(window).on('mousewheel', onScroll);
 	    }
+
 	  };
 	  app.init();
 	})();

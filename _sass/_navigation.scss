@@ -1,0 +1,36 @@
+.navigation {
+  text-transform: uppercase;
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      flex-grow: 1;
+    }
+  }
+}
+
+.navigation-container {
+  width: 100%;
+}
+
+.navigation-item {
+  font-size: 0.5em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-item:hover {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $white;
+  background: $black;
+}
