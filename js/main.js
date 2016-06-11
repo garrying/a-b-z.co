@@ -53,12 +53,20 @@
 	    init: function init() {
 	      app.scrollHelper();
 	    },
+	    ele: {
+	      navigation: $('.navigation')
+	    },
 	    scrollHelper: function scrollHelper() {
 	      var lastScrollY = 0;
 	      var ticking = false;
 
 	      var update = function update(event) {
 	        console.log(event, lastScrollY);
+	        if (lastScrollY > 100) {
+	          app.ele.navigation.addClass('blur');
+	        } else {
+	          app.ele.navigation.removeClass('blur');
+	        }
 	        ticking = false;
 	      };
 

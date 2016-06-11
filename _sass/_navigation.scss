@@ -5,6 +5,7 @@
   top: 0;
   width: 100%;
   justify-content: center;
+  transition: font-size 300ms $easeOutBack;
 
   ul {
     margin: 0;
@@ -14,6 +15,10 @@
     li {
       flex-grow: 1;
     }
+  }
+
+  &.blur {
+    font-size: 0.75em;
   }
 }
 

@@ -5,12 +5,20 @@ const $ = require('jquery');
     init: () => {
       app.scrollHelper();
     },
+    ele: {
+      navigation: $('.navigation'),
+    },
     scrollHelper: () => {
       let lastScrollY = 0;
       let ticking = false;
 
       const update = (event) => {
         console.log(event, lastScrollY);
+        if (lastScrollY > 100) {
+          app.ele.navigation.addClass('blur');
+        } else {
+          app.ele.navigation.removeClass('blur');
+        }
         ticking = false;
       };
 
