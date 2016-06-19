@@ -36,8 +36,8 @@ require('./intent');
       }
 
       function googleSearch(term) {
-        const googleAPIurl = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&alt=json&searchType=image`;
-        // const googleAPIurl = './js/data.json';
+        // const googleAPIurl = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&alt=json&searchType=image`;
+        const googleAPIurl = './js/data.json';
 
         $.get(googleAPIurl)
         .done((results) => {
