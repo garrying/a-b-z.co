@@ -1,0 +1,245 @@
+{
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+ },
+ "queries": {
+  "request": [
+   {
+    "title": "Google Custom Search - N O R M A L S",
+    "totalResults": "2400000000",
+    "searchTerms": "N O R M A L S",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "017668023985580936890:l2eosepcyty",
+    "searchType": "image"
+   }
+  ],
+  "nextPage": [
+   {
+    "title": "Google Custom Search - N O R M A L S",
+    "totalResults": "2400000000",
+    "searchTerms": "N O R M A L S",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "017668023985580936890:l2eosepcyty",
+    "searchType": "image"
+   }
+  ]
+ },
+ "context": {
+  "title": "a-b-z"
+ },
+ "searchInformation": {
+  "searchTime": 0.339835,
+  "formattedSearchTime": "0.34",
+  "totalResults": "2400000000",
+  "formattedTotalResults": "2,400,000,000"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "Ben Cloward - Technical Artist | Resources - Tutorials - Creating ...",
+   "htmlTitle": "Ben Cloward - Technical Artist | Resources - Tutorials - Creating \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://www.bencloward.com/images/tutorial_normals07.gif",
+   "displayLink": "www.bencloward.com",
+   "snippet": "and B colors in the normal",
+   "htmlSnippet": "and B colors in the \u003cb\u003enormal\u003c/b\u003e",
+   "mime": "image/gif",
+   "fileFormat": "Image Document",
+   "image": {
+    "contextLink": "http://www.bencloward.com/tutorials_normal_maps2.shtml",
+    "height": 256,
+    "width": 256,
+    "byteSize": 42495,
+    "thumbnailLink": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-YIe1_OucQLNNuR5t7qJhU3U-n_DWl9b7Pt4s08PawM43h8CaPE0CD78",
+    "thumbnailHeight": 111,
+    "thumbnailWidth": 111
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Why can't 3D printers print non-manifold and inverted normal ...",
+   "htmlTitle": "Why can&#39;t 3D printers print non-manifold and inverted \u003cb\u003enormal\u003c/b\u003e \u003cb\u003e...\u003c/b\u003e",
+   "link": "https://qph.ec.quoracdn.net/main-qimg-550e16a5ba91205e606bf9e087aee101",
+   "displayLink": "www.quora.com",
+   "snippet": "Normals",
+   "htmlSnippet": "\u003cb\u003eNormals\u003c/b\u003e",
+   "mime": "image/",
+   "fileFormat": "Image Document",
+   "image": {
+    "contextLink": "https://www.quora.com/Why-cant-3D-printers-print-non-manifold-and-inverted-normal-designs",
+    "height": 308,
+    "width": 410,
+    "byteSize": 54482,
+    "thumbnailLink": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1U7_Ck1n0p41SzPwavVEBBIiLI1FCad8MB0ETfxoM_q0cxR_j6BeiaQ",
+    "thumbnailHeight": 94,
+    "thumbnailWidth": 125
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Normal mapping - Wikipedia, the free encyclopedia",
+   "htmlTitle": "\u003cb\u003eNormal\u003c/b\u003e mapping - Wikipedia, the free encyclopedia",
+   "link": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Normal_map_example_with_scene_and_result.png",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "Example of a normal map",
+   "htmlSnippet": "Example of a \u003cb\u003enormal\u003c/b\u003e map",
+   "mime": "image/png",
+   "fileFormat": "Image Document",
+   "image": {
+    "contextLink": "https://en.wikipedia.org/wiki/Normal_mapping",
+    "height": 2048,
+    "width": 6144,
+    "byteSize": 3013485,
+    "thumbnailLink": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTuSCOVzQn4yiNemSdKLkY0gb_r1alYBtUcJBbjBprWdoCgS9bKVQNdfM",
+    "thumbnailHeight": 50,
+    "thumbnailWidth": 150
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Weird normals | Eat 3D",
+   "htmlTitle": "Weird \u003cb\u003enormals\u003c/b\u003e | Eat 3D",
+   "link": "http://eat3d.com/files/stock_normals.png",
+   "displayLink": "eat3d.com",
+   "snippet": "stock_normals.png. \"",
+   "htmlSnippet": "stock_normals.png. &quot;",
+   "mime": "image/png",
+   "fileFormat": "Image Document",
+   "image": {
+    "contextLink": "http://eat3d.com/forum/questions-and-feedback/weird-normals",
+    "height": 1024,
+    "width": 1024,
+    "byteSize": 178203,
+    "thumbnailLink": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxd4-tix3vht4jOnK4Nu0q5QypKyRV-LDxlygBQBD5Rjrq3nposoimmZK64A",
+    "thumbnailHeight": 150,
+    "thumbnailWidth": 150
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Patch Normals - File Exchange - MATLAB Central",
+   "htmlTitle": "Patch \u003cb\u003eNormals\u003c/b\u003e - File Exchange - MATLAB Central",
+   "link": "http://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/24330/versions/1/screenshot.png",
+   "displayLink": "www.mathworks.com",
+   "snippet": "Patch Normals",
+   "htmlSnippet": "Patch \u003cb\u003eNormals\u003c/b\u003e",
+   "mime": "image/png",
+   "fileFormat": "Image Document",
+   "image": {
+    "contextLink": "http://www.mathworks.com/matlabcentral/fileexchange/24330-patch-normals",
+    "height": 306,
+    "width": 295,
+    "byteSize": 18690,
+    "thumbnailLink": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2HHUguXNGqC9y1UJnhp7pCTtWBBGK_aiJ3EubpIvg-TJXtEL7ZRTR2w",
+    "thumbnailHeight": 117,
+    "thumbnailWidth": 113
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "About Normals",
+   "htmlTitle": "About \u003cb\u003eNormals\u003c/b\u003e",
+   "link": "http://softimage.wiki.softimage.com/xsidocs/cc0c91d5.jpg",
+   "displayLink": "softimage.wiki.softimage.com",
+   "snippet": "Normals on smooth versus",
+   "htmlSnippet": "\u003cb\u003eNormals\u003c/b\u003e on smooth versus",
+   "mime": "image/jpeg",
+   "image": {
+    "contextLink": "http://softimage.wiki.softimage.com/xsidocs/poly_shading_AboutNormals.htm",
+    "height": 273,
+    "width": 540,
+    "byteSize": 36250,
+    "thumbnailLink": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiTpnB2Q05BRN61eS24AYZG_0BKlXT-BxilnZNd9THFOgUOZJSCwoztYU",
+    "thumbnailHeight": 67,
+    "thumbnailWidth": 132
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Normals channel - Maxwell Render V2 Documentation - Next Limit ...",
+   "htmlTitle": "\u003cb\u003eNormals\u003c/b\u003e channel - Maxwell Render V2 Documentation - Next Limit \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://support.nextlimit.com/download/attachments/3016798/channels_normals_world_01.jpg?version=2&modificationDate=1340886850000&api=v2",
+   "displayLink": "support.nextlimit.com",
+   "snippet": "Normals channel in World",
+   "htmlSnippet": "\u003cb\u003eNormals\u003c/b\u003e channel in World",
+   "mime": "image/jpeg",
+   "image": {
+    "contextLink": "http://support.nextlimit.com/display/maxwelldocs/Normals+channel",
+    "height": 375,
+    "width": 1020,
+    "byteSize": 282009,
+    "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUsOU_sGvntmZo6J5bOkU5f4vKwcjiQ9f1UKrp6SNGHh_moLtPfa8ubUI",
+    "thumbnailHeight": 55,
+    "thumbnailWidth": 150
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Vertex normal - Wikipedia, the free encyclopedia",
+   "htmlTitle": "Vertex \u003cb\u003enormal\u003c/b\u003e - Wikipedia, the free encyclopedia",
+   "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Vertex_normals.png/220px-Vertex_normals.png",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "Vertex normal",
+   "htmlSnippet": "Vertex \u003cb\u003enormal\u003c/b\u003e",
+   "mime": "image/png",
+   "fileFormat": "Image Document",
+   "image": {
+    "contextLink": "https://en.wikipedia.org/wiki/Vertex_normal",
+    "height": 203,
+    "width": 220,
+    "byteSize": 22164,
+    "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWCQOQ7S4mSuw1jrrDkuZN8GX_2eLuMVE0BvWvYJUp9PdYHYHqGOFepw",
+    "thumbnailHeight": 99,
+    "thumbnailWidth": 107
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "OpenGL @ Lighthouse 3D - Terrain Tutorial",
+   "htmlTitle": "OpenGL @ Lighthouse 3D - Terrain Tutorial",
+   "link": "http://www.lighthouse3d.com/opengl/terrain/tnormals.gif",
+   "displayLink": "www.lighthouse3d.com",
+   "snippet": "Each vij represents a normal",
+   "htmlSnippet": "Each vij represents a \u003cb\u003enormal\u003c/b\u003e",
+   "mime": "image/gif",
+   "fileFormat": "Image Document",
+   "image": {
+    "contextLink": "http://www.lighthouse3d.com/opengl/terrain/index.php?normals",
+    "height": 346,
+    "width": 370,
+    "byteSize": 6034,
+    "thumbnailLink": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtrmlEX1NgRyzaYPvzE1sgOMLNBY8C1c3YV56y_cVlqKSHyRWspAAZsg",
+    "thumbnailHeight": 114,
+    "thumbnailWidth": 122
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Normal map - polycount",
+   "htmlTitle": "\u003cb\u003eNormal\u003c/b\u003e map - polycount",
+   "link": "http://wiki.polycount.com/w/images/thumb/c/c9/Normalmap_stairs.jpg/1406px-Normalmap_stairs.jpg",
+   "displayLink": "wiki.polycount.com",
+   "snippet": "A normal mapped model,",
+   "htmlSnippet": "A \u003cb\u003enormal\u003c/b\u003e mapped model,",
+   "mime": "image/jpeg",
+   "image": {
+    "contextLink": "http://wiki.polycount.com/wiki/Normal_map",
+    "height": 375,
+    "width": 1406,
+    "byteSize": 82611,
+    "thumbnailLink": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs4qv1ea8H5e3HjZ5AtgXRgfIHfyfRtzryeq0UxczDc49Mb7-ughw7Ufxi",
+    "thumbnailHeight": 40,
+    "thumbnailWidth": 150
+   }
+  }
+ ]
+}

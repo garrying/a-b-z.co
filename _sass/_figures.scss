@@ -7,3 +7,40 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+#image-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: 300ms opacity ease-in-out, 300ms filter ease-in-out, 300ms -webkit-filter ease-in-out;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+
+  &.active {
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+.image-unit {
+  position: absolute;
+}
+
+.image-item {
+  max-width: 25vw;
+  height: auto;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.image-item-caption {
+  font-size: 10px;
+  opacity: 0.15;
+  max-width: 75%;
+  word-break: break-all;
+}

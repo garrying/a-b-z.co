@@ -4,7 +4,7 @@ layout: default
 
 {% for speaker in site.speakers %}
   <div class="speaker-unit">
-    <span class="speaker-name">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span>
+    <span class="speaker-name" data-metaimage="{{ speaker.name }}">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span>
     <div class="speaker-unit-meta">
       {% if speaker.twitter %}
         <span class="twitter"><a href="{{ speaker.twitter }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span> ¦¦ 
