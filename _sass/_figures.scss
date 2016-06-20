@@ -19,6 +19,7 @@ img {
   transition: 300ms opacity ease-in-out, 300ms filter ease-in-out, 300ms -webkit-filter ease-in-out;
   -webkit-filter: blur(20px);
   filter: blur(20px);
+  -webkit-transform: translate3d(0, 0, 0);
 
   &.active {
     opacity: 1;

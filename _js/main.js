@@ -1,6 +1,8 @@
 const $ = require('jquery');
 window.jQuery = window.$ = $;
 require('./intent');
+require('./waypoints');
+require('./inview');
 
 (() => {
   const app = {
@@ -13,6 +15,7 @@ require('./intent');
       imageGrid: $('#image-grid'),
     },
     imgHelper: () => {
+
       const searchID = '017668023985580936890:l2eosepcyty';
       const searchAPIkey = 'AIzaSyDKm3GPSVDzltXsAcZTB8VeYdrL0N2ZZhc';
 
@@ -36,8 +39,8 @@ require('./intent');
       }
 
       function googleSearch(term) {
-        const googleAPIurl = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&alt=json&searchType=image`;
-        // const googleAPIurl = './js/data.json';
+        // const googleAPIurl = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&alt=json&searchType=image`;
+        const googleAPIurl = './js/data.json';
 
         $.get(googleAPIurl)
         .done((results) => {
@@ -60,7 +63,7 @@ require('./intent');
       let ticking = false;
 
       const update = (event) => {
-        console.log(event, lastScrollY);
+        // console.log(event, lastScrollY);
         if (lastScrollY > 100) {
           app.ele.navigation.addClass('blur');
         } else {
@@ -83,6 +86,16 @@ require('./intent');
         lastScrollY = window.scrollY;
         requestTick();
       };
+
+      const inview = new Waypoint.Inview({
+        element: $('.header'),
+        enter: () => {
+          $('.header').removeClass('fixed');
+        },
+        exited: () => {
+          $('.header').addClass('fixed');
+        },
+      });
 
       $(window).on('mousewheel', onScroll);
     },

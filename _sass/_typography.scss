@@ -43,10 +43,9 @@ h2,
 .footnotes {
   margin-top: 3%;
   padding: 3% 0;
-  column-count: 2;
-  background: $black;
+  background: $accent;
   color: $white;
-  font-size: 0.35em;
+  font-size: 0.5em;
 
   a {
     color: $white;
@@ -55,4 +54,8 @@ h2,
 
 .footnotes-list {
   margin: 0;
+
+  li {
+    margin-bottom: 1em;
+  }
 }

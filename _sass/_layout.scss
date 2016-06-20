@@ -1,6 +1,37 @@
 .header {
+  min-height: calc(100vh + 10px);
   margin-bottom: 3%;
   font-size: 3em;
+  background: $accent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20vh 0 10vh;
+  position: relative;
+
+
+  a, sup {
+    color: $black;
+    text-shadow: none;
+  }
+  
+  @include outline-text($black);
+  
+  &.fixed::after {
+    z-index: 0;
+  }
+
+  &:after {
+    position: fixed;
+    height: 10px;
+    width: 100%;
+    content: '';
+    bottom: -10px;
+    top: 0;
+    display: block;
+    background: $accent;
+    z-index: -1;
+  }
 }
 
 .speaker-unit-content {
