@@ -29,12 +29,12 @@
 
 .navigation-item {
   font-size: 0.5em;
-  padding: 1.5em 0 1em;
+  padding: 2em 0 1em;
   display: flex;
   justify-content: center;
 }
 
 .navigation-item:hover {
-  @include outline-text($white);
+  color: $white;
   background: $black;
 }
