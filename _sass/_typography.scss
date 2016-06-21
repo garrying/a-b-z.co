@@ -24,9 +24,9 @@ b {
 }
 
 h1,
-h2,
-.small {
+h2 {
   font-size: 0.5em;
+  line-height: 1.2em;
 
   @media (max-width: $small-vp) {
     font-size: 0.75em;
