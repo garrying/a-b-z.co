@@ -25,5 +25,11 @@ exclude: [Gemfile, Gemfile.lock, node_modules, speakers, package.json, webpack.c
 
 # Speakers List
 collections:
-  speakers:
+  program_lectures:
+    label: Lectures
+    output: true
+  program_lectures_workshops:
+    output: true
+  program_masterclass:
+    label: 1-Day-Masterclasses
     output: true
