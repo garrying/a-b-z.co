@@ -23,9 +23,12 @@ b {
   font-weight: normal;
 }
 
-h1,
-h2 {
-  font-size: 0.5em;
+sup {
+  font-size: 50%;
+}
+
+.heading-one {
+  font-size: 1.5em;
   line-height: 1.2em;
 
   @media (max-width: $small-vp) {
@@ -33,40 +36,17 @@ h2 {
   }
 }
 
-.line-up {
-  font-size: 1.89em;
-  line-height: 1.25em;
+.heading-two {
+  font-size: 1em;
+}
+
+.content-three {
+  font-size: 0.5em;
+  line-height: 1.3em;
 }
 
 .section-title {
-  text-transform: uppercase;
-  font-size: 1em;
   margin-bottom: 1em;
-}
-
-sup {
-  font-size: 50%;
-}
-
-// Footnotes
-
-.footnotes {
-  margin-top: 3%;
-  padding: 10% 0;
-  background: $accent;
-  color: $white;
-  font-size: 0.5em;
-
-  a {
-    color: $white;
-  }
-}
-
-.footnotes-list {
-  margin: 0;
-  padding: 0 1em;
-
-  li {
-    margin-bottom: 1em;
-  }
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }

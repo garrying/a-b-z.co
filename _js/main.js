@@ -52,6 +52,13 @@ require('./inview');
         (ele) => {
           const term = $(ele.currentTarget).data('metaimage');
           googleSearch(term);
+
+          $(ele.currentTarget).mousemove(e => {
+            const y = e.offsetY;
+            const x = e.offsetX;
+            console.log(y,x);
+            app.ele.imageGrid.css({ transform: `translateY(${y}px) translateX(${x}px)` });
+          });
         },
         () => {
           app.ele.imageGrid.removeClass('active');

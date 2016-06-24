@@ -2,26 +2,26 @@
 layout: default
 ---
 
-<section class="content-container">
+<section class="content-container heading-one">
   <p>
     ¶ You are invited to join us if you are a professional<sup>6</sup> or recently graduated designer, artist, coder, writer, or editor who is keen on letters and language<sup>7</sup>. You yearn for a deeper grasp of typography across media<sup>8</sup> and its expressive potential beyond market trends<sup>9</sup>.
   </p>
 </section>
 
-<section class="content-container">
+<section class="content-container heading-one">
   <p>
     ¶ The $875 CAD fee<sup>10</sup> will cover the 4-day programme, our public event(s), coffee<sup>11</sup> and catered lunches. The school will accept applications until July 31<sup>12</sup>.
   </p>
 </section>
 
-<section class="content-container">
+<section class="content-container heading-one">
   <p>
     ¶ Learn from renowned professionals<sup>13</sup> and with an exciting mix of multidisciplinary practitioners<sup>14</sup>.
   </p>
 </section>
 
 <section class="speakers-container">
-  <h1 class="section-title">¶ 1-Day-Masterclasses</h1>
+  <h1 class="section-title heading-two">¶ 1-Day-Masterclasses</h1>
   {% for speaker in site.program_masterclass %}
     <div class="speaker-unit">
       <header class="speak-unit-header">
@@ -41,7 +41,7 @@ layout: default
           {% endif %}
         </div>
       </header>
-      <div class="speaker-unit-content">
+      <div class="speaker-unit-content content-three">
         {{ speaker.content }}
       </div>
     </div>
@@ -49,7 +49,7 @@ layout: default
 </section>
 
 <section  class="speakers-container">
-  <h1 class="section-title">¶ Lectures and Workshops</h1>
+  <h1 class="section-title heading-two">¶ Lectures and Workshops</h1>
   {% for speaker in site.program_lectures_workshops %}
     <div class="speaker-unit">
       <header class="speak-unit-header">
@@ -69,7 +69,7 @@ layout: default
           {% endif %}
         </div>
       </header>
-      <div class="speaker-unit-content">
+      <div class="speaker-unit-content content-three">
         {{ speaker.content }}
       </div>
     </div>
@@ -77,7 +77,7 @@ layout: default
 </section>
 
 <section class="speakers-container">
-  <h1 class="section-title">¶ Lectures</h1>
+  <h1 class="section-title heading-two">¶ Lectures</h1>
   {% for speaker in site.program_lectures %}
     <div class="speaker-unit">
       <header class="speak-unit-header">
@@ -98,14 +98,14 @@ layout: default
 
         </div>
       </header>
-      <div class="speaker-unit-content">
+      <div class="speaker-unit-content content-three">
         {{ speaker.content }}
       </div>
     </div>
   {% endfor %}
 </section>
 
-<section class="content-container">
+<section class="content-container heading-one">
   <p>
     ¶ Our team is small but ambitious. Founded by Michèle Champagne<sup>14</sup>, Garry Ing<sup>15</sup> and Greg J. Smith<sup>16</sup>, the school draws on the the international careers and experiences designing, computing, writing and editing<sup>17</sup>, as well as teaching at universities<sup>18</sup> and developing custom educational programs<sup>19</sup>.
   </p>

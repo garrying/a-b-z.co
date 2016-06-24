@@ -50,7 +50,7 @@
 	window.jQuery = window.$ = $;
 	__webpack_require__(2);
 	__webpack_require__(71);
-	__webpack_require__(73);
+	__webpack_require__(72);
 
 	(function () {
 	  var app = {
@@ -93,6 +93,13 @@
 	      $('[data-metaimage]').hoverIntent(function (ele) {
 	        var term = $(ele.currentTarget).data('metaimage');
 	        googleSearch(term);
+
+	        $(ele.currentTarget).mousemove(function (e) {
+	          var y = e.offsetY;
+	          var x = e.offsetX;
+	          console.log(y, x);
+	          app.ele.imageGrid.css({ transform: 'translateY(' + y + 'px) translateX(' + x + 'px)' });
+	        });
 	      }, function () {
 	        app.ele.imageGrid.removeClass('active');
 	      });
@@ -11736,8 +11743,7 @@
 	}();
 
 /***/ },
-/* 72 */,
-/* 73 */
+/* 72 */
 /***/ function(module, exports) {
 
 	"use strict";

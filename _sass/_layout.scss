@@ -2,16 +2,14 @@
   -webkit-font-smoothing: subpixel-antialiased;
   min-height: calc(100vh + 10px);
   margin-bottom: 3%;
-  font-size: 3em;
   background: $accent;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 20vh 0 10vh;
-  position: relative;
 
-
-  a, sup {
+  a,
+  sup {
     color: $black;
     text-shadow: none;
   }
@@ -35,15 +33,6 @@
   }
 }
 
-.content-container {
-  font-size: 3em;
-
-  p {
-    font-size: 0.5em;
-    line-height: 1.2em;
-  }
-}
-
 .speak-unit-header {
   line-height: 1.2em;
 }
@@ -52,7 +41,24 @@
   margin-top: 2em;
 }
 
-.speaker-unit-content {
-  font-size: 0.5em;
-  line-height: 1.3em;
+// Footnotes
+
+.footnotes {
+  margin-top: 3%;
+  padding: 10% 0;
+  background: $accent;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}
+
+.footnotes-list {
+  margin: 0;
+  padding: 0 1em;
+
+  li {
+    margin-bottom: 1em;
+  }
 }
