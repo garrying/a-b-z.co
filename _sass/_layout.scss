@@ -14,7 +14,7 @@
     text-shadow: none;
   }
   
-  @include outline-text($black);
+  @include outline-text(1px, $black);
   
   &.fixed::after {
     z-index: 0;

@@ -25,15 +25,12 @@ b {
 
 sup {
   font-size: 50%;
+  @include outline-text(0, $black);
 }
 
 .heading-one {
   font-size: 1.5em;
   line-height: 1.2em;
-
-  @media (max-width: $small-vp) {
-    font-size: 0.75em;
-  }
 }
 
 .heading-two {
@@ -43,6 +40,10 @@ sup {
 .content-three {
   font-size: 0.5em;
   line-height: 1.3em;
+
+  @media (max-width: $small-vp) {
+    font-size: 1em;
+  }
 }
 
 .section-title {
