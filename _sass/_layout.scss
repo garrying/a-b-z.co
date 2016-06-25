@@ -33,6 +33,11 @@
   .heading-one {
     @include outline-text($black, $accent);
   }
+
+  @media (max-width: $small-vp) {
+    min-height: 75vh;
+    padding: 10vh 0 5vh;
+  }
 }
 
 .speak-unit-header {
