@@ -33,3 +33,5 @@ collections:
   program_masterclass:
     label: 1-Day-Masterclasses
     output: true
+  footnotes:
+    output: true
