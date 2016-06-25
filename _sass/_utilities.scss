@@ -1,6 +1,6 @@
-@mixin outline-text($width, $color) {
+@mixin outline-text($color) {
   color: transparent;
-  -webkit-text-stroke-width: $width;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: $color;
 
   @supports not ((-webkit-text-stroke: 1px $color)) {

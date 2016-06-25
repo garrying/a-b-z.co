@@ -8,13 +8,12 @@
   justify-content: flex-end;
   padding: 20vh 0 10vh;
 
-  a,
-  sup {
+  a {
     color: $black;
     text-shadow: none;
   }
   
-  @include outline-text(1px, $black);
+  @include outline-text($black);
   
   &.fixed::after {
     z-index: 0;

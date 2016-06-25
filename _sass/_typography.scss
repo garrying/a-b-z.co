@@ -25,7 +25,8 @@ b {
 
 sup {
   font-size: 50%;
-  @include outline-text(0, $black);
+  color: $black;
+  -webkit-text-stroke-color: transparent;
 }
 
 .heading-one {
