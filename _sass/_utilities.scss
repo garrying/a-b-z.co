@@ -1,10 +1,9 @@
-@mixin outline-text($color) {
-  color: transparent;
+@mixin outline-text($color, $moz-fallback: $color) {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: $color;
 
   @supports not ((-webkit-text-stroke: 1px $color)) {
-    color: $accent;
+    color: $moz-fallback;
     text-shadow: 1px 1px 0 $color, -1px -1px 0 $color, 1px -1px 0 $color,
             -1px 1px 0 $color;
   }

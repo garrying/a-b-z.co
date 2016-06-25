@@ -7,14 +7,13 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 20vh 0 10vh;
+  color: transparent;
 
   a {
     color: $black;
     text-shadow: none;
   }
-  
-  @include outline-text($black);
-  
+
   &.fixed::after {
     z-index: 0;
   }
@@ -29,6 +28,10 @@
     display: block;
     background: $accent;
     z-index: -1;
+  }
+
+  .heading-one {
+    @include outline-text($black, $accent);
   }
 }
 

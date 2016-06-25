@@ -59,9 +59,10 @@ ul {
 // Links
 
 a {
-  display: inline-block;
   color: $text-color;
   text-decoration: none;
+  @include outline-text(transparent, $text-color);
+
 
   &:active {
     position: relative;
