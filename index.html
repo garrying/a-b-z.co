@@ -4,24 +4,34 @@ layout: default
 
 <section class="content-container heading-one">
   <p>
-    <span class="solid">¶</span> You are invited to join us if you are <a href="#">a professional</a><sup>6</sup> or recently graduated designer, artist, coder, writer, or editor who is keen on <a href="#">letters and language</a><sup>7</sup>. You yearn for a deeper grasp of <a href="#">typography across media</a><sup>8</sup> and its expressive potential <a href="#">beyond market trends</a><sup>9</sup>.
+    <span class="solid">¶</span> You are invited to <a href="http://www.thegoodproject.org/wp-content/uploads/2016/01/Mehta_Paradox-of-the-Professions.pdf">join us if you are a professional</a> or recently graduated designer, <a href="https://www.youtube.com/watch?v=rqlZLSshbgU">artist</a>, coder, <a href="http://practicaltypography.com/billionaires-typewriter.html">writer</a>, or editor who is keen on <a href="http://www.readingdesign.org/tristram-shandy">typography and text</a>. You yearn for a <a href="#manifesto">deeper grasp of typography across media and its expressive potential beyond market trends</a>.
   </p>
 </section>
 
 <section class="content-container heading-one">
   <p>
-    <span class="solid">¶</span> The <a href="#">$875 CAD fee</a><sup>10</sup> will cover the 4-day programme, our public event(s), <a href="#">coffee</a><sup>11</sup> and catered lunches. The school will accept <a href="#">applications until July 31</a><sup>12</sup>.
+    <span class="solid">¶</span> <a href="http://www.currencyconverterrate.com/cad/875-cad-to-usd.html">The $875 CAD</a> will <a href="http://type.aerial-bold.com/tw/" target="_blank">cover</a> the 4-day intensive programme, our public event(s), and <a href="https://www.youtube.com/watch?v=KxwcQ1dapw8">all the coffee</a> that <a href="https://www.youtube.com/watch?v=i0i8XR9Cztc">you can drink</a>. A-B-Z-TXT will accept applications until <a href="https://en.wikipedia.org/wiki/July_22" target="_blank">July 22</a>. Apply to participate and we’ll get back to you by <a href="https://en.wikipedia.org/wiki/July_22" target="_blank">July 25th</a>.
   </p>
+</section>
+
+<section class="content-container apply-container">
+  <p>
+    <a href="http://eepurl.com/b1O0Nn" class="btn form-item" target="_blank">APPLY NOW</a>
+  </p>
+  <div id="programme"></div>
 </section>
 
 <section class="content-container heading-one">
   <p>
-    <span class="solid">¶</span> Learn from renowned professionals<sup>13</sup> and with an exciting mix of <a href="#">multidisciplinary practitioners</a><sup>14</sup>.
+    <span class="solid">¶</span> Learn from renowned professionals and with an exciting <a href="http://brooklynradio.com/broadcasts/hip-hop-history/" target="_blank">mix</a> of multidisciplinary practitioners.
   </p>
 </section>
 
 <section class="speakers-container">
-  <h1 class="section-title heading-two">¶ 1-Day-Masterclasses</h1>
+  <header class="heading-container">
+    <h1 class="section-title heading-two">¶ 1-day Masterclasses</h1>
+    <h1 class="section-title heading-two">¶ August 20–21</h1>
+  </header>
   {% for speaker in site.program_masterclass %}
     <div class="speaker-unit">
       <header class="speak-unit-header">
@@ -34,10 +44,10 @@ layout: default
         ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span>
         <div class="speaker-unit-meta">
           {% if speaker.website %}
-            <span class="website"><a href="{{ speaker.website }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a></span> — 
+            <span class="website"><a href="{{ speaker.website }}" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a></span> — 
           {% endif %}
           {% if speaker.twitter %}
-            <span class="twitter"><a href="{{ speaker.twitter }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
+            <span class="twitter"><a href="{{ speaker.twitter }}"  data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}"  target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
           {% endif %}
         </div>
       </header>
@@ -49,7 +59,10 @@ layout: default
 </section>
 
 <section  class="speakers-container">
-  <h1 class="section-title heading-two">¶ Lectures and Workshops</h1>
+  <header class="heading-container">
+    <h1 class="section-title heading-two">¶ Talks and Workshops</h1>
+    <h1 class="section-title heading-two">¶ August 18-19</h1>
+  </header>
   {% for speaker in site.program_lectures_workshops %}
     <div class="speaker-unit">
       <header class="speak-unit-header">
@@ -62,10 +75,10 @@ layout: default
         ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span>
         <div class="speaker-unit-meta">
           {% if speaker.website %}
-            <span class="website"><a href="{{ speaker.website }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a></span> — 
+            <span class="website"><a href="{{ speaker.website }}" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a></span> — 
           {% endif %}
           {% if speaker.twitter %}
-            <span class="twitter"><a href="{{ speaker.twitter }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
+            <span class="twitter"><a href="{{ speaker.twitter }}" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
           {% endif %}
         </div>
       </header>
@@ -77,7 +90,10 @@ layout: default
 </section>
 
 <section class="speakers-container">
-  <h1 class="section-title heading-two">¶ Lectures</h1>
+  <header class="heading-container">
+    <h1 class="section-title heading-two">¶ Talks</h1>
+    <h1 class="section-title heading-two">¶ August 18-19</h1>
+  </header>
   {% for speaker in site.program_lectures %}
     <div class="speaker-unit">
       <header class="speak-unit-header">
@@ -90,10 +106,10 @@ layout: default
         ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span>
         <div class="speaker-unit-meta">
           {% if speaker.website %}
-            <span class="website"><a href="{{ speaker.website }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a></span>
+            <span class="website"><a href="{{ speaker.website }}" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a></span>
           {% endif %}
           {% if speaker.twitter %}
-            — <span class="twitter"><a href="{{ speaker.twitter }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
+            — <span class="twitter"><a href="{{ speaker.twitter }}" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
           {% endif %}
 
         </div>
@@ -105,8 +121,7 @@ layout: default
   {% endfor %}
 </section>
 
-<section class="content-container heading-one">
+<section class="content-container heading-one credits">
   <p>
-    <span class="solid">¶</span> Our team is small but ambitious. Founded by <a href="#">Michèle Champagne</a><sup>14</sup>, <a href="#">Garry Ing</a><sup>15</sup> and <a href="#">Greg J. Smith</a><sup>16</sup>, the school draws on the the international careers and experiences <a href="#">designing, computing, writing and editing</a><sup>17</sup>, as well as <a href="#">teaching at universities</a><sup>18</sup> and <a href="#">developing custom educational programs</a><sup>19</sup>.
-  </p>
+    <span class="solid">¶</span> Our team is small but ambitious. Founded by <a href="https://twitter.com/michhham" target="_blank">Michèle Champagne</a>, <a href="https://twitter.com/garrying" target="_blank">Garry Ing</a> and <a href="https://twitter.com/gr3gjsmith" target="_blank">Greg J. Smith</a>, the school draws on our experiences in design, computation, writing and editing, as well as teaching at universities and developing custom educational programs. <a href="http://eepurl.com/b1O0Nn" target="_blank">Sign up to our mailing list</a> to keep track of our progress. Email us at <a href="mailto:mail@a-b-z.co">mail@a-b-z.co</a> with any questions.
 </section>

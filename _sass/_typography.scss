@@ -45,6 +45,27 @@ sup {
   font-size: 1em;
 }
 
+.heading-container {
+  .section-title:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.speaker-unit {
+  margin-bottom: 1em;
+  p {
+    line-height: 1.4em;
+    
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 .content-three {
   font-size: 0.5em;
   line-height: 1.3em;

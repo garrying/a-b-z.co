@@ -20,8 +20,20 @@ body {
 }
 
 .container {
-  margin-left: 7%;
-  margin-right: 7%;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.apply-container {
+  margin-top: 3em;
+  margin-bottom: 4em;
+
+  .btn {
+    @media (max-width: $small-vp) {
+      display: block;
+      text-align: center;
+    }
+  }
 }
 
 p {
@@ -76,6 +88,7 @@ a {
 
 [data-link-text] {
   position: relative;
+  display: inline-block;
 
   &:hover {
     color: transparent;
@@ -94,4 +107,8 @@ a {
     transform: skew(45deg);
     transform-origin: center center;
   }
+}
+
+.footnotes [data-link-text]::before {
+  color: $white;
 }

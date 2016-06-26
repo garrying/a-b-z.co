@@ -6,6 +6,4 @@ searchimg: steph davidson bloomberg
 location: New York
 ---
 
-Stephanie Davidson was born in Toronto and attended the University of Western Ontario. She is an art director for web at Bloomberg.
-
-Hi my name is Steph Davidson I am a content generator. I'm from Toronto, Ontario and I currently live in New York. You can contact me at stephanie (at) at-risk-teen.com.
+Born in Toronto, and a graduate of Western University, Steph Davidson has gone on to become the unofficial ‘net artist in residence’ of the *[Bloomberg Businessweek](http://www.bloomberg.com/businessweek)* digital team. Steph creates GIFs, illustrations, photo collages, video, and playful web experiences that make the magazine’s editorial at home on screen as it is in print. Steph was involved in the web design of Paul Ford’s essay ["What is Code?"](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/) and *Businessweek*’s recent [Global Tech Issue](http://www.bloomberg.com/features/2016-global-tech-inventors/#/). Steph is also big on [Tumblr](http://paralleluniver.se/). 

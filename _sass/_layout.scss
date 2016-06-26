@@ -45,7 +45,15 @@
 }
 
 .speakers-container {
-  margin-top: 2em;
+  margin-top: 3.5em;
+
+  .content-container + & {
+    margin-top: 2.75em;
+  }
+}
+
+.credits {
+  margin-top: 3em;
 }
 
 // Footnotes
