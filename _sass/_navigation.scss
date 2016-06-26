@@ -25,11 +25,10 @@
 }
 
 .navigation-item {
-  font-size: 0.5em;
-  padding: 2em 0 1em;
   display: flex;
+  padding: 2em 0 1em;
+  font-size: 0.5em;
   justify-content: center;
-  transition: font-size 200ms $easeOutBack;
 }
 
 .first {
