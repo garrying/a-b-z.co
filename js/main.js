@@ -82,8 +82,8 @@
 	      }
 
 	      function googleSearch(term) {
-	        // const googleAPIurl = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&alt=json&searchType=image`;
-	        var googleAPIurl = './js/data.json';
+	        var googleAPIurl = 'https://www.googleapis.com/customsearch/v1?key=' + searchAPIkey + '&cx=' + searchID + '&q=' + term + '&alt=json&searchType=image';
+	        // const googleAPIurl = './js/data.json';
 
 	        $.get(googleAPIurl).done(function (results) {
 	          app.ele.imageGrid.empty().append(results.items.map(imageEle)).addClass('active');
