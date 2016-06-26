@@ -29,10 +29,14 @@
 }
 
 .navigation-item {
-  font-size: 0.5em;
-  padding: 2em 0 1em;
   display: flex;
+  padding: 2em 0 1em;
+  font-size: 0.5em;
   justify-content: center;
+
+  @media (max-width: $small-vp) {
+    font-size: 0.65em;
+  }
 }
 
 .navigation-item:hover {

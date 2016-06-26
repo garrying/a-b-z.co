@@ -1,6 +1,7 @@
 @mixin outline-text($color, $moz-fallback: $color) {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: $color;
+
   @media (max-width: $small-vp) {
     -webkit-text-stroke-width: .5px;
   }
