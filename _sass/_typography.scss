@@ -69,7 +69,11 @@ sup {
   p {
     font-size: 0.87em;
     line-height: 1.4em;
-    
+
+    @media (min-width : $small-vp) and (max-width : 1024px) {
+      font-size: 1.3em;
+    }
+
     a {
       text-decoration: underline;
 
