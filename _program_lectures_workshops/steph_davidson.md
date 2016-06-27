@@ -2,7 +2,7 @@
 name: Steph Davidson
 twitter: https://twitter.com/stephcd
 website: http://stephdavidson.com
-searchimg: steph davidson bloomberg
+searchimg: steph davidson bloomberg businessweek
 location: New York
 ---
 
