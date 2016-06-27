@@ -7,7 +7,7 @@ require('./inview');
 (() => {
   const app = {
     init: () => {
-      app.scrollHelper();
+      // app.scrollHelper();
       app.imgHelper();
     },
     ele: {
@@ -56,7 +56,6 @@ require('./inview');
           $(ele.currentTarget).mousemove(e => {
             const y = e.offsetY;
             const x = e.offsetX;
-            console.log(y,x);
             app.ele.imageGrid.css({ transform: `translateY(${y}px) translateX(${x}px)` });
           });
         },
