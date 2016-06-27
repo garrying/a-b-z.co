@@ -7,7 +7,7 @@ require('./inview');
 (() => {
   const app = {
     init: () => {
-      // app.scrollHelper();
+      app.scrollHelper();
       app.imgHelper();
     },
     ele: {
