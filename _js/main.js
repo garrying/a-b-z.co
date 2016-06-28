@@ -1,6 +1,5 @@
 const $ = require('jquery');
 window.jQuery = window.$ = $;
-require('./intent');
 require('./waypoints');
 require('./inview');
 
@@ -44,55 +43,32 @@ require('./inview');
 
         $.get(googleAPIurl)
         .done((results) => {
-          app.ele.imageGrid.empty().append(results.items.map(imageEle)).addClass('active');
+          app.ele.imageGrid.append(results.items.map(imageEle));
         });
       }
 
-      $('[data-metaimage]').hoverIntent(
+      $('[data-metaimage]').on('mouseenter',
         (ele) => {
           const term = $(ele.currentTarget).data('metaimage');
           googleSearch(term);
 
           $(ele.currentTarget).mousemove(e => {
-            const y = e.offsetY;
-            const x = e.offsetX;
+            const width = e.currentTarget.offsetWidth;
+            const height = e.currentTarget.offsetHeight;
+            const y = e.offsetY - height / 2;
+            const x = e.offsetX - width / 2;
             app.ele.imageGrid.css({ transform: `translateY(${y}px) translateX(${x}px)` });
           });
-        },
+
+          app.ele.imageGrid.empty().addClass('active');
+        });
+
+      $('[data-metaimage]').on('mouseleave',
         () => {
-          app.ele.imageGrid.removeClass('active');
-        }
-      );
+          app.ele.imageGrid.empty().removeClass('active');
+        });
     },
     scrollHelper: () => {
-      let lastScrollY = 0;
-      let ticking = false;
-
-      const update = (event) => {
-        // console.log(event, lastScrollY);
-        if (lastScrollY > 100) {
-          app.ele.navigation.addClass('blur');
-        } else {
-          app.ele.navigation.removeClass('blur');
-        }
-        ticking = false;
-      };
-
-      const requestTick = () => {
-        const scrollEvent = event;
-        if (!ticking) {
-          window.requestAnimationFrame(() => {
-            update(scrollEvent);
-          });
-          ticking = true;
-        }
-      };
-
-      const onScroll = () => {
-        lastScrollY = window.scrollY;
-        requestTick();
-      };
-
       const inview = new Waypoint.Inview({
         element: $('.header'),
         enter: () => {
@@ -102,8 +78,6 @@ require('./inview');
           $('.header').addClass('fixed');
         },
       });
-
-      $(window).on('mousewheel', onScroll);
     },
 
   };

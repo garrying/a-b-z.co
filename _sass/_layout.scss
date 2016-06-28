@@ -9,11 +9,6 @@
   padding: 20vh 0 10vh;
   color: transparent;
 
-  a {
-    color: $black;
-    text-shadow: none;
-  }
-
   &.fixed::after {
     z-index: 1;
   }
@@ -63,10 +58,16 @@
   margin-top: 8%;
   color: $white;
   background: $accent;
+  position: relative;
 
   a {
     color: $white;
   }
+}
+
+#manifesto {
+  position: absolute;
+  top: 0;
 }
 
 .footnotes-list {
