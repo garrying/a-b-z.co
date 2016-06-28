@@ -124,6 +124,7 @@ a {
 .website {
   a {
     @media (max-width: $small-vp) {
+      display: inline-block;
       width: 100%;
       white-space: nowrap;
       overflow: hidden;
