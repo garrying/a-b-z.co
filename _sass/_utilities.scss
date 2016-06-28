@@ -13,13 +13,6 @@
   }
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  visibility: hidden;
-  opacity: 0;
-}
-
 .inline-outline {
   @include outline-text($black, $white);
   color: transparent;
