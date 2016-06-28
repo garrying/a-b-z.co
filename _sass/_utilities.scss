@@ -19,3 +19,14 @@
   visibility: hidden;
   opacity: 0;
 }
+
+.inline-outline {
+  @include outline-text($black, $white);
+  color: transparent;
+}
+
+[data-link-text]:hover {
+  .inline-outline {
+    display: none;
+  }
+}
