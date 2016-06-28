@@ -1,7 +1,15 @@
 .unit-group {
   display: flex;
 
+  @media (max-width: $small-vp) {
+    flex-wrap: wrap;
+  }
+
   .first {
     margin-right: 35px;
+
+    @media (max-width: $small-vp) {
+      margin-right: 0;
+    }
   }
 }
