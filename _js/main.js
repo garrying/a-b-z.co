@@ -12,9 +12,9 @@ require('./inview');
     ele: {
       navigation: $('.navigation'),
       imageGrid: $('#image-grid'),
+      metaImageItem: $('[data-metaimage]'),
     },
     imgHelper: () => {
-
       const searchID = '017668023985580936890:l2eosepcyty';
       const searchAPIkey = 'AIzaSyDKm3GPSVDzltXsAcZTB8VeYdrL0N2ZZhc';
 
@@ -47,7 +47,7 @@ require('./inview');
         });
       }
 
-      $('[data-metaimage]').on('mouseenter',
+      app.ele.metaImageItem.on('mouseenter',
         (ele) => {
           const term = $(ele.currentTarget).data('metaimage');
           googleSearch(term);
@@ -63,7 +63,7 @@ require('./inview');
           app.ele.imageGrid.empty().addClass('active');
         });
 
-      $('[data-metaimage]').on('mouseleave',
+      app.ele.metaImageItem.on('mouseleave',
         () => {
           app.ele.imageGrid.empty().removeClass('active');
         });
