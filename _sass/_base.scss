@@ -107,6 +107,18 @@ a {
     transform: skew(45deg);
     transform-origin: center center;
   }
+
+  @media (max-width: $small-vp) {
+    display: inline;
+
+    &:hover {
+      color: $text-color;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
 }
 
 .website {
