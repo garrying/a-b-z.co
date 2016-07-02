@@ -1,16 +1,8 @@
-[type="email"] {
-  -webkit-appearance: none;
-  border: 0;
-  border-radius: 0;
-  box-shadow: inset 0 0 0 0.4vw $black;
-}
-
 button,
 .btn,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  margin-left: -0.4vw;
   color: $black;
   cursor: pointer;
   background: $white;
@@ -23,6 +15,11 @@ button,
   &:hover {
     color: $white;
     background: $black;
+  }
+
+  @media (max-width: $small-vp) {
+    display: block;
+    text-align: center;
   }
 }
 
@@ -37,9 +34,4 @@ button,
     outline-color: $black;
     outline-offset: 1vw;
   }
-}
-
-.form-group {
-  display: flex;
-  align-items: baseline;
 }

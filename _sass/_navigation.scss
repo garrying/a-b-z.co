@@ -6,10 +6,10 @@
   top: 0;
   width: 100%;
   justify-content: center;
-  transition: font-size 300ms $easeOutBack;
 
   ul {
     margin: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 
@@ -18,10 +18,6 @@
       max-width: 33.3333333%;
     }
   }
-}
-
-.navigation-container {
-  width: 100%;
 }
 
 .navigation-item {
