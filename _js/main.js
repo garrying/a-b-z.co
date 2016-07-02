@@ -1,12 +1,10 @@
 const $ = require('jquery');
-window.jQuery = window.$ = $;
-require('./waypoints');
-require('./inview');
+require('./ScrollTrigger.min');
 
 (() => {
   const app = {
     init: () => {
-      app.scrollHelper();
+      ScrollTrigger.init();
       app.imgHelper();
     },
     ele: {
@@ -39,7 +37,6 @@ require('./inview');
 
       function googleSearch(term) {
         const googleAPIurl = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&alt=json&searchType=image`;
-        // const googleAPIurl = './js/data.json';
 
         $.get(googleAPIurl)
         .done((results) => {
@@ -68,18 +65,6 @@ require('./inview');
           app.ele.imageGrid.empty().removeClass('active');
         });
     },
-    scrollHelper: () => {
-      const inview = new Waypoint.Inview({
-        element: $('.header'),
-        enter: () => {
-          $('.header').removeClass('fixed');
-        },
-        exited: () => {
-          $('.header').addClass('fixed');
-        },
-      });
-    },
-
   };
   app.init();
 })();
