@@ -107,6 +107,18 @@ sup {
   }
 }
 
+.speaker-unit-content {
+  max-width: 70vw;
+
+  @media (min-width : $small-vp) and (max-width : 1024px) {
+    max-width: none;
+  }
+
+  @media (max-width: $small-vp) {
+    max-width: none;
+  }
+}
+
 .section-title {
   margin-bottom: 1em;
   text-transform: uppercase;
