@@ -34,15 +34,15 @@ layout: default
   </header>
   {% for speaker in site.program_masterclass %}
     <div class="speaker-unit">
-      <header class="speak-unit-header heading-two">
-        <span class="speaker-name" data-metaimage="
+      <header class="speak-unit-header">
+        <h3 class="heading-two"><span class="speaker-name" data-metaimage="
         {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
           {{ speaker.searchimg }}
         {% else %}
           {{ speaker.name }}
         {% endif %}
-        ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span>
-        <div class="speaker-unit-meta">
+        ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
+        <div class="speaker-unit-meta heading-two">
           {% if speaker.website %}
             <a class="website" href="{{ speaker.website }}" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
           {% endif %}
@@ -65,15 +65,15 @@ layout: default
   </header>
   {% for speaker in site.program_lectures_workshops %}
     <div class="speaker-unit">
-      <header class="speak-unit-header heading-two">
-        <span class="speaker-name" data-metaimage="
+      <header class="speak-unit-header">
+        <h3 class="heading-two"><span class="speaker-name" data-metaimage="
         {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
           {{ speaker.searchimg }}
         {% else %}
           {{ speaker.name }}
         {% endif %}
-        ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span>
-        <div class="speaker-unit-meta">
+        ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
+        <div class="speaker-unit-meta heading-two">
           {% if speaker.website %}
             <a class="website" href="{{ speaker.website }}" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
           {% endif %}
@@ -96,22 +96,21 @@ layout: default
   </header>
   {% for speaker in site.program_lectures %}
     <div class="speaker-unit">
-      <header class="speak-unit-header heading-two">
-        <span class="speaker-name" data-metaimage="
+      <header class="speak-unit-header">
+        <h3 class="heading-two"><span class="speaker-name" data-metaimage="
         {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
           {{ speaker.searchimg }}
         {% else %}
           {{ speaker.name }}
         {% endif %}
-        ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span>
-        <div class="speaker-unit-meta">
+        ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
+        <div class="speaker-unit-meta heading-two">
           {% if speaker.website %}
             <a class="website" href="{{ speaker.website }}" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
           {% endif %}
           {% if speaker.twitter %}
             — <span class="twitter"><a class="website" href="{{ speaker.twitter }}" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
           {% endif %}
-
         </div>
       </header>
       <div class="speaker-unit-content content-three">
