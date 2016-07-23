@@ -36,9 +36,13 @@ sup {
 
 .heading-one {
   font-size: 1.5em;
-  line-height: 1.2em;
+  line-height: 1.3em;
   color: transparent;
   @include outline-text($black, $white);
+
+  & + & {
+    margin-top: 1.5em;
+  }
 }
 
 .heading-two {
@@ -74,7 +78,7 @@ sup {
 
   p {
     font-size: 0.87em;
-    line-height: 1.4em;
+    line-height: 1.45em;
 
     @media (min-width : $small-vp) and (max-width : 1024px) {
       font-size: 1.3em;

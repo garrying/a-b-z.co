@@ -25,6 +25,13 @@
   padding: 2em 0 1em;
   font-size: 0.5em;
   justify-content: center;
+
+  &.xed:after {
+    height: 2px;
+    width: 60%;
+    top: 2.77em;
+    left: 20%;
+  }
 }
 
 .first {
