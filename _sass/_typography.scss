@@ -86,6 +86,11 @@ sup {
 
     a {
       text-decoration: underline;
+      display: inline-block;
+
+      @media (max-width: $small-vp) {
+        display: inline;
+      }
 
       &:hover {
         text-decoration: none;
@@ -113,7 +118,7 @@ sup {
 }
 
 .speaker-unit-content {
-  max-width: 65vw;
+  max-width: 61.5vw;
 
   @media (min-width : $small-vp) and (max-width : 1024px) {
     max-width: none;
