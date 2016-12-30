@@ -27,6 +27,8 @@
 
   .heading-one {
     @include outline-text($black, $accent);
+    position: relative;
+    z-index: 2;
   }
 
   @media (max-width: $small-vp) {
