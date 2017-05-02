@@ -7,7 +7,7 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
-install: gem install github-pages html-proofer
+install: gem install github-pages bundler html-proofer && bundle install
 
 script: bundle exec jekyll build && htmlproofer ./_site
 
