@@ -14,7 +14,7 @@ sass:
   style: :compressed
 
 # Exclude from build
-exclude: [vendor, Gemfile, Gemfile.lock, node_modules, speakers, package.json, webpack.config.js, webpack.config.production.js]
+exclude: [vendor, Gemfile, Gemfile.lock, node_modules, package.json]
 
 # Speakers List
 collections:
@@ -23,6 +23,4 @@ collections:
   program_lectures_workshops:
     output: false
   program_masterclass:
-    output: false
-  footnotes:
     output: false

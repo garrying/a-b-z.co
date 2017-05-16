@@ -49,11 +49,11 @@ require('./ScrollTrigger.min');
           const term = $(ele.currentTarget).data('metaimage');
           googleSearch(term);
 
-          $(ele.currentTarget).mousemove(e => {
-            const width = e.currentTarget.offsetWidth;
-            const height = e.currentTarget.offsetHeight;
-            const y = e.offsetY - height / 2;
-            const x = e.offsetX - width / 2;
+          $(ele.currentTarget).mousemove((e) => {
+            const width = e.offsetX - e.currentTarget.offsetWidth;
+            const height = e.offsetY - e.currentTarget.offsetHeight;
+            const y = height / 2;
+            const x = width / 2;
             app.ele.imageGrid.css({ transform: `translateY(${y}px) translateX(${x}px)` });
           });
 

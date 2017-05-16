@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint src _js",
     "watch": "webpack --progress --colors --watch",
-    "build": "NODE_ENV=production webpack --progress --colors --config webpack.config.production",
+    "build": "webpack --progress --colors --devtool hidden-source-map",
     "test": "test"
   },
   "repository": {
@@ -23,17 +23,13 @@
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.0.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-runtime": "^6.23.0",
     "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-config-airbnb": "^15.0.0",
     "eslint-plugin-import": "^2.2.0",
-    "lodash": "^4.17.4",
-    "webpack": "^2.4.1",
-    "webpack-dev-middleware": "^1.10.2",
-    "webpack-hot-middleware": "^2.18.0"
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.1",
+    "webpack": "^2.4.1"
   },
   "dependencies": {
     "jquery": "^3.2.1"

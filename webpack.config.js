@@ -13,9 +13,10 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loaders: [
-          'babel-loader?comments=false'
-        ]
+        loaders: 'babel-loader',
+        query: {
+          presets: ['es2015'],
+        }
       },
     ],
   },
@@ -23,12 +24,9 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development') }
+    new webpack.optimize.UglifyJsPlugin({
+      comments: false,
+      sourceMap: false
     })
-  ],
-  devServer: {
-    contentBase: './_js',
-    hot: true
-  }
+  ]
 }
