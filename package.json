@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src _js",
-    "watch": "webpack --progress --colors --watch",
+    "jekyll:serve": "bundle exec jekyll serve",
+    "watch": "npm run jekyll:serve | webpack --progress --colors --watch",
     "build": "webpack --progress --colors --devtool hidden-source-map",
     "test": "test"
   },
