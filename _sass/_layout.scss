@@ -9,10 +9,6 @@
   padding: 20vh 0 10vh;
   color: transparent;
 
-  &.fixed::after {
-    z-index: 1;
-  }
-
   &:after {
     position: fixed;
     height: 10px;
@@ -22,7 +18,6 @@
     top: 0;
     display: block;
     background: $accent;
-    z-index: -1;
   }
 
   .heading-one {
@@ -70,11 +65,6 @@
   a {
     color: $white;
   }
-}
-
-#manifesto {
-  position: absolute;
-  top: 0;
 }
 
 // 404 Page

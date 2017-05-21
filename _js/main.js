@@ -1,10 +1,8 @@
 const $ = require('jquery');
-require('./ScrollTrigger.min');
 
 (() => {
   const app = {
     init: () => {
-      ScrollTrigger.init();
       app.imgHelper();
     },
     ele: {
@@ -18,8 +16,8 @@ require('./ScrollTrigger.min');
 
       function makeNewPosition() {
         // Get viewport dimensions (remove the dimension of the div)
-        const h = $(window).height();
-        const w = $(window).width();
+        const h = window.innerHeight;
+        const w = window.innerWidth;
         const nh = Math.floor(Math.random() * h) / h * 100;
         const nw = Math.floor(Math.random() * w) / w * 100;
         return [nh, nw];
