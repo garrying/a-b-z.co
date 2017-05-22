@@ -45,14 +45,20 @@ const $ = require('jquery');
       app.ele.metaImageItem.on('mouseenter',
         (ele) => {
           const term = $(ele.currentTarget).data('metaimage');
-          googleSearch(term);
-
-          $(ele.currentTarget).mousemove((e) => {
+          function gridPresenter(e) {
             const width = e.offsetX - e.currentTarget.offsetWidth;
             const height = e.offsetY - e.currentTarget.offsetHeight;
             const y = height / 2;
             const x = width / 2;
             app.ele.imageGrid.css({ transform: `translateY(${y}px) translateX(${x}px)` });
+          }
+
+          googleSearch(term);
+
+          $(ele.currentTarget).mousemove((e) => {
+            requestAnimationFrame(() => {
+              gridPresenter(e);
+            });
           });
 
           app.ele.imageGrid.empty().addClass('active');
