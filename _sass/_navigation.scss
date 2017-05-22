@@ -25,18 +25,6 @@
   padding: 2em 0 1em;
   font-size: 0.5em;
   justify-content: center;
-
-  &.xed:after {
-    height: 2px;
-    width: 50%;
-    top: 2.7em;
-    left: 25%;
-
-    @media (max-width: $small-vp) {
-      width: 60%;
-      left: 20%;
-    }
-  }
 }
 
 .first {

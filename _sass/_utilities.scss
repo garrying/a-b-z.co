@@ -1,15 +1,12 @@
 @mixin outline-text($color, $moz-fallback: $color) {
   -webkit-text-stroke-width: 1px;
+  -moz-text-stroke-width: 1px;
   -webkit-text-stroke-color: $color;
+  -moz-text-stroke-color: $color;
 
   @media (max-width: $small-vp) {
     -webkit-text-stroke-width: .5px;
-  }
-
-  @supports not ((-webkit-text-stroke: 1px $color)) {
-    color: $moz-fallback;
-    text-shadow: 1px 1px 0 $color, -1px -1px 0 $color, 1px -1px 0 $color,
-            -1px 1px 0 $color;
+    -moz-text-stroke-width: .5px;
   }
 }
 
