@@ -42,16 +42,17 @@ const $ = require('jquery');
         });
       }
 
+      function gridPresenter(e) {
+        const width = e.offsetX - e.currentTarget.offsetWidth;
+        const height = e.offsetY - e.currentTarget.offsetHeight;
+        const y = height / 2;
+        const x = width / 2;
+        app.ele.imageGrid.css({ transform: `translateY(${y}px) translateX(${x}px)` });
+      }
+
       app.ele.metaImageItem.on('mouseenter',
         (ele) => {
           const term = $(ele.currentTarget).data('metaimage');
-          function gridPresenter(e) {
-            const width = e.offsetX - e.currentTarget.offsetWidth;
-            const height = e.offsetY - e.currentTarget.offsetHeight;
-            const y = height / 2;
-            const x = width / 2;
-            app.ele.imageGrid.css({ transform: `translateY(${y}px) translateX(${x}px)` });
-          }
 
           googleSearch(term);
 
