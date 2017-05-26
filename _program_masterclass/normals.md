@@ -5,6 +5,7 @@ website: http://normalfutu.re
 location: Paris
 title: ¶ .PTF – A SPECULATIVE TYPE FORMAT
 searchimg: design fiction future cedric normals
+edition: 2016
 ---
 
 <p class="content-header">.PTF – A SPECULATIVE TYPE FORMAT</p>

@@ -9,17 +9,6 @@
   padding: 20vh 0 10vh;
   color: transparent;
 
-  &:after {
-    position: fixed;
-    height: 10px;
-    width: 100%;
-    content: '';
-    bottom: -10px;
-    top: 0;
-    display: block;
-    background: $accent;
-  }
-
   .heading-one {
     @include outline-text($black, $accent);
     position: relative;
@@ -30,6 +19,10 @@
     min-height: 87vh;
     padding: 10vh 0 5vh;
   }
+}
+
+.edition:nth-child(2) .header {
+  background: lighten($accent, 25%);
 }
 
 .speak-unit-header {

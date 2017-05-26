@@ -5,6 +5,7 @@ website: http://lustlab.net
 location: The Hague
 title: ¶ UNMAPPING CREATIVITY
 searchimg: lustlab stedelijk museum
+edition: 2016
 ---
 
 <p class="content-header">UNMAPPING CREATIVITY</p>

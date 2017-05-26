@@ -31,15 +31,11 @@ AUG-18–21-2016
   <body>
     {% if page.title != 404 %}
       {% include menu.html %}
-      {% include header.html %}
     {% endif %}
-    <main class="page-content">
-      <div class="container">
-        {{ content }}
-      </div>
+    <main class="editions-container">
+      {{ content }}
     </main>
     {% if page.title != 404 %}
-      {% include footer.html %}
       <script src="js/main.js"></script>
     {% endif %}
     <script>
