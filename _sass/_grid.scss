@@ -12,16 +12,18 @@
 }
 
 .edition-first {
-  box-shadow: -4px 0 0 0 rgba($black, 0.2);
   position: fixed;
   left: 90vw;
   width: 50vw;
   z-index: 5;
+
+  a {
+    pointer-events: none;
+  }
 }
 
 .info {
   color: $white;
-  box-shadow: -4px 0 0 0 rgba($black, 0.2);
   background: $black;
   position: fixed;
   left: 95vw;
@@ -34,18 +36,19 @@
     @include outline-text(transparent, $white);
   }
 
-
-  .heading-one {
-    @include outline-text($white, $black);
-  }
-
   a {
+    pointer-events: none;
+
     color: $white;
     @include outline-text(transparent, $white);
 
     &:active {
       outline-color: $text-color;
     }
+  }
+
+  .heading-one {
+    @include outline-text($white, $black);
   }
 
   [data-link-text] {
@@ -58,8 +61,8 @@
 .panel-focus {
   left: 50vw;
 
-  .container {
-    opacity: 1;
+  a {
+    pointer-events: auto;
   }
 }
 

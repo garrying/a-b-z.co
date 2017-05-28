@@ -46,15 +46,21 @@ ul {
 
 // Selection
 ::-moz-selection {
-  color: $white;
+  color: $black;
   text-shadow: none;
   background: $black;
 }
 
 ::selection {
-  color: $white;
+  color: $black;
   text-shadow: none;
-  background: $black;
+  background: #ff0;
+  @include outline-text(transparent, $text-color);
+}
+
+a::selection {
+  color: transparent;
+  @include outline-text($text-color, transparent);
 }
 
 // Links
@@ -63,7 +69,6 @@ a {
   color: $text-color;
   text-decoration: none;
   @include outline-text(transparent, $text-color);
-
 
   &:active {
     position: relative;
