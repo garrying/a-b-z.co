@@ -4,11 +4,21 @@ const $ = require('jquery');
   const app = {
     init: () => {
       app.imgHelper();
+      app.panelFocus();
     },
     ele: {
       navigation: $('.navigation'),
       imageGrid: $('#image-grid'),
       metaImageItem: $('[data-metaimage]'),
+    },
+    panelFocus: () => {
+      $('.panel').on('click', (ele) => {
+        if (!$(ele.currentTarget).hasClass('edition-current')) {
+          $(ele.currentTarget).addClass('panel-focus');
+        } else {
+          $('.panel').removeClass('panel-focus');
+        }
+      });
     },
     imgHelper: () => {
       const searchID = '017668023985580936890:l2eosepcyty';

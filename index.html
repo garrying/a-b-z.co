@@ -2,9 +2,15 @@
 layout: default
 ---
 
-<div class="edition">
+<div class="panel edition edition-current">
   {% include_relative _editions/2017.html %}
 </div>
-<div class="edition">
+<div class="panel edition edition-first">
   {% include_relative _editions/2016.html %}
+</div>
+<div class="panel info">
+  <div class="container">
+    {% include credits.html %}
+    {% include manifesto.html %}
+  </div>
 </div>
