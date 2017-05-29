@@ -21,8 +21,8 @@
   }
 }
 
-.edition:nth-child(2) .header {
-  background: lighten($accent, 15%);
+.edition-current .header {
+  background: $accent-current;
 }
 
 .speak-unit-header {
