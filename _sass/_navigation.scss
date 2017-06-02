@@ -15,24 +15,22 @@
 
     li {
       flex-grow: 1;
-      max-width: 33.3333333%;
+      max-width: 50%;
     }
   }
 }
 
 .navigation-item {
-  display: flex;
+  display: block;
+  text-align: center;
   padding: 1em 0;
-  font-size: 0.5em;
+  font-size: 0.75em;
   justify-content: center;
-}
+  white-space: nowrap;
+  position: relative;
 
-.first {
-  justify-content: flex-end;
-  padding-right: 1em;
-}
-
-.last {
-  justify-content: flex-start;
-  padding-left: 1em;
+  &::before {
+    width: 100%;
+    text-align: center;
+  }
 }

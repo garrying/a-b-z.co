@@ -34,6 +34,15 @@ sup {
   @include outline-text(transparent, $text-color);
 }
 
+.drop-cap {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: .5em;
+  font-size: 1.8em;
+  line-height: 0.65em;
+}
+
+
 .heading-one {
   font-size: 1.5em;
   line-height: 1.3em;

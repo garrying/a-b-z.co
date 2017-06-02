@@ -37,6 +37,27 @@
   }
 }
 
+.speaker-unit-meta a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+
+  &:hover {
+    overflow: visible;
+  }
+
+  &[data-link-text]:hover::before {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+}
+
 .credits {
   p {
     margin: 0 0 1.5em;
