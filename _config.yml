@@ -1,7 +1,7 @@
 # Site settings
 title: A-B-Z
 email: mail@a-b-z.co
-description: ¶ A-B-Z-TXT is a school for 21st century typography. InterAccess in Toronto. August 17–20, 2017
+description: ● A-B-Z-TXT is a school for 21st century typography. InterAccess in Toronto. August 17–20, 2017
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://a-b-z.co" # the base hostname & protocol for your site
 twitter_username: abz_co
