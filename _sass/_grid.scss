@@ -15,7 +15,7 @@
 .edition-first {
   position: fixed;
   left: 90vw;
-  width: 50vw;
+  width: 55vw;
   z-index: 5;
   padding-right: 5vw;
 
@@ -61,10 +61,14 @@
 }
 
 .panel-focus {
-  left: 50vw;
+  left: 45vw;
 
   a {
     pointer-events: auto;
+  }
+
+  &.info {
+    left: 50vw;
   }
 }
 

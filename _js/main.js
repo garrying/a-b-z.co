@@ -13,9 +13,18 @@ const $ = require('jquery');
     },
     panelFocus: () => {
       $('.panel').on('click', (ele) => {
-        if (!$(ele.currentTarget).hasClass('edition-current')) {
-          $(ele.currentTarget).addClass('panel-focus');
-        } else {
+        if ($(ele.currentTarget).hasClass('edition-current')) {
+          $('.panel').removeClass('panel-focus');
+        } else if ($(ele.currentTarget).hasClass('info')) {
+          $('.info').addClass('panel-focus');
+        } else if ($(ele.currentTarget).hasClass('edition-first')) {
+          $('.edition-first').addClass('panel-focus');
+          $('.info').removeClass('panel-focus');
+        }
+      });
+
+      $(document).keydown((e) => {
+        if (e.keyCode === 27) {
           $('.panel').removeClass('panel-focus');
         }
       });
