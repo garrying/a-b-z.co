@@ -60,6 +60,10 @@ sup {
 
   &.sponsors {
     font-size: 0.5em;
+
+    @media (max-width: $small-vp) {
+      font-size: 1em;
+    }
   }
 
   @media (max-width: $small-vp) {
