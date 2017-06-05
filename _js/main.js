@@ -1,15 +1,25 @@
 const $ = require('jquery');
+require('./libs/vanilla.idle.min');
 
 (() => {
   const app = {
     init: () => {
       app.imgHelper();
       app.panelFocus();
+      app.idle();
     },
     ele: {
       navigation: $('.navigation'),
       imageGrid: $('#image-grid'),
       metaImageItem: $('[data-metaimage]'),
+    },
+    makeNewPosition: () => {
+      // Get viewport dimensions (remove the dimension of the div)
+      const h = window.innerHeight;
+      const w = window.innerWidth;
+      const nh = Math.floor(Math.random() * h) / h * 100;
+      const nw = Math.floor(Math.random() * w) / w * 100;
+      return [nh, nw];
     },
     panelFocus: () => {
       $('.panel').on('click', (ele) => {
@@ -29,21 +39,39 @@ const $ = require('jquery');
         }
       });
     },
+    idlerHappenings: () => {
+      console.log('idle !');
+
+      const pos = app.makeNewPosition();
+      const randImage = Math.floor(Math.random() * 7);
+
+      function imageEle() {
+        return `<div class="idle-object" style="top:${pos[0]}%; left:${pos[1]}%">
+            <img src="/img/idler/${randImage}.gif" />
+          </div>`;
+      }
+
+      $('.edition-current').append(imageEle());
+    },
+    idle: () => {
+      let idlerHappeningsTimer;
+
+      idle({
+        onIdle: () => {
+          idlerHappeningsTimer = setInterval(app.idlerHappenings, 10000);
+        },
+        onActive: () => {
+          clearInterval(idlerHappeningsTimer);
+        },
+        idle: 10000,
+      }).start();
+    },
     imgHelper: () => {
       const searchID = '017668023985580936890:l2eosepcyty';
       const searchAPIkey = 'AIzaSyDKm3GPSVDzltXsAcZTB8VeYdrL0N2ZZhc';
 
-      function makeNewPosition() {
-        // Get viewport dimensions (remove the dimension of the div)
-        const h = window.innerHeight;
-        const w = window.innerWidth;
-        const nh = Math.floor(Math.random() * h) / h * 100;
-        const nw = Math.floor(Math.random() * w) / w * 100;
-        return [nh, nw];
-      }
-
       function imageEle(obj) {
-        const pos = makeNewPosition();
+        const pos = app.makeNewPosition();
         return `
           <div class="image-unit" style="top:${pos[0]}%; left:${pos[1]}%">
             <img src=${obj.link} class="image-item" />
