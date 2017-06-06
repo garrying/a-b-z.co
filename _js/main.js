@@ -63,7 +63,7 @@ require('./libs/vanilla.idle.min');
         onActive: () => {
           clearInterval(idlerHappeningsTimer);
         },
-        idle: 10000,
+        idle: 60000,
       }).start();
     },
     imgHelper: () => {
