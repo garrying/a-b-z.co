@@ -71,12 +71,6 @@ sup {
   }
 }
 
-.heading-container {
-  .section-title:first-child {
-    margin-bottom: 0;
-  }
-}
-
 .speaker-unit {
   margin-bottom: 1em;
 
@@ -144,11 +138,11 @@ sup {
 
 .section-title {
   margin-bottom: 1em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   line-height: 1.2em;
+}
 
-  @media (max-width: $small-vp) {
-    letter-spacing: 0;
-  }
+// no bottom margin
+
+.nbm {
+  margin-bottom: 0;
 }

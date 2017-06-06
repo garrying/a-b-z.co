@@ -6,7 +6,7 @@
   overflow-x: scroll;
   position: relative;
   max-height: 100vh;
-  max-width: 90vw;
+  max-width: 85vw;
   background: $white;
   transition: left 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-overflow-scrolling: touch;
@@ -14,10 +14,10 @@
 
 .edition-first {
   position: fixed;
-  left: 90vw;
+  left: 85vw;
   width: 55vw;
   z-index: 5;
-  padding-right: 5vw;
+  padding-right: 7.5vw;
 
   a {
     pointer-events: none;
@@ -25,13 +25,10 @@
 }
 
 .info {
-  color: $white;
-  background: $black;
   position: fixed;
-  left: 95vw;
+  left: 92.5vw;
   width: 50vw;
   z-index: 10;
-  padding: 20vh 0 10vh;
 
   .solid {
     color: $white;
@@ -40,23 +37,37 @@
 
   a {
     pointer-events: none;
-
-    color: $white;
-    @include outline-text(transparent, $white);
-
-    &:active {
-      outline-color: $text-color;
-    }
   }
 
   .heading-one {
     @include outline-text($white, $black);
+
+    a {
+      color: $white;
+      @include outline-text(transparent, $white);
+
+      &:hover {
+        color: transparent;
+      }
+
+      &:active {
+        outline-color: $text-color;
+      }
+    }
+
+    [data-link-text] {
+      &::before {
+        color: $white;
+      }
+    }
+
+    p {
+      margin-top: 0;
+    }
   }
 
-  [data-link-text] {
-    &::before {
-      color: $white;
-    }
+  .header {
+    background: $black;
   }
 }
 

@@ -3,26 +3,26 @@
 <div class="container">
   <div class="content-container heading-one">
     <p>
-      <span class="solid drop-cap">●</span> If you are a professional designer :: artist :: coder :: writer :: or :: editor :: join us for typographic feats across the media heap :: and :: beyond the commercial cliché.
+      <span class="solid drop-cap">●</span> If you are a :: professional designer :: artist :: or :: coder :: join us for typographic feats across media :: and :: beyond commercial clichés.
     </p>
   </div>
 
   <div class="content-container heading-one">
     <p>
-      <span class="solid drop-cap">●</span> The $675 CAD fee will cover :: the 4-day intensive school :: and :: lots and lots :: of coffee :: A-B-Z-TXT will accept applications until :: July 7th.
+      <span class="solid drop-cap">●</span> The $675 Cdn fee will cover :: the 4-day intensive school :: and :: lots and lots :: of coffee :: A-B-Z-TXT will accept applications until :: July 7th.
     </p>
   </div>
 
   <div class="content-container apply-container">
     <p>
-      <a href="https://goo.gl/forms/OUPSbVqMH9ycvVDM2" rel="noopener" class="btn form-item" target="_blank" title="A-B-Z-TXT Application Form">● ● APPLY NOW ● ●</a>
+      <a href="https://goo.gl/forms/OUPSbVqMH9ycvVDM2" rel="noopener" class="btn form-item" target="_blank" title="A-B-Z-TXT Application Form">● Apply :: Apply ●</a>
     </p>
     <div id="programme"></div>
   </div>
 
   <div class="content-container heading-one">
     <p>
-      <span class="solid drop-cap">●</span> Learn from :: noted creatives :: and with an lively mix of :: fuzzy :: disciplines.
+      <span class="solid drop-cap">●</span> Learn from :: noted creatives :: and with a lively mix of :: fuzzy :: disciplines.
     </p>
   </div>
 
@@ -34,19 +34,21 @@
       {% if speaker.edition == 2017 %}
       <div class="speaker-unit">
         <header class="speak-unit-header">
-          <h3 class="heading-two"><span class="speaker-name" data-metaimage="
+          <h3 class="heading-two"><span class="solid">●</span> <span class="speaker-name" data-metaimage="
           {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
             {{ speaker.searchimg }}
           {% else %}
             {{ speaker.name }}
           {% endif %}
-          ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
+          ">{{ speaker.name }}</span> {{ speaker.action }} ::</h3>
+          <h3 class="heading-two"><span class="solid">●</span> {{ speaker.topic }}</h3>
           <div class="speaker-unit-meta heading-two">
+            <span class="solid">●</span>
             {% if speaker.website %}
               <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
             {% endif %}
             {% if speaker.twitter %}
-               — <span class="twitter"><a class="website" href="{{ speaker.twitter }}"  rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}"  target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
+               :: <span class="twitter"><a class="website" href="{{ speaker.twitter }}"  rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}"  target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
             {% endif %}
           </div>
         </header>
@@ -66,19 +68,21 @@
       {% if speaker.edition == 2017 %}
       <div class="speaker-unit">
         <header class="speak-unit-header">
-          <h3 class="heading-two"><span class="speaker-name" data-metaimage="
+          <h3 class="heading-two"><span class="solid">●</span> <span class="speaker-name" data-metaimage="
           {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
             {{ speaker.searchimg }}
           {% else %}
             {{ speaker.name }}
           {% endif %}
-          ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
+          ">{{ speaker.name }}</span> {{ speaker.action }} ::</h3>
+          <h3 class="heading-two"><span class="solid">●</span> {{ speaker.topic }}</h3>
           <div class="speaker-unit-meta heading-two">
+            <span class="solid">●</span>
             {% if speaker.website %}
               <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
             {% endif %}
             {% if speaker.twitter %}
-              — <span class="twitter"><a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
+              :: <span class="twitter"><a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
             {% endif %}
           </div>
         </header>
@@ -98,19 +102,21 @@
       {% if speaker.edition == 2017 %}
       <div class="speaker-unit">
         <header class="speak-unit-header">
-          <h3 class="heading-two"><span class="speaker-name" data-metaimage="
+          <h3 class="heading-two"><span class="solid">●</span> <span class="speaker-name" data-metaimage="
           {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
             {{ speaker.searchimg }}
           {% else %}
             {{ speaker.name }}
           {% endif %}
-          ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
+          ">{{ speaker.name }}</span> {{ speaker.action}} ::</h3>
+          <h3 class="heading-two"><span class="solid">●</span> {{ speaker.topic }}</h3>
           <div class="speaker-unit-meta heading-two">
+            <span class="solid">●</span>
             {% if speaker.website %}
               <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
             {% endif %}
             {% if speaker.twitter %}
-              — <span class="twitter"><a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
+              :: <span class="twitter"><a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
             {% endif %}
           </div>
         </header>
@@ -124,7 +130,7 @@
 
   <div class="content-container apply-container">
     <p>
-      <a href="https://goo.gl/forms/OUPSbVqMH9ycvVDM2" rel="noopener" class="btn form-item" target="_blank" title="A-B-Z-TXT Application Form">● ● APPLY NOW ● ●</a>
+      <a href="https://goo.gl/forms/OUPSbVqMH9ycvVDM2" rel="noopener" class="btn form-item" target="_blank" title="A-B-Z-TXT Application Form">● Apply :: Apply ●</a>
     </p>
   </div>
 </div>
