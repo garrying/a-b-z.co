@@ -24,7 +24,6 @@ require('./libs/vanilla.idle.min');
       return [nh, nw];
     },
     headerPositioner: () => {
-      console.log('asd');
       const targetHeaderPos = $('.edition-current .heading-one').position();
       $('.section-panel .header').css('paddingTop', targetHeaderPos.top);
     },
