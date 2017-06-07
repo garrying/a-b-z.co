@@ -7,6 +7,8 @@ require('./libs/vanilla.idle.min');
       app.imgHelper();
       app.panelFocus();
       app.idle();
+      app.headerPositioner();
+      app.resizeBinder();
     },
     ele: {
       navigation: $('.navigation'),
@@ -20,6 +22,11 @@ require('./libs/vanilla.idle.min');
       const nh = Math.floor(Math.random() * h) / h * 100;
       const nw = Math.floor(Math.random() * w) / w * 100;
       return [nh, nw];
+    },
+    headerPositioner: () => {
+      console.log('asd');
+      const targetHeaderPos = $('.edition-current .heading-one').position();
+      $('.section-panel .header').css('paddingTop', targetHeaderPos.top);
     },
     panelFocus: () => {
       $('.panel').on('click', (ele) => {
@@ -116,6 +123,31 @@ require('./libs/vanilla.idle.min');
         () => {
           app.ele.imageGrid.empty().removeClass('active');
         });
+    },
+    resizeBinder: () => {
+      (() => {
+        const throttle = (type, name, obj) => {
+          obj = obj || window;
+          let running = false;
+          const func = () => {
+            if (running) { return; }
+            running = true;
+            requestAnimationFrame(() => {
+              obj.dispatchEvent(new CustomEvent(name));
+              running = false;
+            });
+          };
+          obj.addEventListener(type, func);
+        };
+
+        /* init - you can init any event */
+        throttle('resize', 'optimizedResize');
+      })();
+
+      // handle event
+      window.addEventListener('optimizedResize', () => {
+        app.headerPositioner();
+      });
     },
   };
   app.init();
