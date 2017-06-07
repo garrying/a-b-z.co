@@ -46,8 +46,6 @@ require('./libs/vanilla.idle.min');
       });
     },
     idlerHappenings: () => {
-      console.log('idle !');
-
       const pos = app.makeNewPosition();
       const randImage = Math.floor(Math.random() * 7);
 
@@ -143,7 +141,7 @@ require('./libs/vanilla.idle.min');
         throttle('resize', 'optimizedResize');
       })();
 
-      // handle event
+      // Window resize event
       window.addEventListener('optimizedResize', () => {
         app.headerPositioner();
       });
