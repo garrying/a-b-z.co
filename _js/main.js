@@ -8,7 +8,7 @@ require('./libs/vanilla.idle.min');
       app.panelFocus();
       app.idle();
       app.headerPositioner();
-      app.resizeBinder();
+      app.eventBinders();
     },
     ele: {
       navigation: $('.navigation'),
@@ -24,7 +24,7 @@ require('./libs/vanilla.idle.min');
       return [nh, nw];
     },
     headerPositioner: () => {
-      const targetHeaderPos = $('.edition-current .heading-one').position();
+      const targetHeaderPos = $('.edition-current .heading-one').offset();
       $('.section-panel .header').css('paddingTop', targetHeaderPos.top);
     },
     panelFocus: () => {
@@ -121,7 +121,7 @@ require('./libs/vanilla.idle.min');
           app.ele.imageGrid.empty().removeClass('active');
         });
     },
-    resizeBinder: () => {
+    eventBinders: () => {
       (() => {
         const throttle = (type, name, obj) => {
           obj = obj || window;
@@ -143,6 +143,11 @@ require('./libs/vanilla.idle.min');
 
       // Window resize event
       window.addEventListener('optimizedResize', () => {
+        app.headerPositioner();
+      });
+
+      // Window on load
+      $(window).on('load', () => {
         app.headerPositioner();
       });
     },
