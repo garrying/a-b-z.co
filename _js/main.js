@@ -58,7 +58,7 @@ require('./libs/vanilla.idle.min');
 
       idle({
         onIdle: () => {
-          idlerHappeningsTimer = setInterval(app.idlerHappenings, 10000);
+          idlerHappeningsTimer = setInterval(app.idlerHappenings, 30000);
         },
         onActive: () => {
           clearInterval(idlerHappeningsTimer);

@@ -4,7 +4,7 @@ action: will
 twitter: https://twitter.com/wxswxs
 website: http://wxs.ca
 location: Toronto
-topic: short description…
+topic: help you find the perfect emoji
 edition: 2017
 ---
 

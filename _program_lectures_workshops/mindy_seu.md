@@ -1,7 +1,7 @@
 ---
 name: Mindy Seu
-action: will
-topic: kinetic typography in computer history
+action: will introduce
+topic: the poetry in interface aesthetics
 twitter: https://twitter.com/mind_seu
 website: http://mindyseu.com
 location: Cambridge
