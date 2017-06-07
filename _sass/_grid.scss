@@ -1,5 +1,9 @@
 .editions-container {
   display: flex;
+
+  @media (max-width: $small-vp) {
+    flex-wrap: wrap;
+  }
 }
 
 .section-panel {
@@ -14,6 +18,10 @@
 
 .edition-current {
   padding-right: 15vw;
+
+  @media (max-width: $small-vp) {
+    padding-right: 0;
+  }
 }
 
 .edition-first {
@@ -26,6 +34,10 @@
   a {
     pointer-events: none;
   }
+
+  @media (max-width: $small-vp) {
+    display: none;
+  }
 }
 
 .info {
@@ -33,6 +45,14 @@
   left: 92.5vw;
   width: 50vw;
   z-index: 10;
+
+  @media (max-width: $small-vp) {
+    position: relative;
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    left: 0;
+  }
 
   .solid {
     color: $white;
