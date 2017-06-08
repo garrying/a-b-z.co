@@ -2,17 +2,12 @@
 layout: default
 ---
 
-<section class="panel edition edition-current">
+<section class="panel edition-current">
   {% include_relative _editions/2017.html %}
 </section>
-<section class="panel section-panel edition edition-first">
+<section class="panel section-panel edition-first">
   {% include_relative _editions/2016.html %}
 </section>
 <section class="panel section-panel info">
-  <header class="header">
-    {% include credits.html %}
-  </header>
-  <div class="container">
-    {% include manifesto.html %}
-  </div>
+  {% include info.html %}
 </section>
