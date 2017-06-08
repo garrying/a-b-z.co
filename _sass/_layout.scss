@@ -22,6 +22,22 @@
 
 .edition-current .header {
   background: $accent-current;
+  position: relative;
+
+  &:after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 15vw;
+    height: 100%;;
+    background: $accent-current;
+    left: 100%;
+
+    @media (max-width: $small-vp) {
+      display: none;
+    }
+  }
 }
 
 .speak-unit-header {

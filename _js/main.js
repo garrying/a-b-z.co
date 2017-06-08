@@ -11,7 +11,6 @@ require('./libs/vanilla.idle.min');
       app.eventBinders();
     },
     ele: {
-      navigation: $('.navigation'),
       imageGrid: $('#image-grid'),
       metaImageItem: $('[data-metaimage]'),
     },
@@ -148,6 +147,7 @@ require('./libs/vanilla.idle.min');
 
       // Window on load
       $(window).on('load', () => {
+        $('.section-panel').addClass('ready');
         app.headerPositioner();
       });
     },
