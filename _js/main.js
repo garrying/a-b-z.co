@@ -147,9 +147,10 @@ require('./libs/vanilla.idle.min');
 
       // Window on load
       $(window).on('load', () => {
-        $('.section-panel').addClass('ready');
         app.headerPositioner();
       });
+
+      $('.section-panel').addClass('ready');
     },
   };
   app.init();
