@@ -41,6 +41,18 @@ ul {
 
   @media (max-width: $small-vp) {
     flex-wrap: wrap;
+
+    li {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .logo {
+      display: flex;
+      align-self: center;
+    }
   }
 }
 

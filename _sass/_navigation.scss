@@ -23,10 +23,14 @@
   display: block;
   text-align: center;
   padding: 1em 0;
-  font-size: 0.75em;
+  font-size: 0.80em;
   justify-content: center;
   white-space: nowrap;
   position: relative;
+
+  @media (max-width: $small-vp) {
+    font-size: 0.90em;
+  }
 
   &::before {
     width: 100%;
