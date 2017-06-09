@@ -1,10 +1,10 @@
 ---
 name: Chris lee
-action: will look at
+action: will relate
 twitter: https://twitter.com/chrislee_uu
 website: http://cairolexicon.com
 location: Buffalo
-topic: [ typography in currency ]
+topic: typographic form to the state
 edition: 2017
 ---
 
