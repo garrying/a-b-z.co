@@ -62,11 +62,6 @@
     left: 0;
   }
 
-  .solid {
-    color: $white;
-    @include outline-text(transparent, $white);
-  }
-
   a {
     pointer-events: none;
   }
