@@ -6,7 +6,7 @@ action: will mix
 topic: playful computation and typography
 location: New York
 title: ¶ UNMAPPING CREATIVITY
-searchimg: Zach Lieberman Typography
+searchimg: Zach Lieberman
 edition: 2017
 ---
 
