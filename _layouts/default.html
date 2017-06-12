@@ -35,13 +35,13 @@ AUG-17–20-2017
     <main class="editions-container">
       {{ content }}
     </main>
-    {% if page.title != 404 %}
-      <script src="js/main.js"></script>
-    {% endif %}
     <script>
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
       ga('create','UA-77755061-1','auto');ga('send','pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    {% if page.title != 404 %}
+      <script src="js/main.js"></script>
+    {% endif %}
   </body>
 </html>

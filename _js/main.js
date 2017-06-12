@@ -13,6 +13,10 @@ require('./libs/vanilla.idle.min');
     ele: {
       imageGrid: $('#image-grid'),
       metaImageItem: $('[data-metaimage]'),
+      panel: $('.panel'),
+    },
+    panelGAevents: (panelName) => {
+      ga('send', 'event', 'Panels', 'Opened', panelName);
     },
     makeNewPosition: () => {
       // Get viewport dimensions (remove the dimension of the div)
@@ -27,20 +31,22 @@ require('./libs/vanilla.idle.min');
       $('.section-panel .header').css('paddingTop', targetHeaderPos.top);
     },
     panelFocus: () => {
-      $('.panel').on('click', (ele) => {
+      app.ele.panel.on('click', (ele) => {
         if ($(ele.currentTarget).hasClass('edition-current')) {
-          $('.panel').removeClass('panel-focus');
+          $('.section-panel').removeClass('panel-focus').attr('aria-hidden', 'true');
         } else if ($(ele.currentTarget).hasClass('info')) {
-          $('.info').addClass('panel-focus');
+          $('.info').addClass('panel-focus').attr('aria-hidden', 'false');
+          app.panelGAevents('Info');
         } else if ($(ele.currentTarget).hasClass('edition-first')) {
-          $('.edition-first').addClass('panel-focus');
-          $('.info').removeClass('panel-focus');
+          $('.edition-first').addClass('panel-focus').attr('aria-hidden', 'false');
+          $('.info').removeClass('panel-focus').attr('aria-hidden', 'true');
+          app.panelGAevents('First Edition');
         }
       });
 
       $(document).keydown((e) => {
         if (e.keyCode === 27) {
-          $('.panel').removeClass('panel-focus');
+          app.ele.panel.removeClass('panel-focus');
         }
       });
     },
