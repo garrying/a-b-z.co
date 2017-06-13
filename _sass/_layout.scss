@@ -2,7 +2,7 @@
   -webkit-font-smoothing: subpixel-antialiased;
   min-height: calc(100vh + 10px);
   margin-bottom: 3%;
-  background: $accent;
+  background: $accent-first;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -10,7 +10,7 @@
   color: transparent;
 
   .heading-one {
-    @include outline-text($black, $accent);
+    @include outline-text($black, $accent-first);
     position: relative;
   }
 
@@ -83,7 +83,7 @@
 
 .page-notfound {
   -webkit-font-smoothing: subpixel-antialiased;
-  background: $accent;
+  background: $accent-current;
   position: fixed;
   display: flex;
   align-items: center;

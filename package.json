@@ -8,6 +8,7 @@
     "jekyll:serve": "bundle exec jekyll serve",
     "watch": "npm run jekyll:serve | webpack --progress --colors --watch",
     "build": "webpack --progress --colors --devtool hidden-source-map",
+    "stage": "cp -fR _site/ ~/Dropbox/Apps/updog/a-b-z",
     "test": "test"
   },
   "repository": {
