@@ -1,5 +1,5 @@
 ---
-name: Chris lee
+name: Chris Lee
 action: will relate
 twitter: https://twitter.com/chrislee_uu
 website: http://cairolexicon.com
