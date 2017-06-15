@@ -1,7 +1,7 @@
 ---
-name: Ali Shamas Qadeer
-action: will
-topic: short description…
+name: Ali S. Qadeer
+action: will exhume
+topic: the materiality of text
 twitter: https://twitter.com/iamasq
 website: http://work.iamasq.ca
 location: Toronto
