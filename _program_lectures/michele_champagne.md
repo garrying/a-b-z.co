@@ -1,6 +1,6 @@
 ---
 name: Michèle Champagne
-action: will look back for
+action: will look for
 twitter: https://twitter.com/michhham
 website: http://michelechampagne.com
 location: Montreal

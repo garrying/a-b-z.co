@@ -6,7 +6,7 @@ require('./libs/vanilla.idle.min');
     init: () => {
       app.imgHelper();
       app.panelFocus();
-      app.idle();
+      // app.idle();
       app.headerPositioner();
       app.eventBinders();
     },
