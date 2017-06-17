@@ -5,6 +5,7 @@ twitter: https://twitter.com/chrislee_uu
 website: http://cairolexicon.com
 location: Buffalo
 topic: typographic form to the state
+searchimg: chris lee Metahaven designer
 edition: 2017
 ---
 
