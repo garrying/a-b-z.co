@@ -126,6 +126,7 @@ sup {
 
 .speaker-unit-content {
   max-width: 61.5vw;
+  margin-top: 2em;
 
   @media (min-width : $small-vp) and (max-width : 1024px) {
     max-width: none;
