@@ -1,5 +1,5 @@
 const $ = require('jquery');
-require('./libs/vanilla.idle.min');
+// require('./libs/vanilla.idle.min');
 
 (() => {
   const app = {
