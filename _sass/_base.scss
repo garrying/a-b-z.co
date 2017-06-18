@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
@@ -94,6 +95,7 @@ a {
 
 [data-link-text] {
   display: inline-block;
+  -webkit-font-smoothing: antialiased;
 
   &:hover {
     color: transparent;
