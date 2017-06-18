@@ -53,8 +53,8 @@
 
 .info {
   left: 92.5vw;
-  width: 50vw;
   z-index: 7;
+  width: 50vw;
 
   @media (max-width: $small-vp) {
     position: static;
@@ -96,6 +96,10 @@
   }
 
   .header {
+    // Fix for Safari transparancy issue on scroll.
+    padding-top: 1px;
+    margin-top: -1px;
+    //
     background: $black;
   }
 }
