@@ -7,9 +7,9 @@
 }
 
 .section-panel {
+  position: fixed;
   overflow-x: scroll;
-  position: relative;
-  max-height: 100vh;
+  height: 100vh;
   max-width: 85vw;
   background: $white;
   transition: left 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -33,14 +33,17 @@
 }
 
 .edition-first {
-  position: fixed;
   left: 85vw;
-  width: 55vw;
   z-index: 5;
+  width: 55vw;
   padding-right: 7.5vw;
 
   a {
     pointer-events: none;
+  }
+
+  .header {
+    background: $accent-first;
   }
 
   @media (max-width: $small-vp) {
@@ -49,10 +52,9 @@
 }
 
 .info {
-  position: fixed;
   left: 92.5vw;
   width: 50vw;
-  z-index: 10;
+  z-index: 7;
 
   @media (max-width: $small-vp) {
     position: relative;
