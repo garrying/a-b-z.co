@@ -96,10 +96,6 @@
   }
 
   .header {
-    // Fix for Safari transparancy issue on scroll.
-    padding-top: 1px;
-    margin-top: -1px;
-    //
     margin-bottom: 0;
     background: $black;
   }

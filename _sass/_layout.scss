@@ -20,11 +20,11 @@
 }
 
 .edition-current .header {
-  background: $accent-current;
   position: relative;
   margin-bottom: 12%;
+  background: $accent-current;
 
-  &:after {
+  &::after {
     display: block;
     position: absolute;
     content: '';
@@ -65,10 +65,10 @@
   }
 
   &[data-link-text]:hover::before {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 
@@ -82,7 +82,7 @@
   }
 }
 
-.footernotes {
+.manifesto {
   padding: 10% 0;
   margin-top: 8%;
   background: $accent-current;

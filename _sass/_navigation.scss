@@ -1,37 +1,31 @@
 .navigation {
   position: fixed;
-  display: flex;
-  z-index: 6;
   top: 0;
+  z-index: 6;
   width: 85vw;
-  justify-content: center;
+
+  @media (max-width: $small-vp) {
+    width: 100%;
+  }
 
   ul {
-    margin: 0;
-    width: 100%;
-    padding: 0 7.25%;
     display: flex;
+    width: 100%;
 
     li {
       flex-grow: 1;
       max-width: 33.3333333%;
+
+      @media (max-width: $small-vp) {
+        max-width: 50%;
+      }
     }
   }
 }
 
 .navigation-item {
-  display: block;
-  padding: 1em 0;
-  justify-content: center;
-  white-space: nowrap;
   position: relative;
-
-  @media (max-width: $small-vp) {
-    font-size: 0.90em;
-  }
-
-  &::before {
-    width: 100%;
-    text-align: center;
-  }
+  display: inline-block;
+  padding: 1em 0;
+  white-space: nowrap;
 }
