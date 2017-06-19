@@ -36,10 +36,10 @@ sup {
 
 .drop-cap {
   float: left;
-  margin-right: 1em;
-  margin-bottom: 0.5em;
-  font-size: 1.8em;
-  line-height: 0.65em;
+  margin-right: 0.35em;
+  margin-left: -0.1em;
+  font-size: 2.97em;
+  line-height: 0.5em
 }
 
 .heading-one {
@@ -71,7 +71,7 @@ sup {
 }
 
 .speaker-unit {
-  margin-bottom: 1em;
+  margin-bottom: 1.95em;
 
   @media (min-width : $small-vp) and (max-width : 1024px) {
     margin-bottom: 1.7em;
@@ -124,7 +124,7 @@ sup {
 }
 
 .speaker-unit-content {
-  max-width: 61.5vw;
+  max-width: 55.5vw;
   margin-top: 2em;
 
   @media (min-width : $small-vp) and (max-width : 1024px) {

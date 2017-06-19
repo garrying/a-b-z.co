@@ -35,7 +35,7 @@
 .edition-first {
   left: 85vw;
   z-index: 5;
-  width: 55vw;
+  width: 57.5vw;
   padding-right: 7.5vw;
 
   a {
@@ -100,12 +100,13 @@
     padding-top: 1px;
     margin-top: -1px;
     //
+    margin-bottom: 0;
     background: $black;
   }
 }
 
 .panel-focus {
-  left: 45vw;
+  left: 42.5vw;
 
   a {
     pointer-events: auto;
