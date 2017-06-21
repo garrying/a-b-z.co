@@ -3,19 +3,19 @@
 <div class="container">
   <div class="content-container heading-one">
     <p>
-      <span class="solid">¶</span> You are invited to join us if you are a <a href="http://www.thegoodproject.org/wp-content/uploads/2016/01/Mehta_Paradox-of-the-Professions.pdf" rel="noopener" data-link-text="professional" target="_blank">professional</a> or recently graduated <a href="https://www.penguin.co.uk/books/19371/design-as-art/" rel="noopener" data-link-text="designer" target="_blank">designer</a>, <a href="https://www.youtube.com/watch?v=rqlZLSshbgU" rel="noopener" data-link-text="artist" target="_blank">artist</a>, <a href="http://esolangs.org/wiki/Main_Page" target="_blank" rel="noopener" data-link-text="coder">coder</a>, <a href="http://practicaltypography.com/billionaires-typewriter.html" rel="noopener" data-link-text="writer" target="_blank">writer</a>, or editor. You seek to grasp <a href="http://practicaltypography.com/why-typography-matters.html" rel="noopener" data-link-text="typography" target="_blank">typography</a> across media and its expressive potential beyond <a href="http://www.macleans.ca/economy/business/the-dying-art-of-handwriting-as-an-excellent-sales-tool/" target="_blank" rel="noopener" data-link-text="market trends">market trends</a><span class="inline-outline">.</span>
+      <span class="solid">¶</span> You are invited to join us if you are a <a href="http://www.thegoodproject.org/wp-content/uploads/2016/01/Mehta_Paradox-of-the-Professions.pdf" rel="noopener" data-link-text="professional" target="_blank">professional</a> or recently graduated <a href="https://www.penguin.co.uk/books/19371/design-as-art/" rel="noopener" data-link-text="designer" target="_blank">designer</a>, <a href="https://www.youtube.com/watch?v=rqlZLSshbgU" rel="noopener" data-link-text="artist" target="_blank">artist</a>, <a href="http://esolangs.org/wiki/Main_Page" target="_blank" rel="noopener" data-link-text="coder">coder</a>, <a href="http://practicaltypography.com/billionaires-typewriter.html" rel="noopener" data-link-text="writer" target="_blank">writer</a>, or editor. You seek to grasp <a href="http://practicaltypography.com/why-typography-matters.html" rel="noopener" data-link-text="typography" target="_blank">typography</a> across media and its expressive potential beyond <a href="http://www.macleans.ca/economy/business/the-dying-art-of-handwriting-as-an-excellent-sales-tool/" target="_blank" rel="noopener" data-link-text="trends">trends</a><span class="inline-outline">.</span>
     </p>
   </div>
 
   <div class="content-container heading-one">
     <p>
-      <span class="solid">¶</span> <a href="http://www.currencyconverterrate.com/cad/875-cad-to-usd.html" target="_blank" rel="noopener" data-link-text="The $875 CAD">The $875 CAD</a> fee will <a href="http://type.aerial-bold.com/tw/" target="_blank" rel="noopener" data-link-text="cover">cover</a> the 4-day intensive programme and <a href="https://www.youtube.com/watch?v=KxwcQ1dapw8" target="_blank" rel="noopener" data-link-text="all the coffee">all the coffee</a> that <a href="https://www.youtube.com/watch?v=i0i8XR9Cztc" target="_blank" rel="noopener" data-link-text="you can drink">you can drink</a>. <br>A-B-Z-TXT will accept applicants  until <a href="https://en.wikipedia.org/wiki/July_22" target="_blank" rel="noopener" data-link-text="July 22nd">July 22nd</a>.
+      <span class="solid">¶</span> <a href="http://www.currencyconverterrate.com/cad/875-cad-to-usd.html" target="_blank" rel="noopener" data-link-text="The $875 CAD">The $875 CAD</a> fee will <a href="http://type.aerial-bold.com/tw/" target="_blank" rel="noopener" data-link-text="cover">cover</a> the 4-day programme and <a href="https://www.youtube.com/watch?v=KxwcQ1dapw8" target="_blank" rel="noopener" data-link-text="all the coffee">all the coffee</a> that <a href="https://www.youtube.com/watch?v=i0i8XR9Cztc" target="_blank" rel="noopener" data-link-text="you can drink">you can drink</a>. <br>A-B-Z-TXT will accept applicants  until <a href="https://en.wikipedia.org/wiki/July_22" target="_blank" rel="noopener" data-link-text="July 22nd">July 22nd</a>.
     </p>
   </div>
 
   <div class="content-container heading-one">
     <p>
-      <span class="solid">¶</span> Learn from renowned professionals and with an exciting <a href="http://brooklynradio.com/broadcasts/hip-hop-history/" target="_blank" rel="noopener" data-link-text="mix">mix</a> of <a href="http://cargocollective.com/roryhyde/Future-Practice-Conversations-from-the-Edge-of-Architecture" target="_blank" rel="noopener" data-link-text="multidisciplinary">multidisciplinary</a> practitioners.
+      <span class="solid">¶</span> Learn from famed professionals and with an exciting <a href="http://brooklynradio.com/broadcasts/hip-hop-history/" target="_blank" rel="noopener" data-link-text="mix">mix</a> of <a href="http://cargocollective.com/roryhyde/Future-Practice-Conversations-from-the-Edge-of-Architecture" target="_blank" rel="noopener" data-link-text="multidisciplinary">multidisciplinary</a> practitioners.
     </p>
   </div>
 
@@ -34,13 +34,14 @@
           {% else %}
             {{ speaker.name }}
           {% endif %}
-          ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
+          ">¶ {{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
           <div class="speaker-unit-meta heading-two">
             {% if speaker.website %}
-              <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
+              ¶ <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
             {% endif %}
             {% if speaker.twitter %}
-               — <span class="twitter"><a class="website" href="{{ speaker.twitter }}"  rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}"  target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
+               <br />
+               ¶ <span class="twitter"><a class="website" href="{{ speaker.twitter }}"  rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}"  target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
             {% endif %}
           </div>
         </header>
@@ -61,7 +62,7 @@
       {% if speaker.edition == 2016 %}
       <div class="speaker-unit">
         <header class="speak-unit-header">
-          <h3 class="heading-two"><span class="speaker-name" data-metaimage="
+          <h3 class="heading-two">¶ <span class="speaker-name" data-metaimage="
           {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
             {{ speaker.searchimg }}
           {% else %}
@@ -70,10 +71,11 @@
           ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
           <div class="speaker-unit-meta heading-two">
             {% if speaker.website %}
-              <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
+              ¶ <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
             {% endif %}
             {% if speaker.twitter %}
-              — <span class="twitter"><a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
+              <br />
+              ¶ <span class="twitter"><a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
             {% endif %}
           </div>
         </header>
@@ -94,7 +96,7 @@
       {% if speaker.edition == 2016 %}
       <div class="speaker-unit">
         <header class="speak-unit-header">
-          <h3 class="heading-two"><span class="speaker-name" data-metaimage="
+          <h3 class="heading-two">¶ <span class="speaker-name" data-metaimage="
           {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
             {{ speaker.searchimg }}
           {% else %}
@@ -103,10 +105,17 @@
           ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
           <div class="speaker-unit-meta heading-two">
             {% if speaker.website %}
-              <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
+              ¶ <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}" target="_blank">
+              {% if speaker.websitetext %}
+                {{ speaker.websitetext }}
+              {% else %}
+                {{ speaker.website | remove_first: "http://" }}
+              {% endif %}
+              </a>
             {% endif %}
             {% if speaker.twitter %}
-              — <span class="twitter"><a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
+              <br />
+              ¶ <span class="twitter"><a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
             {% endif %}
           </div>
         </header>

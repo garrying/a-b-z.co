@@ -4,7 +4,7 @@ twitter: https://twitter.com/zachlieberman
 website: http://thesystemis.com
 action: will mix
 topic: playful computation and typography
-location: New York
+location: NYC
 searchimg: zach lieberman computation poetic
 edition: 2017
 ---

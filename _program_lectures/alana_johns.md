@@ -1,6 +1,7 @@
 ---
 name: Alana Johns
 website: http://homes.chass.utoronto.ca/~ajohns
+websitetext: utoronto.ca/~ajohns
 location: Toronto
 searchimg: Alana Johns Inuktitut
 edition: 2016

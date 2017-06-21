@@ -2,7 +2,7 @@
 name: Tracy Ma
 twitter: https://twitter.com/tracy_ma
 website: http://tracyma.com
-location: New York
+location: NYC
 searchimg: tracy ma bloomberg businessweek
 edition: 2016
 ---
