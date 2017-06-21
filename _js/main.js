@@ -28,7 +28,12 @@ const $ = require('jquery');
     },
     headerPositioner: () => {
       const targetHeaderPos = $('.edition-current .heading-one').offset();
-      $('.section-panel .header').css('paddingTop', targetHeaderPos.top);
+
+      if (window.matchMedia("(max-width: 568px)").matches) {
+        $('.section-panel .header').removeAttr('style');
+      } else {
+        $('.section-panel .header').css('paddingTop', targetHeaderPos.top);
+      }
     },
     panelFocus: () => {
       app.ele.panel.on('click', (ele) => {
