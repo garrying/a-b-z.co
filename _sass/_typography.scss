@@ -146,3 +146,14 @@ sup {
 .nbm {
   margin-bottom: 0;
 }
+
+// spacer
+
+.spacer {
+  display: inline-block;
+  width: 2em;
+
+  @media (max-width: $small-vp) {
+    display: none;
+  }
+}
