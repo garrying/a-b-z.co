@@ -26,29 +26,7 @@
     </header>
     {% for speaker in site.program_masterclass %}
       {% if speaker.edition == 2016 %}
-      <div class="speaker-unit">
-        <header class="speak-unit-header">
-          <h3 class="heading-two"><span class="speaker-name" data-metaimage="
-          {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
-            {{ speaker.searchimg }}
-          {% else %}
-            {{ speaker.name }}
-          {% endif %}
-          ">¶ {{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
-          <div class="speaker-unit-meta heading-two">
-            {% if speaker.website %}
-              ¶ <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
-            {% endif %}
-            {% if speaker.twitter %}
-               <br />
-               ¶ <span class="twitter"><a class="website" href="{{ speaker.twitter }}"  rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}"  target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
-            {% endif %}
-          </div>
-        </header>
-        <div class="speaker-unit-content content-three">
-          {{ speaker.content }}
-        </div>
-      </div>
+        {% include 2016/speaker-unit.html speaker=speaker %}
       {% endif %}
     {% endfor %}
   </section>
@@ -60,29 +38,7 @@
     </header>
     {% for speaker in site.program_lectures_workshops %}
       {% if speaker.edition == 2016 %}
-      <div class="speaker-unit">
-        <header class="speak-unit-header">
-          <h3 class="heading-two">¶ <span class="speaker-name" data-metaimage="
-          {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
-            {{ speaker.searchimg }}
-          {% else %}
-            {{ speaker.name }}
-          {% endif %}
-          ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
-          <div class="speaker-unit-meta heading-two">
-            {% if speaker.website %}
-              ¶ <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
-            {% endif %}
-            {% if speaker.twitter %}
-              <br />
-              ¶ <span class="twitter"><a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
-            {% endif %}
-          </div>
-        </header>
-        <div class="speaker-unit-content content-three">
-          {{ speaker.content }}
-        </div>
-      </div>
+        {% include 2016/speaker-unit.html speaker=speaker %}
       {% endif %}
     {% endfor %}
   </section>
@@ -94,35 +50,7 @@
     </header>
     {% for speaker in site.program_lectures %}
       {% if speaker.edition == 2016 %}
-      <div class="speaker-unit">
-        <header class="speak-unit-header">
-          <h3 class="heading-two">¶ <span class="speaker-name" data-metaimage="
-          {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
-            {{ speaker.searchimg }}
-          {% else %}
-            {{ speaker.name }}
-          {% endif %}
-          ">{{ speaker.name }}</span><span class="speaker-location">, {{ speaker.location }}</span></h3>
-          <div class="speaker-unit-meta heading-two">
-            {% if speaker.website %}
-              ¶ <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}" target="_blank">
-              {% if speaker.websitetext %}
-                {{ speaker.websitetext }}
-              {% else %}
-                {{ speaker.website | remove_first: "http://" }}
-              {% endif %}
-              </a>
-            {% endif %}
-            {% if speaker.twitter %}
-              <br />
-              ¶ <span class="twitter"><a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a></span>
-            {% endif %}
-          </div>
-        </header>
-        <div class="speaker-unit-content content-three">
-          {{ speaker.content }}
-        </div>
-      </div>
+        {% include 2016/speaker-unit.html speaker=speaker %}
       {% endif %}
     {% endfor %}
   </section>
