@@ -28,11 +28,11 @@ const $ = require('jquery');
     },
     headerPositioner: () => {
       const targetHeaderPos = $('.edition-current .heading-one').offset();
-
+      const pairedHeaders = $('.section-panel .header');
       if (window.matchMedia("(max-width: 568px)").matches) {
-        $('.section-panel .header').removeAttr('style');
+        pairedHeaders.removeAttr('style');
       } else {
-        $('.section-panel .header').css('paddingTop', targetHeaderPos.top);
+        pairedHeaders.css('paddingTop', targetHeaderPos.top);
       }
     },
     panelFocus: () => {
