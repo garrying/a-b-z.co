@@ -9,7 +9,13 @@
       {{ speaker.name }}
     {% endif %}
     ">{{ speaker.name }}</span></h3>
-    <h3 class="heading-two"><span class="solid">●</span> {{ speaker.action}} {{ speaker.topic }}</h3>
+    <h3 class="heading-two"><span class="solid">●</span> {{ speaker.action}}</h3>
+    {% if speaker.topic1 %}
+      <h3 class="heading-two"><span class="solid">●</span> {{ speaker.topic1 }}</h3>
+    {% endif %}
+    {% if speaker.topic2 %}
+      <h3 class="heading-two"><span class="solid">●</span> {{ speaker.topic2 }}</h3>
+    {% endif %}
     <div class="speaker-unit-meta heading-two">
       {% if speaker.website %}
         <div class="unit">

@@ -4,7 +4,8 @@ action: will relate
 twitter: https://twitter.com/chrislee_uu
 website: http://cairolexicon.com
 location: Buffalo
-topic: typographic form to state power
+topic1: typographic form to
+topic2: state power
 searchimg: chris lee Metahaven designer
 edition: 2017
 ---

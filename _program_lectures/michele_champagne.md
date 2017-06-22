@@ -4,8 +4,8 @@ action: will look for
 twitter: https://twitter.com/michhham
 website: http://michelechampagne.com
 location: Montreal
-searchimg: Michèle Champagne design
-topic: signs of Rob Ford
+searchimg: Michèle Champagne design -flare
+topic1: signs of Rob Ford
 edition: 2017
 ---
 

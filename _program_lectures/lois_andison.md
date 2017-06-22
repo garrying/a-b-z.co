@@ -3,7 +3,8 @@ name: Lois Andison
 action: will comment on
 website: http://loisandison.com
 location: Toronto
-topic: language as artistic medium
+topic1: language as artistic
+topic2: medium
 edition: 2017
 ---
 

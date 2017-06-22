@@ -1,7 +1,7 @@
 ---
 name: Mindy Seu
-action: will introduce
-topic: the poetry in interface aesthetics
+action: will introduce the poetry
+topic1: in interface aesthetics
 twitter: https://twitter.com/mind_seu
 website: http://mindyseu.com
 searchimg: Mindy Seu archive

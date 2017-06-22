@@ -1,10 +1,10 @@
 ---
 name: Xavier Snelgrove
-action: will
+action: will help you find the
 twitter: https://twitter.com/wxswxs
 website: http://wxs.ca
 location: Toronto
-topic: help you find the perfect emoji
+topic1: perfect emoji
 searchimg: xavier snelgrove emoji dango -linkedin
 edition: 2017
 ---
