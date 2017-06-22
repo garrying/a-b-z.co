@@ -29,7 +29,7 @@ const $ = require('jquery');
     headerPositioner: () => {
       const targetHeaderPos = $('.edition-current .heading-one').offset();
       const pairedHeaders = $('.section-panel .header');
-      if (window.matchMedia("(max-width: 568px)").matches) {
+      if (window.matchMedia('(max-width: 568px)').matches) {
         pairedHeaders.removeAttr('style');
       } else {
         pairedHeaders.css('paddingTop', targetHeaderPos.top);
@@ -98,9 +98,9 @@ const $ = require('jquery');
         const googleAPIurl = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&alt=json&searchType=image`;
 
         $.get(googleAPIurl)
-        .done((results) => {
-          app.ele.imageGrid.append(results.items.map(imageEle));
-        });
+          .done((results) => {
+            app.ele.imageGrid.append(results.items.map(imageEle));
+          });
       }
 
       function gridPresenter(e) {
