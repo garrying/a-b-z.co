@@ -1,11 +1,10 @@
 ---
 name: Chris Lee
-action: will relate
+action: will relate typography
 twitter: https://twitter.com/chrislee_uu
 website: http://cairolexicon.com
 location: Buffalo
-topic1: typographic form to
-topic2: state power
+topic1: to state power
 searchimg: chris lee Metahaven designer
 edition: 2017
 ---
