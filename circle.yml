@@ -3,6 +3,8 @@ machine:
     NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
 
 dependencies:
+  override:
+    - echo "Ignore CircleCI default dependencies"
   post:
     - bundle exec jekyll build
 
