@@ -11,5 +11,5 @@ dependencies:
     - bundle exec jekyll build
 
 test:
-  post:
-    - bundle exec htmlproofer ./_site --allow-hash-href --check-favicon --check-html --disable-external
+  override:
+    - bundle exec htmlproofer ./_site
