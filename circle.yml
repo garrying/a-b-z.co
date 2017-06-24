@@ -11,5 +11,5 @@ dependencies:
     - bundle exec jekyll build
 
 test:
-  override:
-    - bundle exec htmlproofer ./_site
+  post:
+    - bundle exec htmlproofer ./_site --check-html
