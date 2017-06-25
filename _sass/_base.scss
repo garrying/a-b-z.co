@@ -3,6 +3,10 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+
+  @media (max-width: $small-vp) {
+    overflow-x: hidden;
+  }
 }
 
 *,
@@ -17,6 +21,7 @@ body {
 
   @media (max-width: $small-vp) {
     font-size: 1em;
+    overflow-x: hidden;
   }
 }
 
