@@ -3,6 +3,10 @@
 
   @media (max-width: $small-vp) {
     flex-wrap: wrap;
+
+    .panel {
+      width: 100%;
+    }
   }
 }
 
