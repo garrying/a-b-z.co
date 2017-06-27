@@ -1,12 +1,10 @@
 const $ = require('jquery');
-// require('./libs/vanilla.idle.min');
 
 (() => {
   const app = {
     init: () => {
       app.imgHelper();
       app.panelFocus();
-      // app.idle();
       app.headerPositioner();
       app.eventBinders();
     },
@@ -54,31 +52,6 @@ const $ = require('jquery');
           app.ele.panel.removeClass('panel-focus');
         }
       });
-    },
-    idlerHappenings: () => {
-      const pos = app.makeNewPosition();
-      const randImage = Math.floor(Math.random() * 7);
-
-      function imageEle() {
-        return `<div class="idle-object" style="top:${pos[0]}%; left:${pos[1]}%">
-            <img src="/img/idler/${randImage}.gif" />
-          </div>`;
-      }
-
-      $('.edition-current').append(imageEle());
-    },
-    idle: () => {
-      let idlerHappeningsTimer;
-
-      idle({
-        onIdle: () => {
-          idlerHappeningsTimer = setInterval(app.idlerHappenings, 30000);
-        },
-        onActive: () => {
-          clearInterval(idlerHappeningsTimer);
-        },
-        idle: 60000,
-      }).start();
     },
     imgHelper: () => {
       const searchID = '017668023985580936890:l2eosepcyty';

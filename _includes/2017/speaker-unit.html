@@ -1,14 +1,17 @@
 {% assign speaker = include.speaker %}
+{% assign searchimg = speaker.searchimg.size %}
+
+{% capture searchQuery %}
+  {% if searchimg %}
+    {{ speaker.searchimg }}
+  {% else %}
+    {{ speaker.name }}
+  {% endif %}
+{% endcapture %}
 
 <div class="speaker-unit">
   <header class="speak-unit-header">
-    <h3 class="heading-two"><span class="solid">●</span> <span class="speaker-name" data-metaimage="
-    {% assign searchimg = speaker.searchimg.size %}{% if searchimg %}
-      {{ speaker.searchimg }}
-    {% else %}
-      {{ speaker.name }}
-    {% endif %}
-    ">{{ speaker.name }}</span></h3>
+    <h3 class="heading-two"><span class="solid">●</span> <span class="speaker-name" data-metaimage="{{ searchQuery | strip }}">{{ speaker.name }}</span></h3>
     <h3 class="heading-two"><span class="solid">●</span> {{ speaker.action}}</h3>
     {% if speaker.topic1 %}
       <h3 class="heading-two"><span class="solid">●</span> {{ speaker.topic1 }}</h3>
