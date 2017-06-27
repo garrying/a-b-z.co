@@ -3,7 +3,6 @@ name: Zach Lieberman
 twitter: https://twitter.com/zachlieberman
 website: http://thesystemis.com
 action: will mix
-topic full: playful computation and typography
 topic1: playful computation
 topic2: and typography
 location: NYC
