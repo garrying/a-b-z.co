@@ -1,1 +1,1 @@
-<a href="{{ include.url }}" target="_blank" rel="noopener" data-link-text="{{ include.text }}">{{ include.text }}</a>
+<a href="{{ include.url }}" target="_blank" rel="noopener" data-link-text="{{ include.text }}" {% if include.prooferignore == "true" %}data-proofer-ignore{% endif %}>{{ include.text }}</a>
