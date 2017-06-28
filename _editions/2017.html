@@ -31,9 +31,7 @@
       <h2 class="section-title heading-two"><span class="solid">●</span> Talk and Masterclass</h2>
     </header>
     {% for speaker in site.program_masterclass %}
-      {% if speaker.edition == 2017 %}
-        {% include 2017/speaker-unit.html speaker=speaker %}
-      {% endif %}
+      {% include 2017/speaker-unit.html speaker=speaker %}
     {% endfor %}
   </section>
 
@@ -42,9 +40,7 @@
       <h2 class="section-title heading-two"><span class="solid">●</span> Talk and Workshop</h2>
     </header>
     {% for speaker in site.program_lectures_workshops %}
-      {% if speaker.edition == 2017 %}
-        {% include 2017/speaker-unit.html speaker=speaker %}
-      {% endif %}
+      {% include 2017/speaker-unit.html speaker=speaker %}
     {% endfor %}
   </section>
 
@@ -53,9 +49,7 @@
       <h2 class="section-title heading-two"><span class="solid">●</span> Talks</h2>
     </header>
     {% for speaker in site.program_lectures %}
-      {% if speaker.edition == 2017 %}
-        {% include 2017/speaker-unit.html speaker=speaker %}
-      {% endif %}
+      {% include 2017/speaker-unit.html speaker=speaker %}
     {% endfor %}
   </section>
 
