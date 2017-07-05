@@ -24,7 +24,7 @@
         {% if speaker.website %}
           <div class="unit">
             <span class="solid">●</span>
-            <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.website | remove_first: "http://" }}" target="_blank">{{ speaker.website | remove_first: "http://" }}</a>
+            <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}" target="_blank">{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}</a>
           </div>
         {% endif %}
         {% if speaker.twitter %}
