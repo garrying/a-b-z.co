@@ -1,7 +1,8 @@
 ---
 name: Zach Lieberman
 twitter: https://twitter.com/zachlieberman
-website: http://thesystemis.com
+website: https://www.instagram.com/zach.lieberman/
+websitetext: instagram.com/zach.lieberman
 action: will mix
 topic1: playful computation
 topic2: and typography
