@@ -20,20 +20,16 @@
       {% if speaker.topic2 %}
         <h3 class="heading-two"><span class="solid">●</span> {{ speaker.topic2 }}</h3>
       {% endif %}
-      <div class="speaker-unit-meta heading-two">
-        {% if speaker.website %}
-          <div class="unit">
-            <span class="solid">●</span>
-            <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}" target="_blank">{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}</a>
-          </div>
-        {% endif %}
-        {% if speaker.twitter %}
-          <div class="unit">
-             <span class="solid">●</span>
-             <a class="website" href="{{ speaker.twitter }}"  rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}"  target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a>
-          </div>
-        {% endif %}
-      </div>
+      {% if speaker.website %}
+        <h3 class="unit heading-two">
+          <span class="solid">●</span> <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}" target="_blank">{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}</a>
+        </h3>
+      {% endif %}
+      {% if speaker.twitter %}
+        <h3 class="unit heading-two">
+           <span class="solid">●</span> <a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a>
+        </h3>
+      {% endif %}
     </header>
     <div class="speaker-unit-content content-three">
       {{ speaker.content }}

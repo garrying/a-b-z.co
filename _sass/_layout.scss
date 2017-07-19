@@ -74,6 +74,11 @@
 
 .edition-current .speaker-unit-meta a {
   overflow: visible;
+
+  @media (max-width: $small-vp) {
+    width: 80%;
+    overflow: hidden;
+  }
 }
 
 .credits {
