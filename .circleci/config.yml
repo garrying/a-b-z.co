@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: Install Dependencies
-          command: apt-get install nodejs && gem install bundler && bundle install
+          command: sudo apt-get install nodejs && gem install bundler && bundle install
       - run:
           name: Jekyll Build
           command: bundle exec jekyll build
