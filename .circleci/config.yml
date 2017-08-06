@@ -8,8 +8,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Bundle Install
-          command: gem install bundler && bundle install
+          name: Install Dependencies
+          command: apt-get install nodejs && gem install bundler && bundle install
       - run:
           name: Jekyll Build
           command: bundle exec jekyll build
