@@ -15,7 +15,7 @@ sass:
   style: :compressed
 
 # Exclude from build
-exclude: [vendor, Gemfile, Gemfile.lock, node_modules, package.json, webpack.config.js, circle.yml, package-lock.json]
+exclude: [vendor, Gemfile, Gemfile.lock, node_modules, package.json, webpack.config.js, circle.yml, package-lock.json, LICENSE, README.md]
 
 # Speakers List
 collections:
