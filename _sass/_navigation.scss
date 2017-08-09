@@ -1,7 +1,7 @@
 .navigation {
   position: fixed;
   top: 0;
-  z-index: 6;
+  z-index: 5;
   width: 85vw;
 
   @media (max-width: $small-vp) {
@@ -14,7 +14,7 @@
 
     li {
       flex-grow: 1;
-      max-width: 33.3333333%;
+      max-width: 27%;
 
       @media (max-width: $small-vp) {
         max-width: 50%;

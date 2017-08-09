@@ -4,7 +4,7 @@ action: will introduce the poetry
 topic1: in interface aesthetics
 twitter: https://twitter.com/mind_seu
 website: http://mindyseu.com
-searchimg: Mindy Seu archive
+searchimg: Mindy Seu archive -eventbrite.com
 location: Cambridge
 edition: 2017
 ---

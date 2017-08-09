@@ -7,7 +7,7 @@ action: will mix
 topic1: playful computation
 topic2: and typography
 location: NYC
-searchimg: zach lieberman computation poetic
+searchimg: zach lieberman computation letterforms
 edition: 2017
 ---
 
