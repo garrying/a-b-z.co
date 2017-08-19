@@ -37,6 +37,11 @@
     .header span {
       margin: 0 !important;
     }
+
+    .header span.drop-cap {
+      margin-right: 0.35em !important;
+      margin-left: -0.1em !important;
+    }
   }
 }
 
