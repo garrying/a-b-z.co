@@ -1,0 +1,38 @@
+{% assign speaker = include.speaker %}
+{% assign searchimg = speaker.searchimg.size %}
+
+{% capture searchQuery %}
+  {% if searchimg %}
+    {{ speaker.searchimg }}
+  {% else %}
+    {{ speaker.name }}
+  {% endif %}
+{% endcapture %}
+
+{% if speaker.edition == 2017 %}
+  <div class="speaker-unit">
+    <header class="speak-unit-header">
+      <h3 class="heading-two"><span class="solid">●</span> <span class="speaker-name" data-metaimage="{{ searchQuery | strip }}">{{ speaker.name }}</span></h3>
+      <h3 class="heading-two"><span class="solid">●</span> {{ speaker.action}}</h3>
+      {% if speaker.topic1 %}
+        <h3 class="heading-two"><span class="solid">●</span> {{ speaker.topic1 }}</h3>
+      {% endif %}
+      {% if speaker.topic2 %}
+        <h3 class="heading-two"><span class="solid">●</span> {{ speaker.topic2 }}</h3>
+      {% endif %}
+      {% if speaker.website %}
+        <h3 class="unit heading-two">
+          <span class="solid">●</span> <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}" target="_blank">{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}</a>
+        </h3>
+      {% endif %}
+      {% if speaker.twitter %}
+        <h3 class="unit heading-two">
+           <span class="solid">●</span> <a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a>
+        </h3>
+      {% endif %}
+    </header>
+    <div class="speaker-unit-content content-three">
+      {{ speaker.content }}
+    </div>
+  </div>
+{% endif %}

@@ -24,8 +24,8 @@
   }
 }
 
-.edition-current {
-  padding-right: 15vw;
+.edition-ltr {
+  padding-right: 22.5vw;
 
   .header .container {
     padding-right: 6.8%;
@@ -63,6 +63,26 @@
     display: none;
   }
 }
+
+.edition-second {
+  left: 77.5vw;
+  z-index: 4;
+  width: 57.5vw;
+  padding-right: 7.5vw;
+
+  a {
+    pointer-events: none;
+  }
+
+  .header {
+    background: $accent-second;
+  }
+
+  @media (max-width: $small-vp) {
+    display: none;
+  }
+}
+
 
 .info {
   left: 92.5vw;
@@ -123,6 +143,10 @@
 
   &.info {
     left: 50vw;
+  }
+
+  &.edition-second {
+    left: 35vw;
   }
 }
 

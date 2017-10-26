@@ -1,0 +1,29 @@
+.edition-ltr {
+  .heading-one {
+    @include outline-text($accent-ltr, $white);
+  }
+
+  a {
+    font-family: $font-family-serif;
+    color: $accent-ltr;
+    @include outline-text(transparent, $accent-ltr);
+    line-height: 0.9em;
+    border-bottom: 2px solid $accent-ltr;
+  }
+
+  [data-link-text] {
+    &::before {
+      color: $accent-ltr;
+    }
+  }
+
+  .solid {
+    color: $accent-ltr;
+    @include outline-text(transparent, $accent-ltr);
+  }
+
+  .edition-footer {
+    color: $white;
+    background: $accent-ltr;
+  }
+}

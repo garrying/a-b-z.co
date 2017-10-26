@@ -19,10 +19,10 @@
   }
 }
 
-.edition-current .header {
+.edition-second .header {
   position: relative;
   margin-bottom: 12%;
-  background: $accent-current;
+  background: $accent-second;
 
   &::after {
     display: block;
@@ -31,7 +31,7 @@
     top: 0;
     width: 15vw;
     height: 100%;;
-    background: $accent-current;
+    background: $accent-second;
     left: 100%;
 
     @media (max-width: $small-vp) {
@@ -87,10 +87,10 @@
   }
 }
 
-.manifesto {
+.edition-footer {
   padding: 10% 0;
   margin-top: 8%;
-  background: $accent-current;
+  background: $accent-second;
 }
 
 // 404 Page
@@ -102,7 +102,7 @@
   width: 100%;
   height: 100%;
   padding: 0 8.5%;
-  background: $accent-current;
+  background: $accent-second;
   flex-wrap: wrap;
   align-items: center;
   -webkit-font-smoothing: subpixel-antialiased;

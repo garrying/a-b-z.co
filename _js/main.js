@@ -44,6 +44,10 @@ const $ = require('jquery');
           $('.edition-first').addClass('panel-focus').attr('aria-hidden', 'false');
           $('.info').removeClass('panel-focus').attr('aria-hidden', 'true');
           app.panelGAevents('First Edition');
+        } else if ($(ele.currentTarget).hasClass('edition-second')) {
+          $('.edition-second').addClass('panel-focus').attr('aria-hidden', 'false');
+          $('.info, .edition-first').removeClass('panel-focus').attr('aria-hidden', 'true');
+          app.panelGAevents('Second Edition');
         }
       });
 

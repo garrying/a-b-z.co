@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<section class="panel edition-current">
+<section class="panel edition-current edition-ltr">
+  {% include_relative _editions/2017-ltr.html %}
+</section>
+<section class="panel section-panel edition-second" role="tabpanel" aria-hidden="true">
   {% include_relative _editions/2017.html %}
   {% include manifesto.html %}
 </section>

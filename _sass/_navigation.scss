@@ -14,7 +14,7 @@
 
     li {
       flex-grow: 1;
-      max-width: 27%;
+      flex-basis: 27%;
 
       @media (max-width: $small-vp) {
         max-width: 50%;
@@ -34,6 +34,11 @@
   display: inline-block;
   padding: 1em 0;
   white-space: nowrap;
+  color: $accent-ltr;
+
+  &::before {
+    color: $accent-ltr;
+  }
 
   @media (max-width: $small-vp) {
     font-size: 1.4em;
