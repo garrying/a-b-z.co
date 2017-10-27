@@ -9,6 +9,10 @@
     @include outline-text(transparent, $accent-ltr);
     line-height: 0.9em;
     border-bottom: 2px solid $accent-ltr;
+
+    &:active {
+      outline-color: $accent-ltr;
+    }
   }
 
   [data-link-text] {
@@ -25,5 +29,18 @@
   .edition-footer {
     color: $white;
     background: $accent-ltr;
+
+    sup {
+      color: $white;
+    }
+  }
+
+  .speaker-unit,
+  .section-title {
+    color: $accent-ltr;
+
+    a {
+      text-decoration: none;
+    }
   }
 }

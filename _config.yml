@@ -19,6 +19,10 @@ exclude: [vendor, Gemfile, Gemfile.lock, node_modules, package.json, webpack.con
 
 # Speakers List
 collections:
+  program_host:
+    output: false
+  program_panelist:
+    output: false
   program_lectures:
     output: false
   program_lectures_workshops:
