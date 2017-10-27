@@ -43,4 +43,11 @@
       text-decoration: none;
     }
   }
+
+  .speaker-unit-content {
+    a {
+      border-width: 0;
+      text-decoration: underline;
+    }
+  }
 }
