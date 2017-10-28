@@ -24,27 +24,6 @@
   }
 }
 
-.edition-ltr {
-  padding-right: 22.5vw;
-
-  .header .container {
-    padding-right: 6.8%;
-  }
-
-  @media (max-width: $small-vp) {
-    padding-right: 0;
-
-    .header span {
-      margin: 0 !important;
-    }
-
-    .header span.drop-cap {
-      margin-right: 0.35em !important;
-      margin-left: -0.1em !important;
-    }
-  }
-}
-
 .edition-first {
   left: 85vw;
   z-index: 5;

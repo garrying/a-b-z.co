@@ -12,15 +12,15 @@
   ul {
     display: flex;
     width: 100%;
+  }
 
-    li {
-      flex-grow: 1;
-      flex-basis: 27%;
+  li {
+    flex-grow: 1;
+    flex-basis: 27%;
 
-      &:last-child {
-        @media (max-width: $small-vp) {
-          padding-left: 0.75em;
-        }
+    &:last-child {
+      @media (max-width: $small-vp) {
+        padding-left: 0.75em;
       }
     }
   }
@@ -30,9 +30,13 @@
   position: relative;
   display: inline-block;
   margin: 1em 0;
-  white-space: nowrap;
   color: $accent-ltr;
+  white-space: nowrap;
   pointer-events: auto;
+
+  &:active {
+    outline-color: $accent-ltr;
+  }
 
   &::before {
     color: $accent-ltr;

@@ -1,6 +1,24 @@
 .edition-ltr {
+  padding-right: 22.5vw;
+
+  .header .container {
+    padding-right: 6.8%;
+  }
+
+  @media (max-width: $small-vp) {
+    padding-right: 0;
+
+    .header span {
+      margin: 0 !important;
+    }
+  }
+
   .heading-one {
     @include outline-text($accent-ltr, $white);
+  }
+
+  .heading-two {
+    color: $accent-ltr;
   }
 
   a {
