@@ -4,4 +4,4 @@ searchimg:
 edition: 2017.1
 ---
 
-(~30 words) Québec mail artist and author of the assembly e-zine <em>Circulaire 132</em>.
+Réjean is a mail artist, collagist and proud member of The Eternal Network. Author of the assembly zine <a href="#collection" rel="noopener" target="_blank"><em>Circulaire 132</em></a>.

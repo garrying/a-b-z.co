@@ -13,12 +13,8 @@
   <div class="speaker-unit">
     <header class="speak-unit-header">
       <h3 class="heading-two"><span class="solid">></span>
-        {% if speaker.website %}
-          <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.name }}" target="_blank"><span class="speaker-name" data-metaimage="{{ searchQuery | strip }}">{{ speaker.name }}</span></a>
-        {% else %}
-          <span class="speaker-name" data-metaimage="{{ searchQuery | strip }}">{{ speaker.name }}</span>
-        {% endif %}
-        </h3>
+        <span class="speaker-name" data-metaimage="{{ searchQuery | strip }}">{{ speaker.name }}</span>
+      </h3>
     </header>
     <div class="speaker-unit-content content-three">
       {{ speaker.content }}

@@ -5,4 +5,4 @@ searchimg:
 edition: 2017.1
 ---
 
-(~30 words) A-B-Z-LTR co-conspirator. Operates as Dan Can 3000. Québec author, art director, and scriptwriter Formerly Known as ‘New Media Artist’. 
+A-B-Z-LTR co-conspirator. Operates as Dan Can 3000. [Daniel](http://danielcanty.com) is an [author](http://latabledesmatieres.com), director, and scriptwriter formerly known as a ‘New Media Artist’. 
