@@ -20,8 +20,8 @@ body {
   font-size: 3vw;
 
   @media (max-width: $small-vp) {
-    font-size: 1em;
     overflow-x: hidden;
+    font-size: 1em;
   }
 }
 
@@ -136,8 +136,8 @@ a {
 .website {
   @media (max-width: $small-vp) {
     display: inline-block;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

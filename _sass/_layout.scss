@@ -1,12 +1,12 @@
 .header {
+  display: flex;
   -webkit-font-smoothing: subpixel-antialiased;
   min-height: calc(100vh + 10px);
+  padding: 20vh 0 10vh;
   margin-bottom: 3%;
-  display: flex;
+  color: transparent;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 20vh 0 10vh;
-  color: transparent;
 
   .heading-one {
     @include outline-text($black, $accent-first);
@@ -16,27 +16,6 @@
   @media (max-width: $small-vp) {
     min-height: 87vh;
     padding: 10vh 0 5vh;
-  }
-}
-
-.edition-second .header {
-  position: relative;
-  margin-bottom: 12%;
-  background: $accent-second;
-
-  &::after {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 0;
-    width: 15vw;
-    height: 100%;;
-    background: $accent-second;
-    left: 100%;
-
-    @media (max-width: $small-vp) {
-      display: none;
-    }
   }
 }
 
@@ -53,11 +32,11 @@
 }
 
 .speaker-unit-meta a {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%;
   position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   vertical-align: bottom;
 
   &:hover {

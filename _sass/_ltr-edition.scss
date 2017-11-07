@@ -23,10 +23,10 @@
 
   a {
     font-family: $font-family-serif;
-    color: $accent-ltr;
-    @include outline-text(transparent, $accent-ltr);
     line-height: 0.9em;
+    color: $accent-ltr;
     border-bottom: 2px solid $accent-ltr;
+    @include outline-text(transparent, $accent-ltr);
 
     &:active {
       outline-color: $accent-ltr;
@@ -64,8 +64,8 @@
 
   .speaker-unit-content {
     a {
-      border-width: 0;
       text-decoration: underline;
+      border-width: 0;
     }
   }
 }

@@ -1,3 +1,12 @@
+@mixin ot-features {
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "alt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
 @mixin outline-text($color, $moz-fallback: $color) {
   -webkit-text-stroke-width: 1px;
   -moz-text-stroke-width: 1px;
