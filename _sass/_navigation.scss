@@ -1,7 +1,7 @@
 .navigation {
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 4;
   width: 77.5vw;
   pointer-events: none;
 
@@ -12,6 +12,7 @@
   ul {
     display: flex;
     width: 100%;
+    padding-right: 12vw;
   }
 
   li {
