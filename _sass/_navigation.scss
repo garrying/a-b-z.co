@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 5;
-  width: 85vw;
+  width: 77.5vw;
   pointer-events: none;
 
   @media (max-width: $small-vp) {
@@ -16,7 +16,6 @@
 
   li {
     flex-grow: 1;
-    flex-basis: 27%;
 
     &:last-child {
       @media (max-width: $small-vp) {
@@ -27,8 +26,6 @@
 }
 
 .navigation-item {
-  position: relative;
-  display: inline-block;
   margin: 1em 0;
   color: $accent-ltr;
   white-space: nowrap;
