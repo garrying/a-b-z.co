@@ -88,7 +88,8 @@ const $ = require('jquery');
         app.ele.imageGrid.css({ transform: `translateY(${y}px) translateX(${x}px)` });
       }
 
-      app.ele.metaImageItem.on('mouseenter',
+      app.ele.metaImageItem.on(
+        'mouseenter',
         (ele) => {
           const term = $(ele.currentTarget).data('metaimage');
 
@@ -101,12 +102,15 @@ const $ = require('jquery');
           });
 
           app.ele.imageGrid.empty().addClass('active');
-        });
+        },
+      );
 
-      app.ele.metaImageItem.on('mouseleave',
+      app.ele.metaImageItem.on(
+        'mouseleave',
         () => {
           app.ele.imageGrid.empty().removeClass('active');
-        });
+        },
+      );
     },
     eventBinders: () => {
       (() => {
