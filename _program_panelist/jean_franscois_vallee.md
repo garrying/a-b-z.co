@@ -1,6 +1,6 @@
 ---
 name: Jean-François Vallée
-searchimg:
+searchimg: Jean-François Vallée Renaissance dialogue
 edition: 2017.1
 ---
 

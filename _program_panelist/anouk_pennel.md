@@ -1,7 +1,7 @@
 ---
 name: Anouk Pennel
 website: https://www.instagram.com/anoukpennel/
-searchimg:
+searchimg: Anouk Pennel post punk
 edition: 2017.1
 ---
 

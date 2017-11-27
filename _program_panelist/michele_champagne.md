@@ -1,6 +1,6 @@
 ---
 name: Michèle Champagne
-searchimg:
+searchimg: michele champagne design cargo -raintron -linkedin -licdn
 edition: 2017.1
 ---
 

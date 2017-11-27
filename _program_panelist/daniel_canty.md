@@ -1,7 +1,7 @@
 ---
 name: Daniel Canty
 website: http://danielcanty.com/
-searchimg:
+searchimg: Daniel Canty wigrum
 edition: 2017.1
 ---
 

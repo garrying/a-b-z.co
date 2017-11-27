@@ -1,6 +1,6 @@
 ---
 name: Réjean François Côté
-searchimg:
+searchimg: Réjean François Côté fluxus
 edition: 2017.1
 ---
 

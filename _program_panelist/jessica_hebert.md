@@ -1,6 +1,6 @@
 ---
 name: Jessica Hébert
-searchimg:
+searchimg: Jessica Hébert Artexte -dyn
 edition: 2017.1
 ---
 
