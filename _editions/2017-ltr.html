@@ -25,15 +25,13 @@
     </p>
   </div>
 
+  <div class="content-container heading-one">
+    <p>
+      <span class="solid">&lt;p&gt;</span> {% include link.html text="Thank you" url="https://vimeo.com/166639790" %} to our amazing lettered luminaries. <span class="solid">&lt;/p&gt;</span>
+    </p>
+  </div>
 
   <section  class="speakers-container">
-    <header class="heading-container">
-      <div class="content-container heading-one">
-        <p>
-          <span class="solid">&lt;p&gt;</span> {% include link.html text="Thank you" url="https://vimeo.com/166639790" %} to our amazing lettered luminaries. <span class="solid">&lt;/p&gt;</span>
-        </p>
-      </div>
-    </header>
     {% for speaker in site.program_panelist %}
       {% include 2017-ltr/speaker-unit.html speaker=speaker %}
     {% endfor %}
