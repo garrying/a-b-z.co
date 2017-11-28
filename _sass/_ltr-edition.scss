@@ -11,6 +11,12 @@
 
   .heading-one {
     @include outline-text($accent-ltr, $white);
+
+    @media (max-width: $small-vp) {
+      span {
+        margin: 0 !important;
+      }
+    }
   }
 
   .heading-two {
@@ -27,9 +33,18 @@
     &:active {
       outline-color: $accent-ltr;
     }
+
+    @media (max-width: $small-vp) {
+      border-bottom: 1px solid $accent-ltr;
+    }
   }
 
   [data-link-text] {
+
+    @media (max-width: $small-vp) {
+      display: inline-block;
+    }
+
     &::before {
       color: $accent-ltr;
     }
@@ -63,5 +78,10 @@
       text-decoration: underline;
       border-width: 0;
     }
+  }
+
+  .content-container
+  + .speakers-container {
+    margin-top: 1.5em;
   }
 }
