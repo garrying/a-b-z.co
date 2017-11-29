@@ -1,6 +1,24 @@
 .edition-ltr {
   padding-right: 19vw;
 
+
+  .header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    @media (max-width: $small-vp) {
+      min-height: 100vh;
+    }
+
+    .heading-one {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .content-container.first p {
+    margin-top: 0;
+  }
+
   @media (max-width: $small-vp) {
     padding-right: 0;
 
