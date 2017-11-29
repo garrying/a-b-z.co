@@ -1,7 +1,7 @@
 # Site settings
 title: A-B-Z
 email: mail@a-b-z.co
-description: A-B-Z-LTR is a new fall 2017 Bachelor adventure offered at UQÀM’s École de design in the city of Montréal, Québec.
+description: A-B-Z-LTR is a new fall 2017 Bachelor adventure offered at UQAM’s École de design in the city of Montréal, Québec.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://a-b-z.co" # the base hostname & protocol for your site
 twitter_username: abz_co
