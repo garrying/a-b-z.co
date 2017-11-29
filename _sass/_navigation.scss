@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 4;
-  width: 77.5vw;
+  width: 81vw;
   pointer-events: none;
 
   @media (max-width: $small-vp) {
@@ -17,6 +17,14 @@
 
   li {
     flex-grow: 1;
+
+    &.first {
+      max-width: 38%;
+
+      @media (max-width: $small-vp) {
+        max-width: none;
+      }
+    }
 
     &:last-child {
       @media (max-width: $small-vp) {
