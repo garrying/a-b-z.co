@@ -3,13 +3,17 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.5.0
+      - image: circleci/node:6.13.0
     environment:
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     steps:
       - checkout
       - run:
           name: Install Dependencies
-          command: sudo apt-get install nodejs && gem install bundler && bundle install
+          command: sudo apt-get install nodejs && gem install bundler && bundle install && npm install
+      - run:
+          name: NPM Build
+          command: npm run build
       - run:
           name: Jekyll Build
           command: bundle exec jekyll build
