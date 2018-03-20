@@ -18,6 +18,7 @@ jobs:
           command: bundle exec htmlproofer ./_site --check-html
 
   js_build:
+    working_directory: ~/a-b-z.co
     docker:
       - image: circleci/node:6.13.0
     steps:
