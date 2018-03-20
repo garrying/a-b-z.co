@@ -31,7 +31,7 @@ jobs:
           command: sudo npm install -g npm@latest
       - run:
           name: Install npm
-          command: npm install
+          command: bash && npm install
       - run:
           name: Webpack Build
           command: npm run build
