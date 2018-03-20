@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.5.0
-      - image: circleci/node:6.13.0
+      - image: circleci/node:latest
     environment:
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     steps:
