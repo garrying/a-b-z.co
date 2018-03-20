@@ -1,5 +1,5 @@
-const webpack = require('webpack')
-const path = require('path')
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   context: path.join(__dirname, './_js'),
@@ -9,24 +9,18 @@ module.exports = {
     filename: 'main.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loaders: 'babel-loader',
         query: {
-          presets: ['es2015'],
-        }
+          presets: ['env'],
+        },
       },
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      comments: false,
-      sourceMap: false
-    })
-  ]
-}
+};
