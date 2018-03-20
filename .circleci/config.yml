@@ -16,29 +16,3 @@ jobs:
       - run: 
           name: HTMLProofer Test
           command: bundle exec htmlproofer ./_site --check-html
-
-  js_build:
-    working_directory: ~/a-b-z.co
-    docker:
-      - image: circleci/node:6.13.0
-    steps:
-      - checkout
-      - run:
-          name: Install nvm
-          command: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
-      - run:
-          name: Update npm
-          command: sudo npm install -g npm@latest
-      - run:
-          name: Install npm
-          command: bash && npm install
-      - run:
-          name: Webpack Build
-          command: npm run build
-
-workflows:
-  version: 2
-  build:
-    jobs:
-      - build
-      - js_build
