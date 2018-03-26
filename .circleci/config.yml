@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  jekyll_build:
     docker:
       - image: circleci/ruby:2.5.0
     environment:
@@ -20,15 +20,17 @@ jobs:
     docker:
       - image: node:8.0
     steps:
+      - checkout
       - run:
-          name: "Checking Versions"
-          command: |
-            node --version
-            npm --version
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: npm Build
+          command: npm run build
 
 workflows:
   version: 2
-  build-and-deploy:
+  build-and-js:
     jobs:
-      - build
+      - jekyll_build
       - js_build
