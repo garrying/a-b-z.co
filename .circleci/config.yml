@@ -16,3 +16,19 @@ jobs:
       - run: 
           name: HTMLProofer Test
           command: bundle exec htmlproofer ./_site --check-html
+  js_build:
+    docker:
+      - image: node:8.0
+    steps:
+      - run:
+          name: "Checking Versions"
+          command: |
+            node --version
+            npm --version
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - js_build
