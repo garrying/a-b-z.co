@@ -1,0 +1,28 @@
+.edition-first {
+  left: 91vw;
+  z-index: 5;
+  width: 57.5vw;
+  padding-right: 7.5vw;
+  background: $accent-first;
+
+  .header {
+    margin-bottom: 0;
+    padding: 0;
+    justify-content: flex-start;
+    min-height: unset;
+    background: $accent-first;
+  }
+
+  a {
+    border-bottom: 2px solid $black;
+    line-height: 1em;
+
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+
+  &.panel-focus {
+    left: 50vw;
+  }
+}

@@ -1,0 +1,65 @@
+.info {
+  top: 90vh;
+  z-index: 7;
+  width: 50vw;
+  background: $black;
+  color: $white;
+  font-size: 2vw;
+  line-height: 1.2em;
+
+  a {
+    pointer-events: none;
+  }
+
+  &.panel-focus {
+    top: 10vh;
+
+    a {
+      pointer-events: auto;
+    }
+  }
+
+
+  a {
+    color: $white;
+    border-bottom: 2px solid $white;
+    @include outline-text(transparent, $white);
+
+    &:hover {
+      color: transparent;
+    }
+
+    &:active {
+      outline-color: $text-color;
+    }
+  }
+
+  [data-link-text] {
+    &::before {
+      color: $white;
+    }
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .panel-header {
+    position: static;
+
+  }
+}
+
+.mailinglist {
+  color: $black;
+  background: $accent-mailinglist;
+  margin-left: 50vw;
+  width: 25vw;
+}
+
+.twitter {
+  color: $black;
+  background: $accent-twitter;
+  margin-left: 75vw;
+  width: 25vw;
+}

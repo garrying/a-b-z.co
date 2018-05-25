@@ -18,31 +18,28 @@ sup {
   @include outline-text(transparent, $text-color);
 }
 
+h1 {
+  font-size: 2vw;
+}
+
 .solid {
   color: $text-color;
   @include outline-text(transparent, $text-color);
 }
 
 .drop-cap {
-  margin-right: 0.35em;
   font-size: 1.7em;
   line-height: 0.59em;
   vertical-align: sub;
 }
 
 .heading-one {
-  font-size: 1.5em;
+  font-size: 2vw;
   line-height: 1.2em;
-  color: transparent;
-  @include outline-text($black, $white);
-
-  & + & {
-    margin-top: 1.5em;
-  }
 }
 
 .heading-two {
-  font-size: 1em;
+  font-size: 2vw;
   line-height: 1.2em;
 
   &.sponsors {
@@ -81,7 +78,6 @@ sup {
     a {
       font-size: 1.12em;
       display: inline-block;
-      text-decoration: underline;
 
       @media (max-width: $small-vp) {
         display: inline;

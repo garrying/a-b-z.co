@@ -42,12 +42,16 @@ const $ = require('jquery');
           app.panelGAevents('Info');
         } else if ($(ele.currentTarget).hasClass('edition-first')) {
           $('.edition-first').addClass('panel-focus').attr('aria-hidden', 'false');
-          $('.info').removeClass('panel-focus').attr('aria-hidden', 'true');
+          $('.info, .edition-second ,.edition-ltr').removeClass('panel-focus').attr('aria-hidden', 'true');
           app.panelGAevents('First Edition');
         } else if ($(ele.currentTarget).hasClass('edition-second')) {
           $('.edition-second').addClass('panel-focus').attr('aria-hidden', 'false');
-          $('.info, .edition-first').removeClass('panel-focus').attr('aria-hidden', 'true');
+          $('.info, .edition-first, .edition-ltr').removeClass('panel-focus').attr('aria-hidden', 'true');
           app.panelGAevents('Second Edition');
+        } else if ($(ele.currentTarget).hasClass('edition-ltr')) {
+          $('.edition-ltr').addClass('panel-focus').attr('aria-hidden', 'false');
+          $('.info, .edition-first, .edition-second').removeClass('panel-focus').attr('aria-hidden', 'true');
+          app.panelGAevents('LTR Edition');
         }
       });
 

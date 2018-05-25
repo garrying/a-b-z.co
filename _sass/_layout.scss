@@ -1,17 +1,9 @@
 .header {
   display: flex;
-  -webkit-font-smoothing: subpixel-antialiased;
-  min-height: calc(100vh + 10px);
+  min-height: 100vh;
   padding: 20vh 0 10vh;
-  margin-bottom: 3%;
-  color: transparent;
   flex-direction: column;
   justify-content: flex-end;
-
-  .heading-one {
-    @include outline-text($black, $accent-first);
-    position: relative;
-  }
 
   @media (max-width: $small-vp) {
     min-height: 87vh;
@@ -64,12 +56,6 @@
   p {
     margin: 0 0 1.5em;
   }
-}
-
-.edition-footer {
-  padding: 10% 0;
-  margin-top: 8%;
-  background: $accent-second;
 }
 
 // 404 Page

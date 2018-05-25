@@ -1,0 +1,20 @@
+.edition-third {
+  width: 75vw;
+  background: $accent-third;
+
+  .header {
+    padding: 20vh 0 10vh;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  .heading-one {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: transparent;
+    @include outline-text($black, $white);
+
+    & + & {
+      margin-top: 1.5em;
+    }
+  }
+}

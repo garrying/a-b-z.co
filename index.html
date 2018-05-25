@@ -2,7 +2,11 @@
 layout: default
 ---
 
-<section class="panel edition-current edition-ltr">
+
+<section class="panel edition-current edition-third">
+  {% include_relative _editions/2018.html %}
+</section>
+<section class="panel section-panel edition-ltr" role="tabpanel" aria-hidden="true">
   {% include_relative _editions/2017-ltr.html %}
 </section>
 <section class="panel section-panel edition-second" role="tabpanel" aria-hidden="true">
@@ -14,5 +18,11 @@ layout: default
 </section>
 <section class="panel section-panel info" role="tabpanel" aria-hidden="true">
   {% include info.html %}
+</section>
+<section class="panel section-panel info mailinglist" role="tabpanel" aria-hidden="true">
+  {% include mailinglist.html %}
+</section>
+<section class="panel section-panel info twitter" role="tabpanel" aria-hidden="true">
+  {% include twitter.html %}
 </section>
 <div id="image-grid"></div>
