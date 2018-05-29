@@ -1,11 +1,10 @@
 .info {
-  top: 90vh;
+  top: 88vh;
   z-index: 7;
   width: 50vw;
   background: $black;
   color: $white;
-  font-size: 2vw;
-  line-height: 1.2em;
+  left: 0;
 
   a {
     pointer-events: none;
@@ -17,37 +16,20 @@
     a {
       pointer-events: auto;
     }
-  }
 
-
-  a {
-    color: $white;
-    border-bottom: 2px solid $white;
-    @include outline-text(transparent, $white);
-
-    &:hover {
-      color: transparent;
+    .info-chars {
+      display: inline;
     }
-
-    &:active {
-      outline-color: $text-color;
-    }
-  }
-
-  [data-link-text] {
-    &::before {
-      color: $white;
-    }
-  }
-
-  p {
-    margin-top: 0;
   }
 
   .panel-header {
     position: static;
-
+    min-height: 12vh;
   }
+}
+
+.info-chars {
+  display: none;
 }
 
 .mailinglist {

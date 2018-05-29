@@ -1,14 +1,16 @@
 .edition-third {
   width: 75vw;
   background: $accent-third;
+  -webkit-font-smoothing: subpixel-antialiased;
+  padding-bottom: 12vh;
 
   .header {
-    padding: 20vh 0 10vh;
-    -webkit-font-smoothing: subpixel-antialiased;
+    padding: 0;
+    min-height: calc(88vh - 2em);
   }
 
   .heading-one {
-    font-size: 1.5em;
+    font-size: 2.5em;
     line-height: 1.2em;
     color: transparent;
     @include outline-text($black, $white);

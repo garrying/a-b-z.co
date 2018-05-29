@@ -2,7 +2,7 @@
   left: 75vw;
   z-index: 4;
   width: 57.5vw;
-  padding-right: 7.5vw;
+  padding-right: 24.5vw;
   background: $accent-ltr;
   color: $white;
 
@@ -34,51 +34,6 @@
       span {
         margin: 0 !important;
       }
-    }
-  }
-
-  .heading-two {
-    color: $white;
-  }
-
-  a {
-    color: $white;
-    border-bottom: 2px solid $white;
-
-    &:active {
-      outline-color: $accent-ltr;
-    }
-
-    @media (max-width: $small-vp) {
-      border-bottom: 1px solid $accent-ltr;
-    }
-  }
-
-  [data-link-text] {
-
-    @media (max-width: $small-vp) {
-      display: inline-block;
-    }
-
-    &::before {
-      color: $accent-ltr;
-    }
-  }
-
-  .solid {
-    color: $white;
-    @include outline-text(transparent, $white);
-  }
-
-  .edition-footer {
-    font-size: 2vw;
-    padding: 10% 0;
-    margin-top: 8%;
-    color: $accent-ltr;
-    background: $white;
-
-    sup {
-      color: $accent-ltr;
     }
   }
 

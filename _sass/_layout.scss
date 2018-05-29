@@ -15,14 +15,6 @@
   line-height: 1.2em;
 }
 
-.speakers-container {
-  margin-top: 3.5em;
-
-  .content-container + & {
-    margin-top: 2.75em;
-  }
-}
-
 .speaker-unit-meta a {
   position: relative;
   max-width: 100%;
@@ -49,12 +41,6 @@
   @media (max-width: $small-vp) {
     width: 80%;
     overflow: hidden;
-  }
-}
-
-.credits {
-  p {
-    margin: 0 0 1.5em;
   }
 }
 
