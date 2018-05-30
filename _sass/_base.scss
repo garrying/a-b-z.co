@@ -81,7 +81,6 @@ a::selection {
 a {
   color: inherit;
   text-decoration: underline;
-  @include outline-text(transparent, $text-color);
 
   &:active {
     position: relative;
@@ -96,44 +95,6 @@ a {
     text-decoration: none;
   }
 }
-
-.current-editon {
-  [data-link-text] {
-    display: inline-block;
-    -webkit-font-smoothing: antialiased;
-
-    &:hover {
-      color: transparent;
-      transform: none;
-
-      &::before {
-        display: block;
-      }
-    }
-
-    &::before {
-      position: absolute;
-      display: none;
-      color: $text-color;
-      content: attr(data-link-text);
-      transform: skew(45deg);
-      transform-origin: center center;
-    }
-
-    @media (max-width: $small-vp) {
-      display: inline;
-
-      &:hover {
-        color: $text-color;
-
-        &::before {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
 
 .website {
   @media (max-width: $small-vp) {

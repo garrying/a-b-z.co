@@ -6,16 +6,8 @@
   color: $white;
   left: 0;
 
-  a {
-    pointer-events: none;
-  }
-
   &.panel-focus {
     top: 10vh;
-
-    a {
-      pointer-events: auto;
-    }
 
     .info-chars {
       display: inline;
@@ -25,6 +17,16 @@
   .panel-header {
     position: static;
     min-height: 12vh;
+    flex-grow: 1;
+
+    a {
+      min-height: 12vh;
+    }
+  }
+
+  .container {
+    width: 100%;
+
   }
 }
 
@@ -37,6 +39,12 @@
   background: $accent-mailinglist;
   margin-left: 50vw;
   width: 25vw;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .twitter {
@@ -44,4 +52,10 @@
   background: $accent-twitter;
   margin-left: 75vw;
   width: 25vw;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center
+  }
 }

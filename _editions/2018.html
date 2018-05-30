@@ -7,20 +7,15 @@
 {% include 2018/header.html %}
 
 <div class="container">
-  <div class="content-container heading-one">
-    <p>
-      [  ] Join us for four days of talks, workshops, and damn good coffee.
-    </p>
-  </div>
 
   <div class="content-container heading-one">
     <p>
-      [  ] If you are a designer, artist, coder, or writer, A is also for applying now. Deadline: June 29th. Fee: 675 CAD $.
+      [  ] If you’re a professional {% include link.html text="designer" url="https://walkerart.org/magazine/screen-saviors" %}, artist, {% include link.html text="coder" url="https://twitter.com/jongacnik/status/964736260743970816" %}, or {% include link.html text="writer" url="https://hazlitt.net/blog/should-i-keep-being-writer-if-i-cant-pay-my-rent" %}, A is also for ‘apply now’. Deadline: <a href="https://en.wikipedia.org/wiki/June_29" rel="noopener" data-link-text="coffee" target="_blank">June 29th</a>. Fee: 675 CAD $.
     </p>
   </div>
 
-  <div class="content-container heading-one">
-    <p>
+  <div class="content-container">
+    <p class="heading-one">
       <a href="{{site.submissionurl}}" rel="noopener" class="btn form-item" target="_blank" title="A-B-Z-TXT Application Form">
       [Apply Now]
       </a>
@@ -29,7 +24,39 @@
 
   <div class="content-container heading-one">
     <p>
-      [  ] Join Jon, Jürg, and Mindy for talks and three days of workshops.
+      [  ] Join us for four days of talks, workshops, and damn good <a href="https://www.youtube.com/watch?v=KxwcQ1dapw8" rel="noopener" data-link-text="coffee" target="_blank">coffee</a>.
     </p>
   </div>
+
+  <div class="content-container heading-one">
+    <p>
+      [  ] Join Jürg, Jon and Mindy for presentations and peer-to-peer publishing.
+  </div>
+</div>
+
+<section class="container">
+  {% assign program_masterclass_sorted = site.program_masterclass | sort:'order'  %}
+  {% for speaker in program_masterclass_sorted %}
+    {% include 2018/speaker-unit.html speaker=speaker %}
+  {% endfor %}
+</section>
+
+<div class="container">
+  <p class="heading-one">[  ] Join us … :</p>
+</div>
+
+<section class="container">
+  {% for speaker in site.program_lectures %}
+    {% include 2018/speaker-unit.html speaker=speaker %}
+  {% endfor %}
+</section>
+
+
+
+<div class="container">
+  <h1 class="heading-one">[  ] Thank you to our partners.</h1>
+
+  <p>Co-presenters (InterAccess)</p>
+
+  <p>Media Partners (CreativeApplications.Net, Walker Art, Eye magazine)</p>
 </div>
