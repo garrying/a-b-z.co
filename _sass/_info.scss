@@ -1,5 +1,5 @@
 .info {
-  top: 88vh;
+  top: 90vh;
   z-index: 7;
   width: 50vw;
   background: $black;
@@ -16,11 +16,11 @@
 
   .panel-header {
     position: static;
-    min-height: 12vh;
+    min-height: 10vh;
     flex-grow: 1;
 
     a {
-      min-height: 12vh;
+      min-height: 10vh;
     }
   }
 
