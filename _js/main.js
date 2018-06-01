@@ -35,23 +35,14 @@ const $ = require('jquery');
     },
     panelFocus: () => {
       app.ele.panel.on('click', (ele) => {
-        if ($(ele.currentTarget).hasClass('edition-current')) {
-          $('.section-panel').removeClass('panel-focus').attr('aria-hidden', 'true');
-        } else if ($(ele.currentTarget).hasClass('info')) {
+        $(ele.currentTarget).addClass('panel-focus').attr('aria-hidden', 'false');
+        $('.editions-container .panel').not(ele.currentTarget).removeClass('panel-focus').attr('aria-hidden', 'true');
+
+        if ($(ele.currentTarget).hasClass('info')) {
           $('.info').addClass('panel-focus').attr('aria-hidden', 'false');
           app.panelGAevents('Info');
-        } else if ($(ele.currentTarget).hasClass('edition-first')) {
-          $('.edition-first').addClass('panel-focus').attr('aria-hidden', 'false');
-          $('.info, .edition-second ,.edition-ltr').removeClass('panel-focus').attr('aria-hidden', 'true');
-          app.panelGAevents('First Edition');
-        } else if ($(ele.currentTarget).hasClass('edition-second')) {
-          $('.edition-second').addClass('panel-focus').attr('aria-hidden', 'false');
-          $('.info, .edition-first, .edition-ltr').removeClass('panel-focus').attr('aria-hidden', 'true');
-          app.panelGAevents('Second Edition');
-        } else if ($(ele.currentTarget).hasClass('edition-ltr')) {
-          $('.edition-ltr').addClass('panel-focus').attr('aria-hidden', 'false');
-          $('.info, .edition-first, .edition-second').removeClass('panel-focus').attr('aria-hidden', 'true');
-          app.panelGAevents('LTR Edition');
+        } else {
+          app.panelGAevents('Edition Panel');
         }
       });
 
