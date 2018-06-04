@@ -8,10 +8,6 @@
 
   &.panel-focus {
     top: 10vh;
-
-    .info-chars {
-      display: inline;
-    }
   }
 
   .panel-header {
@@ -21,17 +17,22 @@
 
     a {
       min-height: 10vh;
+
+      @media (max-width: $small-vp) {
+        justify-content: center;
+      }
     }
   }
 
   .container {
     width: 100%;
-
   }
-}
 
-.info-chars {
-  display: none;
+  .hidden-chars {
+    @media (max-width: $small-vp) {
+      display: none;
+    }
+  }
 }
 
 .mailinglist {

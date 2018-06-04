@@ -5,6 +5,16 @@
   padding-right: 16.5vw;
   background: $accent-second;
 
+  @media (max-width: $small-vp) {
+    left: 0;
+    padding-right: 0;
+    width: 100vw;
+    min-height: 10vh;
+    padding: 0;
+    bottom: 20vh;
+    top: 70vh;
+  }
+
   .header {
     margin-bottom: 0;
     padding: 0;
@@ -15,5 +25,10 @@
 
   &.panel-focus {
     left: 50vw;
+
+    @media (max-width: $small-vp) {
+      left: 0;
+      top: 10vh;
+    }
   }
 }

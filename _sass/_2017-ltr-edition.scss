@@ -8,6 +8,11 @@
 
   &.panel-focus {
     left: 50vw;
+
+    @media (max-width: $small-vp) {
+      left: 0;
+      top: 10vh;
+    }
   }
 
   .header {
@@ -17,12 +22,18 @@
     min-height: unset;
 
     @media (max-width: $small-vp) {
-      min-height: 100vh;
+      padding: 0;
     }
   }
 
   @media (max-width: $small-vp) {
+    left: 0;
+    top: 60vh;
     padding-right: 0;
+    width: 100vw;
+    min-height: 10vh;
+    padding: 0;
+    bottom: 30vh;
 
     .header span {
       margin: 0 !important;

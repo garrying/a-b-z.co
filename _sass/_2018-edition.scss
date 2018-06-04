@@ -3,6 +3,10 @@
   background: $accent-third;
   padding-bottom: 12vh;
 
+  @media (max-width: $small-vp) {
+    width: 100vw;
+  }
+
   .header {
     padding: 0;
     min-height: calc(88vh - 2em);
