@@ -6,13 +6,8 @@
   background: $accent-first;
 
   @media (max-width: $small-vp) {
-    left: 0;
-    padding-right: 0;
     width: 100vw;
-    min-height: 10vh;
     padding: 0;
-    bottom: 20vh;
-    top: 80vh;
   }
 
   .header {
@@ -25,10 +20,5 @@
 
   &.panel-focus {
     left: 50vw;
-
-    @media (max-width: $small-vp) {
-      left: 0;
-      top: 10vh;
-    }
   }
 }

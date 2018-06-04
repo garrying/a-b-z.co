@@ -2,9 +2,9 @@
   display: flex;
 
   @media (max-width: $small-vp) {
-    display: grid;
-    grid-template-rows: 25% 100px auto;
-    flex-wrap: wrap;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
   }
 }
 
@@ -26,7 +26,10 @@
   }
 
   @media (max-width: $small-vp) {
+    max-height: 100vh;
+    position: static;
     max-width: unset;
+    height: 10vh;
   }
 }
 
@@ -37,6 +40,10 @@
 
   .hidden-chars {
     display: inline;
+  }
+
+  @media (max-width: $small-vp) {
+    flex-grow: 1;
   }
 }
 
