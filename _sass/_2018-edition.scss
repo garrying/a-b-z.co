@@ -3,6 +3,7 @@
   background: $accent-third;
   padding-bottom: 12vh;
   transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-overflow-scrolling: touch;
 
   @media (max-width: $small-vp) {
     width: 100vw;
