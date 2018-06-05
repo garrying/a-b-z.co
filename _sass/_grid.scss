@@ -3,7 +3,7 @@
 
   @media (max-width: $small-vp) {
     flex-direction: column;
-    height: 90vh;
+    height: calc(100vh - var(--ios-gap));
     justify-content: space-between;
   }
 }
@@ -26,6 +26,7 @@
   }
 
   @media (max-width: $small-vp) {
+    padding-bottom: 0;
     max-height: 100vh;
     position: static;
     max-width: unset;
