@@ -1,4 +1,5 @@
 const $ = require('jquery');
+const vhCheck = require('vh-check');
 
 (() => {
   const app = {
@@ -7,6 +8,7 @@ const $ = require('jquery');
       app.panelFocus();
       app.headerPositioner();
       app.eventBinders();
+      app.vhCheck();
     },
     ele: {
       imageGrid: $('#image-grid'),
@@ -138,6 +140,9 @@ const $ = require('jquery');
       });
 
       $('.section-panel').addClass('ready');
+    },
+    vhCheck: () => {
+      vhCheck('ios-gap');
     },
   };
   app.init();

@@ -36,6 +36,7 @@
     "webpack-cli": "^2.1.4"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "vh-check": "^1.1.2"
   }
 }
