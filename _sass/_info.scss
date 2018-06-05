@@ -1,14 +1,25 @@
-.info {
+.section-panel-info-group {
+  display: flex;
   top: 90vh;
   z-index: 7;
-  width: 50vw;
-  background: $black;
-  color: $white;
+  right: 0;
   left: 0;
+  bottom: 0;
+  max-width: unset;
+  padding: 0;
 
   &.panel-focus {
     top: 10vh;
   }
+}
+
+.info {
+  height: 90vh;
+  width: 50vw;
+  background: $black;
+  color: $white;
+  padding: 0;
+  overflow-x: scroll;
 
   .panel-header {
     position: static;
@@ -35,14 +46,13 @@
   }
 
   @media (max-width: $small-vp) {
-    position: fixed;
+    overflow-x: scroll;
   }
 }
 
 .mailinglist {
   color: $black;
   background: $accent-mailinglist;
-  margin-left: 50vw;
   width: 25vw;
 
   a {
@@ -55,7 +65,6 @@
 .twitter {
   color: $black;
   background: $accent-twitter;
-  margin-left: 75vw;
   width: 25vw;
 
   a {
