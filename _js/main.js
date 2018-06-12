@@ -46,6 +46,10 @@ const vhCheck = require('vh-check');
         } else {
           app.panelGAevents('Edition Panel');
         }
+
+        if (window.matchMedia('(max-width: 568px)').matches) {
+          $('.panel, .info').scrollTop(0);
+        }
       });
 
       $(document).keydown((e) => {

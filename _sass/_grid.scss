@@ -34,7 +34,15 @@
   }
 }
 
+@media (max-width: $small-vp) {
+  .panel {
+    overflow: hidden;
+  }
+}
+
 .panel-focus {
+  overflow: auto;
+
   a {
     pointer-events: auto;
   }
