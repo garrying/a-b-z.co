@@ -15,12 +15,10 @@
       {% if speaker.topic1 %}
         <h3 class="heading-two">[ ] {{ speaker.topic1 }}</h3>
       {% endif %}
-      <h3 class="heading-two">[ ] <span class="speaker-name" data-metaimage="{{ searchQuery | strip }}">{{ speaker.name }}</span>, {{ speaker.location }}</h3>
-      {% if speaker.website %}
-        <h3 class="unit heading-two">
-          [ ] <a class="website" href="{{ speaker.website }}" rel="noopener" data-link-text="{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}" target="_blank">{% if speaker.websitetext %}{{ speaker.websitetext }}{% else %}{{ speaker.website | remove_first: "http://" }}{% endif %}</a>
-        </h3>
-      {% endif %}
+      <h3 class="heading-two">[ ]
+        {% if speaker.website %}<a class="website speaker-name" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.name }}" data-metaimage="{{ searchQuery | strip }}" target="_blank">
+            {{ speaker.name }}
+          </a>{% else %}<span class="speaker-name" data-metaimage="{{ searchQuery | strip }}">{{ speaker.name }}</span>{% endif %}, {{ speaker.location }}</h3>
       {% if speaker.website2 %}
         <h3 class="unit heading-two">
           [ ] <a class="website" href="{{ speaker.website2 }}" rel="noopener" data-link-text="{% if speaker.websitetext2 %}{{ speaker.websitetext2 }}{% else %}{{ speaker.website2 | remove_first: "http://" }}{% endif %}" target="_blank">{% if speaker.websitetext %}{{ speaker.websitetext2 }}{% else %}{{ speaker.website2 | remove_first: "http://" }}{% endif %}</a>

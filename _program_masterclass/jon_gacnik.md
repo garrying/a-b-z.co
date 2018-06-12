@@ -11,4 +11,4 @@ searchimg: Jon Gacnik
 edition: 2018
 ---
 
-Jon Gacnik is a designer and programmer. He is a partner and technology director at [Folder Studio](https://folder.studio), where they design books, build websites, and explore [idiosyncratic archives](http://informationalaffairs.com/). He also builds, maintains, and contributes to [hyper-focused](https://mono.equipment/) [tools](https://gr8.style/) in the open source and peer-to-peer web communities.
+Jon Gacnik is a designer and programmer. He is a partner and technology director at [Folder Studio](https://folder.studio){:target='_blank' rel='noopener'}, where they design books, build websites, and explore [idiosyncratic archives](http://informationalaffairs.com/){:target='_blank' rel='noopener'}. He also builds, maintains, and contributes to [hyper-focused](https://mono.equipment/){:target='_blank' rel='noopener'} [tools](https://gr8.style/){:target='_blank' rel='noopener'} in the open source and peer-to-peer web communities.

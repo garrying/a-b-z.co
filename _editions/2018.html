@@ -17,7 +17,7 @@
   <div class="content-container">
     <p class="heading-one">
       <a href="{{site.submissionurl}}" rel="noopener" class="btn form-item" target="_blank" title="A-B-Z-TXT Application Form">
-      [Apply Now]
+      [Apply!]
       </a>
     </p>
   </div>
@@ -30,7 +30,7 @@
 
   <div class="content-container heading-one">
     <p>
-      [  ] Join Jürg, Jon and Mindy for presentations and peer-to-peer publishing.
+      [  ] Jürg, Jon, and Mindy will present talks and three days filled with printing, projections and {% include link.html text="peer-to-peer" url="https://www.scientificamerican.com/gallery/early-sketch-of-arpanets-first-four-nodes/" %} protocols.
   </div>
 </div>
 
@@ -41,10 +41,6 @@
   {% endfor %}
 </section>
 
-<div class="container">
-  <p class="heading-one">[  ] Join us … :</p>
-</div>
-
 <section class="container">
   {% for speaker in site.program_lectures %}
     {% include 2018/speaker-unit.html speaker=speaker %}
@@ -54,9 +50,27 @@
 
 
 <div class="container">
-  <h1 class="heading-one">[  ] Thank you to our partners.</h1>
+  <p class="heading-one">[  ] Thank you to our partners.</p>
 
-  <p>Co-presenters (InterAccess)</p>
-
-  <p>Media Partners (CreativeApplications.Net, Walker Art, Eye magazine)</p>
+  <div class="unit first">
+    <h2 class="heading-two sponsors">Co-presenters</h2>
+    <ul class="horizontal">
+      <li><img class="logo" width="180" height="100" src="/img/abz-interaccess.png" alt="InterAccess"></li>
+    </ul>
+  </div>
+  <div class="unit">
+    <h2 class="heading-two sponsors">Sponsors</h2>
+    <ul class="horizontal">
+      <li><img class="logo" width="180" height="100" src="/img/abz-bmd.png" alt="Bruce Mau Design"></li>
+      <li><img class="logo" width="146" height="100" src="/img/abz-entro.png" alt="Entro"></li>
+    </ul>
+  </div>
+  <div class="unit">
+    <h2 class="heading-two sponsors">Media Partners</h2>
+    <ul class="horizontal">
+      <li><img class="logo" width="180" height="100" src="/img/abz-can.png" alt="Creative Applications Network"></li>
+      <li><img class="logo" width="190" height="100" src="/img/abz-walker.png" alt="Walker Art Center"></li>
+      <li><img class="logo" width="152" height="100" src="/img/abz-eye.png" alt="Eye Magazine"></li>
+    </ul>
+  </div>
 </div>
