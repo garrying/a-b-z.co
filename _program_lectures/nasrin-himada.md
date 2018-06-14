@@ -5,7 +5,7 @@ website2: https://twitter.com/nasrin_himada
 websitetext2: '@nasrin_himada'
 location: Tio’tia:ke
 topic1: N is for
-searchimg:
+searchimg: Nasrin Himada scapegoat
 edition: 2018
 ---
 

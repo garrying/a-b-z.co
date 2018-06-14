@@ -38,6 +38,7 @@ sup {
 
 .speaker-unit-content {
   max-width: 60vw;
+  margin: 2em 0;
 
   @media (min-width : $small-vp) and (max-width : 1024px) {
     max-width: 60vw;

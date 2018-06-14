@@ -1,8 +1,6 @@
 ---
 name: Nell Tenhaaf
-website: https://www.stmariewalker.com/
-website2: https://www.instagram.com/stmarie_walker/
-websitetext2: '@stmarie_walker'
+website: http://www.yorku.ca/tenhaaf/objects.html
 location: Toronto
 topic1: N is for
 searchimg:
