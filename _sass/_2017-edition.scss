@@ -1,0 +1,23 @@
+.edition-second {
+  left: 83vw;
+  z-index: 4;
+  width: 57.5vw;
+  padding-right: 16.5vw;
+  background: $accent-second;
+
+  @media (max-width: $small-vp) {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .header {
+    margin-bottom: 0;
+    padding: 0;
+    justify-content: flex-start;
+    min-height: unset;
+  }
+
+  &.panel-focus {
+    left: 50vw;
+  }
+}

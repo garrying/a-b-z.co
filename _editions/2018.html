@@ -1,0 +1,82 @@
+<div class="panel-header">
+  <div class="container">
+    <h1>TXT-<br><span class="hidden-chars">20</span>18</h1>
+  </div>
+</div>
+
+{% include 2018/header.html %}
+
+<div class="container">
+
+  <div class="content-container heading-one">
+    <p>
+      <span class="solid">±</span> If you’re a {% include link.html text="professional" url="http://thegoodproject.org/wp-content/uploads/2016/01/Mehta_Paradox-of-the-Professions.pdf" %} {% include link.html text="designer" url="https://walkerart.org/magazine/screen-saviors" %}, {% include link.html text="artist" url="https://thecreativeindependent.com/artist-survey/" %}, {% include link.html text="coder" url="https://twitter.com/jongacnik/status/964736260743970816" %}, or {% include link.html text="writer" url="https://hazlitt.net/blog/should-i-keep-being-writer-if-i-cant-pay-my-rent" %}, A is also for {% include link.html text="‘apply now’" url="https://goo.gl/forms/mbteXa8MYWmPCil02" %}. Deadline: <a href="https://en.wikipedia.org/wiki/July_15" rel="noopener" data-link-text="July 15th" target="_blank">July 15th</a>. Fee: {% include link.html text="675 CAD $" url="https://www.currencyconverterrate.com/cad/675-cad-to-usd.html" %}.
+    </p>
+  </div>
+
+  <div class="content-container">
+    <p class="heading-one">
+      <a href="{{site.submissionurl}}" rel="noopener" class="btn form-item" target="_blank" title="A-B-Z-TXT Application Form">
+      Apply!
+      </a>
+    </p>
+  </div>
+
+  <div class="content-container heading-one">
+    <p>
+      <span class="solid">±</span> Join us for four days of talks, workshops, and damn good <a href="https://www.youtube.com/watch?v=KxwcQ1dapw8" rel="noopener" data-link-text="coffee" target="_blank">coffee</a>.
+    </p>
+  </div>
+
+  <div class="content-container heading-one">
+    <p>
+      <span class="solid">±</span> Jürg, Jon, and Mindy will present talks and three days filled with printing, projections and {% include link.html text="peer-to-peer" url="https://www.scientificamerican.com/gallery/early-sketch-of-arpanets-first-four-nodes/" %} protocols.
+  </div>
+</div>
+
+<section class="container">
+  {% assign program_masterclass_sorted = site.program_masterclass | sort:'order'  %}
+  {% for speaker in program_masterclass_sorted %}
+    {% include 2018/speaker-unit.html speaker=speaker %}
+  {% endfor %}
+</section>
+
+<section class="container">
+  <div class="content-container heading-one">
+    <p>
+      <span class="solid">±</span> We will offer talks on grids, language, and the history of Telidon.
+    </p>
+  </div>
+  {% for speaker in site.program_lectures %}
+    {% include 2018/speaker-unit.html speaker=speaker %}
+  {% endfor %}
+</section>
+
+<div class="container">
+  <p class="heading-one"><span class="solid">±</span> Thank you to our partners.</p>
+
+  <div class="unit-group">
+    <div class="unit first">
+      <h2 class="heading-two sponsors">Co-presenter</h2>
+      <ul class="horizontal">
+        <li><img class="logo" width="180" height="100" src="/img/abz-interaccess.png" alt="InterAccess"></li>
+      </ul>
+    </div>
+    <div class="unit">
+      <h2 class="heading-two sponsors">Sponsors</h2>
+      <ul class="horizontal">
+        <li><img class="logo" width="180" height="100" src="/img/abz-officebureau.png" alt="Office/Bureau"></li>
+        <li><img class="logo" width="180" height="100" src="/img/abz-bmd.png" alt="Bruce Mau Design"></li>
+        <li><img class="logo" width="146" height="100" src="/img/abz-entro.png" alt="Entro"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="unit">
+    <h2 class="heading-two sponsors">Media Partners</h2>
+    <ul class="horizontal">
+      <li><img class="logo" width="180" height="100" src="/img/abz-can.png" alt="Creative Applications Network"></li>
+      <li><img class="logo" width="190" height="100" src="/img/abz-walker.png" alt="Walker Art Center"></li>
+      <li><img class="logo" width="152" height="100" src="/img/abz-eye.png" alt="Eye Magazine"></li>
+    </ul>
+  </div>
+</div>

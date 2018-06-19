@@ -17,6 +17,7 @@
   <meta name="twitter:site" content="@abz_co" />
   <meta name="twitter:image" content="{{ site.url }}/img/abz-logo.png" />
   <meta name="theme-color" content="#a3f0b7" />
+  <meta name="google" content="notranslate" />
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
 </head>

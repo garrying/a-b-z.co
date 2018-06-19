@@ -1,0 +1,76 @@
+.section-panel-info-group {
+  display: flex;
+  top: 90vh;
+  z-index: 7;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  max-width: unset;
+  padding: 0;
+
+  &.panel-focus {
+    top: 10vh;
+  }
+}
+
+.info {
+  height: 90vh;
+  width: 50vw;
+  background: $accent-about;
+  color: $black;
+  padding: 0;
+  overflow-x: hidden;
+
+  .panel-header {
+    position: relative;
+    min-height: 10vh;
+    flex-grow: 1;
+
+    a {
+      min-height: 10vh;
+
+      @media (max-width: $small-vp) {
+        justify-content: center;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .hidden-chars {
+    @media (max-width: $small-vp) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $small-vp) {
+    overflow-y: scroll;
+    height: unset;
+  }
+}
+
+.mailinglist {
+  color: $black;
+  background: $accent-mailinglist;
+  width: 25vw;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.twitter {
+  color: $black;
+  background: $accent-twitter;
+  width: 25vw;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center
+  }
+}

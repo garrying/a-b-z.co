@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <!--
-     __________________
-    |             .__. |
-    | A-B-Z-LTR   |  | |
-    |             '""' |
-    |           -.,-_  |
-    |__________________|
+      ____________________________
+     !\_________________________/!\
+     !!                         !! \
+     !!                         !!  \
+     !!                         !!  !
+     !!                         !!  !
+     !!        A-B-Z-TXT        !!  !
+     !!                         !!  !
+     !!                         !!  !
+     !!                         !!  /
+     !!_________________________!! /
+     !/_________________________\!/
+        __\_________________/__/!_
+       !_______________________!/ )
+     ________________________    (__
+    /oooo  oooo  oooo  oooo /!   _  )_
+   /ooooooooooooooooooooooo/ /  (_)_(_)
+  /ooooooooooooooooooooooo/ /    (o o)
+ /C=_____________________/_/    ==\o/==
 
-          ____________
-         /     _.'\   \
-        /   _.'    \   \
-       /_.-'        \___\
-      |\_\ ``   .-   \ _/|
-      |  _\___________.  |
-      | /              \ |
-      |/                \|
-      |__________________|
-
-Montréal
-DEC-11-2017
+TORONTO-INTERACCESS
+AUG-23–26-2018
 
 @abz_co
 
@@ -26,9 +29,6 @@ DEC-11-2017
 <html lang="en">
   {% include head.html %}
   <body>
-    {% if page.title != 404 %}
-      {% include menu.html %}
-    {% endif %}
     <main class="editions-container">
       {{ content }}
     </main>
@@ -38,7 +38,7 @@ DEC-11-2017
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     {% if page.title != 404 %}
-      <script src="js/main.js" async></script>
+      <script src="js/main.js?{{site.time | date: '%s%N'}}" async></script>
     {% endif %}
   </body>
 </html>

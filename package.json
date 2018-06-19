@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src _js",
-    "jekyll:serve": "bundle exec jekyll serve",
+    "jekyll:serve": "bundle exec jekyll serve --livereload",
     "watch": "npm run jekyll:serve | webpack --mode development --progress --colors --watch",
     "watch-build": "webpack --mode development --progress --colors --watch",
     "build": "webpack -p --mode production --progress --colors",
@@ -31,11 +31,12 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.8.2",
-    "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.4"
+    "eslint-plugin-react": "^7.9.1",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "vh-check": "^1.1.3"
   }
 }

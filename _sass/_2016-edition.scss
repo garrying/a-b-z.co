@@ -1,0 +1,23 @@
+.edition-first {
+  left: 91vw;
+  z-index: 5;
+  width: 57.5vw;
+  padding-right: 7.5vw;
+  background: $accent-first;
+
+  @media (max-width: $small-vp) {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .header {
+    margin-bottom: 0;
+    padding: 0;
+    justify-content: flex-start;
+    min-height: unset;
+  }
+
+  &.panel-focus {
+    left: 50vw;
+  }
+}

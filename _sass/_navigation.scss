@@ -48,8 +48,4 @@
   &::before {
     color: $accent-ltr;
   }
-
-  @media (max-width: $small-vp) {
-    font-size: 1.4em;
-  }
 }

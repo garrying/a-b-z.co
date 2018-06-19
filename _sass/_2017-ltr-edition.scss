@@ -1,0 +1,47 @@
+.edition-ltr {
+  left: 75vw;
+  z-index: 4;
+  width: 57.5vw;
+  padding-right: 24.5vw;
+  background: $accent-ltr;
+  color: $white;
+
+  &.panel-focus {
+    left: 50vw;
+  }
+
+  .header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+    min-height: unset;
+
+    @media (max-width: $small-vp) {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: $small-vp) {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .speaker-unit,
+  .section-title {
+    color: $white;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .speaker-unit-content {
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

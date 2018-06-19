@@ -12,11 +12,10 @@
 {% if speaker.edition == 2017.1 %}
   <div class="speaker-unit">
     <header class="speak-unit-header">
-      <h3 class="heading-two"><span class="solid">></span>
-        <span class="speaker-name" data-metaimage="{{ searchQuery | strip }}">{{ speaker.name }}</span>
+      <h3 class="heading-two"><span class="speaker-name" data-metaimage="{{ searchQuery | strip }}">{{ speaker.name }}</span>
       </h3>
     </header>
-    <div class="speaker-unit-content content-three">
+    <div class="speaker-unit-content">
       {{ speaker.content }}
     </div>
   </div>

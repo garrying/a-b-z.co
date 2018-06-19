@@ -1,0 +1,92 @@
+.edition-third {
+  width: 75vw;
+  background: $accent-third;
+  padding-bottom: 12vh;
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-overflow-scrolling: touch;
+
+  @media (max-width: $small-vp) {
+    width: 100vw;
+    height: 10vh;
+    overflow-x: hidden;
+    padding-bottom: 0;
+  }
+
+  .header {
+    padding: 0;
+    min-height: calc(88vh - 2em);
+
+    @media (max-width: $small-vp) {
+      min-height: unset;
+    }
+  }
+
+  .heading-one {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    color: transparent;
+    -webkit-font-smoothing: subpixel-antialiased;
+    @include outline-text($black, $white);
+
+    & + & {
+      margin-top: 1.5em;
+    }
+
+    a {
+      text-decoration: none;
+      @include outline-text($text-color, transparent);
+    }
+
+    @media (max-width: $small-vp) {
+      font-size: 2em;
+    }
+  }
+
+  a.btn {
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke-width: 0;
+    -moz-text-stroke-width: 0;
+  }
+
+  a[data-link-text] {
+    color: $black;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    @include outline-text(transparent, transparent);
+
+    &:hover {
+      color: transparent;
+      transform: none;
+
+      &::before {
+        display: block;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      display: none;
+      color: $text-color;
+      content: attr(data-link-text);
+      transform: skew(45deg);
+      transform-origin: center center;
+    }
+
+    @media (max-width: $small-vp) {
+      display: inline;
+
+      &:hover {
+        color: $text-color;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .speaker-unit-content {
+    margin: 2em 0;
+  }
+}
