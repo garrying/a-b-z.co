@@ -43,7 +43,10 @@
   }
 
   a.btn {
-    @include outline-text(transparent, transparent);
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke-width: 0;
+    -moz-text-stroke-width: 0;
   }
 
   a[data-link-text] {
