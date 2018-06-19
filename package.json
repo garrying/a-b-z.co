@@ -33,10 +33,10 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.9.1",
     "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.6"
+    "webpack-cli": "^3.0.8"
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "vh-check": "^1.1.2"
+    "vh-check": "^1.1.3"
   }
 }
