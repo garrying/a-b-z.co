@@ -112,3 +112,20 @@ a {
     white-space: nowrap;
   }
 }
+
+// Editions Panels Vertical Alignment
+
+.section-panel  {
+  .section-title {
+    margin-bottom: 1.16em;
+  }
+
+  p {
+    margin-bottom: $type-vertical-spacing;
+    margin-top: $type-vertical-spacing;
+  }
+
+  ul {
+    margin-bottom: $type-vertical-spacing;
+  }
+}
