@@ -7,7 +7,7 @@ website2: https://twitter.com/juerglehni
 websitetext2: '@juerglehni'
 topic1: J is for
 location: Zürich
-searchimg: Jürg Lehni
+searchimg: Jürg Lehni design
 edition: 2018
 ---
 
