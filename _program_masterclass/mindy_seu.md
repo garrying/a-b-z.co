@@ -7,7 +7,7 @@ website2: https://twitter.com/mind_seu
 websitetext2: '@mind_seu'
 topic1: M is for
 location: Cambridge
-searchimg: Mindy Seu
+searchimg: Mindy Seu design
 edition: 2018
 ---
 
