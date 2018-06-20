@@ -7,7 +7,7 @@ website2: https://twitter.com/chrislee_uu
 websitetext2: '@chrislee_uu'
 location: Toronto/Buffalo
 topic1: C is for
-searchimg: chris lee Metahaven designer
+searchimg: chris lee cairolexicon
 edition: 2018
 ---
 
