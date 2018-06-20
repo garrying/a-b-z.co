@@ -7,7 +7,7 @@ website2: https://twitter.com/jongacnik
 websitetext2: '@jongacnik'
 topic1: J is for
 location: Los Angeles
-searchimg: Jon Gacnik Design
+searchimg: Jon Gacnik are.na
 edition: 2018
 ---
 
