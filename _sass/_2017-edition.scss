@@ -17,7 +17,15 @@
     min-height: unset;
   }
 
+  a {
+    pointer-events: none;
+  }
+
   &.panel-focus {
     left: 50vw;
+
+    a {
+      pointer-events: auto;
+    }
   }
 }

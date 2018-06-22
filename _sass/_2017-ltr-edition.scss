@@ -6,8 +6,16 @@
   background: $accent-ltr;
   color: $white;
 
+  a {
+    pointer-events: none;
+  }
+
   &.panel-focus {
     left: 50vw;
+
+    a {
+      pointer-events: auto;
+    }
   }
 
   .header {
