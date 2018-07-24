@@ -74,8 +74,14 @@ const vhCheck = require('vh-check');
 
       function googleSearch(term) {
         const googleAPIurl = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&alt=json&searchType=image`;
+        const googleAPIurlSecondary = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&start=12&alt=json&searchType=image`;
 
         $.get(googleAPIurl)
+          .done((results) => {
+            app.ele.imageGrid.append(results.items.map(imageEle));
+          });
+
+        $.get(googleAPIurlSecondary)
           .done((results) => {
             app.ele.imageGrid.append(results.items.map(imageEle));
           });
