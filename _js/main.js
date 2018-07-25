@@ -1,5 +1,9 @@
 const $ = require('jquery');
 const vhCheck = require('vh-check');
+const IdleJs = require('idle-js');
+
+const searchID = '017668023985580936890:l2eosepcyty';
+const searchAPIkey = 'AIzaSyDKm3GPSVDzltXsAcZTB8VeYdrL0N2ZZhc';
 
 (() => {
   const app = {
@@ -9,14 +13,38 @@ const vhCheck = require('vh-check');
       app.headerPositioner();
       app.eventBinders();
       app.vhCheck();
+      app.idle();
     },
     ele: {
       imageGrid: $('#image-grid'),
       metaImageItem: $('[data-metaimage]'),
       panel: $('.panel'),
+      metaImageItemCurrent: $('.edition-current [data-metaimage]'),
     },
     panelGAevents: (panelName) => {
       ga('send', 'event', 'Panels', 'Opened', panelName);
+    },
+    idle: () => {
+      let intervalID;
+      const idle = new IdleJs({
+        idle: 20000,
+        events: ['mousemove', 'keydown', 'mousedown', 'touchstart'],
+        onIdle: () => {
+          intervalID = window.setInterval(app.idleImageGrid, 10000);
+        },
+        onActive: () => {
+          app.ele.imageGrid.empty().removeClass('active');
+          clearInterval(intervalID);
+        },
+        keepTracking: true,
+        startAtIdle: false,
+      }).start();
+    },
+    idleImageGrid: () => {
+      const rand = Math.floor(Math.random() * app.ele.metaImageItemCurrent.length);
+      const searchItem = app.ele.metaImageItemCurrent[rand];
+      app.imgHelperGoogleSearch($(searchItem).data('metaimage'));
+      app.ele.imageGrid.removeAttr('style').addClass('active');
     },
     makeNewPosition: () => {
       // Get viewport dimensions (remove the dimension of the div)
@@ -58,9 +86,8 @@ const vhCheck = require('vh-check');
         }
       });
     },
-    imgHelper: () => {
-      const searchID = '017668023985580936890:l2eosepcyty';
-      const searchAPIkey = 'AIzaSyDKm3GPSVDzltXsAcZTB8VeYdrL0N2ZZhc';
+    imgHelperGoogleSearch: (term) => {
+      const googleAPIurl = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&alt=json&searchType=image`;
 
       function imageEle(obj) {
         const pos = app.makeNewPosition();
@@ -72,21 +99,12 @@ const vhCheck = require('vh-check');
         `;
       }
 
-      function googleSearch(term) {
-        const googleAPIurl = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&alt=json&searchType=image`;
-        const googleAPIurlSecondary = `https://www.googleapis.com/customsearch/v1?key=${searchAPIkey}&cx=${searchID}&q=${term}&start=12&alt=json&searchType=image`;
-
-        $.get(googleAPIurl)
-          .done((results) => {
-            app.ele.imageGrid.append(results.items.map(imageEle));
-          });
-
-        $.get(googleAPIurlSecondary)
-          .done((results) => {
-            app.ele.imageGrid.append(results.items.map(imageEle));
-          });
-      }
-
+      $.get(googleAPIurl)
+        .done((results) => {
+          app.ele.imageGrid.append(results.items.map(imageEle));
+        });
+    },
+    imgHelper: () => {
       function gridPresenter(e) {
         const width = e.offsetX - e.currentTarget.offsetWidth;
         const height = e.offsetY - e.currentTarget.offsetHeight;
@@ -100,7 +118,7 @@ const vhCheck = require('vh-check');
         (ele) => {
           const term = $(ele.currentTarget).data('metaimage');
 
-          googleSearch(term);
+          app.imgHelperGoogleSearch(term);
 
           $(ele.currentTarget).mousemove((e) => {
             requestAnimationFrame(() => {
