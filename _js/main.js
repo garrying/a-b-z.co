@@ -4,6 +4,8 @@ const IdleJs = require('idle-js');
 
 const searchID = '017668023985580936890:l2eosepcyty';
 const searchAPIkey = 'AIzaSyDKm3GPSVDzltXsAcZTB8VeYdrL0N2ZZhc';
+let idleCounter = 10;
+let intervalID;
 
 (() => {
   const app = {
@@ -25,7 +27,6 @@ const searchAPIkey = 'AIzaSyDKm3GPSVDzltXsAcZTB8VeYdrL0N2ZZhc';
       ga('send', 'event', 'Panels', 'Opened', panelName);
     },
     idle: () => {
-      let intervalID;
       const idle = new IdleJs({
         idle: 20000,
         events: ['mousemove', 'keydown', 'mousedown', 'touchstart'],
@@ -33,8 +34,9 @@ const searchAPIkey = 'AIzaSyDKm3GPSVDzltXsAcZTB8VeYdrL0N2ZZhc';
           intervalID = window.setInterval(app.idleImageGrid, 10000);
         },
         onActive: () => {
-          app.ele.imageGrid.empty().removeClass('active');
+          idleCounter = 10;
           clearInterval(intervalID);
+          app.ele.imageGrid.empty().removeClass('active');
         },
         keepTracking: true,
         startAtIdle: false,
@@ -43,8 +45,13 @@ const searchAPIkey = 'AIzaSyDKm3GPSVDzltXsAcZTB8VeYdrL0N2ZZhc';
     idleImageGrid: () => {
       const rand = Math.floor(Math.random() * app.ele.metaImageItemCurrent.length);
       const searchItem = app.ele.metaImageItemCurrent[rand];
-      app.imgHelperGoogleSearch($(searchItem).data('metaimage'));
-      app.ele.imageGrid.removeAttr('style').addClass('active');
+      idleCounter--;
+      if (idleCounter >= 0) {
+        app.imgHelperGoogleSearch($(searchItem).data('metaimage'));
+        app.ele.imageGrid.removeAttr('style').addClass('active');
+      } else {
+        clearInterval(intervalID);
+      }
     },
     makeNewPosition: () => {
       // Get viewport dimensions (remove the dimension of the div)
