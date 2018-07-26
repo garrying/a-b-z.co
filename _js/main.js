@@ -4,7 +4,7 @@ const IdleJs = require('idle-js');
 
 const searchID = '017668023985580936890:l2eosepcyty';
 const searchAPIkey = 'AIzaSyDKm3GPSVDzltXsAcZTB8VeYdrL0N2ZZhc';
-let idleCounter = 10;
+let idleCounter = 5;
 let intervalID;
 
 (() => {
@@ -28,10 +28,10 @@ let intervalID;
     },
     idle: () => {
       const idle = new IdleJs({
-        idle: 20000,
+        idle: 30000,
         events: ['mousemove', 'keydown', 'mousedown', 'touchstart'],
         onIdle: () => {
-          intervalID = window.setInterval(app.idleImageGrid, 10000);
+          intervalID = window.setInterval(app.idleImageGrid, 20000);
         },
         onActive: () => {
           idleCounter = 10;
