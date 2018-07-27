@@ -15,7 +15,7 @@ let intervalID;
       app.headerPositioner();
       app.eventBinders();
       app.vhCheck();
-      app.idle();
+      // app.idle();
     },
     ele: {
       imageGrid: $('#image-grid'),
