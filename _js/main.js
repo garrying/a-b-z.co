@@ -34,7 +34,7 @@ let intervalID;
           intervalID = window.setInterval(app.idleImageGrid, 20000);
         },
         onActive: () => {
-          idleCounter = 10;
+          idleCounter = 5;
           clearInterval(intervalID);
           app.ele.imageGrid.empty().removeClass('active');
         },
