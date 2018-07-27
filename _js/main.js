@@ -4,7 +4,7 @@ const IdleJs = require('idle-js');
 
 const searchID = '017668023985580936890:l2eosepcyty';
 const searchAPIkey = 'AIzaSyCeVfNPSMEp3OIdekPlfiZRhamvE0LloS0';
-let idleCounter = 5;
+let idleCounter = 6;
 let intervalID;
 
 (() => {
@@ -34,7 +34,7 @@ let intervalID;
           intervalID = window.setInterval(app.idleImageGrid, 20000);
         },
         onActive: () => {
-          idleCounter = 5;
+          idleCounter = 6;
           clearInterval(intervalID);
           app.ele.imageGrid.empty().removeClass('active');
         },
