@@ -3,7 +3,7 @@ const vhCheck = require('vh-check');
 const IdleJs = require('idle-js');
 
 const searchID = '017668023985580936890:l2eosepcyty';
-const searchAPIkey = 'AIzaSyDJuy-kp0l0J5eyExT3rdr68dpx11pJlz8';
+const searchAPIkey = 'AIzaSyCeVfNPSMEp3OIdekPlfiZRhamvE0LloS0';
 let idleCounter = 5;
 let intervalID;
 
