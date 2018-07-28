@@ -1,7 +1,7 @@
 ---
 name: Department of Unusual Certainties
 website: http://wearedouc.com
-website2: https://twitter.com/therealitycorp
+website2: https://twitter.com/cristoforo_DoUC
 websitetext2: '@cristoforo_DoUC'
 website3: https://twitter.com/therealitycorp
 websitetext3: '@therealitycorp'
