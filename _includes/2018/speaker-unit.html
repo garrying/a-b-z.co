@@ -27,6 +27,11 @@
           <span class="solid">±</span> <a class="website" href="{{ speaker.website2 }}" rel="noopener" data-link-text="{% if speaker.websitetext2 %}{{ speaker.websitetext2 }}{% else %}{{ speaker.website2 | remove_first: "http://" }}{% endif %}" target="_blank">{% if speaker.websitetext2 %}{{ speaker.websitetext2 }}{% else %}{{ speaker.website2 | remove_first: "http://" }}{% endif %}</a>
         </h3>
       {% endif %}
+      {% if speaker.website3 %}
+        <h3 class="unit heading-two">
+          <span class="solid">±</span> <a class="website" href="{{ speaker.website3 }}" rel="noopener" data-link-text="{% if speaker.websitetext3 %}{{ speaker.websitetext3 }}{% else %}{{ speaker.website3 | remove_first: "http://" }}{% endif %}" target="_blank">{% if speaker.websitetext3 %}{{ speaker.websitetext3 }}{% else %}{{ speaker.website3 | remove_first: "http://" }}{% endif %}</a>
+        </h3>
+      {% endif %}
       {% if speaker.twitter %}
         <h3 class="unit heading-two">
            <span class="solid">±</span> <a class="website" href="{{ speaker.twitter }}" rel="noopener" data-link-text="@{{ speaker.twitter | remove_first: "https://twitter.com/" }}" target="_blank">@{{ speaker.twitter | remove_first: "https://twitter.com/" }}</a>
