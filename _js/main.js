@@ -4,7 +4,7 @@ const IdleJs = require('idle-js');
 
 const searchID = '017668023985580936890:l2eosepcyty';
 const searchAPIkey = 'AIzaSyCeVfNPSMEp3OIdekPlfiZRhamvE0LloS0';
-let idleCounter = 6;
+let idleCounter = 10;
 let intervalID;
 
 (() => {
@@ -15,7 +15,7 @@ let intervalID;
       app.headerPositioner();
       app.eventBinders();
       app.vhCheck();
-      // app.idle();
+      app.idle();
     },
     ele: {
       imageGrid: $('#image-grid'),
@@ -27,20 +27,22 @@ let intervalID;
       ga('send', 'event', 'Panels', 'Opened', panelName);
     },
     idle: () => {
-      const idle = new IdleJs({
-        idle: 30000,
-        events: ['mousemove', 'keydown', 'mousedown', 'touchstart'],
-        onIdle: () => {
-          intervalID = window.setInterval(app.idleImageGrid, 20000);
-        },
-        onActive: () => {
-          idleCounter = 6;
-          clearInterval(intervalID);
-          app.ele.imageGrid.empty().removeClass('active');
-        },
-        keepTracking: true,
-        startAtIdle: false,
-      }).start();
+      if (window.matchMedia('(min-width: 568px)').matches) {
+        const idle = new IdleJs({
+          idle: 20000,
+          events: ['mousemove', 'keydown', 'mousedown', 'touchstart'],
+          onIdle: () => {
+            intervalID = window.setInterval(app.idleImageGrid, 10000);
+          },
+          onActive: () => {
+            idleCounter = 6;
+            clearInterval(intervalID);
+            app.ele.imageGrid.empty().removeClass('active');
+          },
+          keepTracking: true,
+          startAtIdle: false,
+        }).start();
+      }
     },
     idleImageGrid: () => {
       const rand = Math.floor(Math.random() * app.ele.metaImageItemCurrent.length);
