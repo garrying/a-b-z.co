@@ -4,7 +4,7 @@
   "description": "a-b-z.co",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src _js",
+    "lint": "standard _js/*.js",
     "jekyll:serve": "bundle exec jekyll serve --livereload",
     "watch": "npm run jekyll:serve | webpack --mode development --progress --colors --watch",
     "watch-build": "webpack --mode development --progress --colors --watch",

@@ -1,3 +1,6 @@
+/* eslint no-unused-vars: "warn" */
+/* global ga requestAnimationFrame CustomEvent */
+
 const $ = require('jquery')
 const vhCheck = require('vh-check')
 const IdleJs = require('idle-js')
