@@ -8,7 +8,7 @@ const IdleJs = require('idle-js')
 const searchID = '017668023985580936890:l2eosepcyty'
 const searchAPIkey = 'AIzaSyCeVfNPSMEp3OIdekPlfiZRhamvE0LloS0'
 let idleCounter = 10
-let intervalID;
+let intervalID
 
 (() => {
   const app = {
