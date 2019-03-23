@@ -1,8 +1,9 @@
 .edition-third {
-  left: 67vw;
+  left: 50vw;
   width: 75vw;
   background: $accent-third;
   padding-bottom: 12vh;
+  padding-right: 25vw;
   transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-overflow-scrolling: touch;
 
@@ -62,7 +63,7 @@
   }
 
   &.panel-focus {
-    left: 50vw;
+    left: 25vw;
 
     a {
       pointer-events: auto;
