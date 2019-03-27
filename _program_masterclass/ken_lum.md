@@ -11,4 +11,4 @@ searchimg: Ken Lum art
 edition: 2019
 ---
 
-Ken Lum is known for his art in painting, sculpture, and photography, as well as his interest in language and letterforms. His work addresses immigration, subject formation, and public space. He has an impressive exhibition record including major works at Documenta 11, Venice Biennale, São Paulo Biennale, Gwangju Biennale, and Whitney Biennale.  He is Chair of Fine Arts at the University of Pennsylvania’s School of Design in Philadelphia.
+Ken Lum is known for his art in painting, sculpture, and photography, as well as his interest in language and letterforms. His work addresses immigration, subject formation, and public space. He has an impressive exhibition record including major works at Documenta 11, Venice Biennale, São Paulo Biennale, Gwangju Biennale, and Whitney Biennale. He is Chair of Fine Arts at the University of Pennsylvania’s School of Design in Philadelphia.
