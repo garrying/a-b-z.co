@@ -12,9 +12,6 @@
 {% if speaker.edition == 2019 %}
   <div class="speaker-unit">
     <header class="speak-unit-header heading-one">
-      {% if speaker.topic1 %}
-        <h3 class="heading-two"><span class="solid">¤</span> {{ speaker.topic1 }}</h3>
-      {% endif %}
       <h3 class="heading-two"><span class="solid">¤</span>
         {% if speaker.website %}<a class="website speaker-name" href="{{ speaker.website }}" rel="noopener" data-link-text="{{ speaker.name }}" data-metaimage="{{ searchQuery | strip }}" target="_blank">
             {{ speaker.name }}

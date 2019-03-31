@@ -5,7 +5,7 @@ description: A-B-Z-LUM is a talk and workshop by Ken Lum. From May 24 to 25, 201
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://a-b-z.co" # the base hostname & protocol for your site
 twitter_username: abz_co
-submissionurl: https://goo.gl/forms/mbteXa8MYWmPCil02
+submissionurl: https://forms.gle/7vgs1u76YWB9QEZ8A
 
 # Build settings
 markdown: kramdown

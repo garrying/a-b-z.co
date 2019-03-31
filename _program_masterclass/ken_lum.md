@@ -5,7 +5,6 @@ website: http://kenlumart.com
 websitetext: '#kenlum'
 website2: https://www.instagram.com/explore/tags/kenlum/
 websitetext2: '#kenlum'
-topic1: J is for
 location: Vancouver – Philadelphia
 searchimg: Ken Lum art
 edition: 2019
