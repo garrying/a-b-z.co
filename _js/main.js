@@ -72,7 +72,7 @@ let intervalID
       if (window.matchMedia('(max-width: 568px)').matches) {
         pairedHeaders.removeAttr('style')
       } else {
-        pairedHeaders.css('paddingTop', targetHeaderPos.top)
+        pairedHeaders.css('paddingTop', targetHeaderPos.top + 7)
       }
     },
     panelFocus: () => {
