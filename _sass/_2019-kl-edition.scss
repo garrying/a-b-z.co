@@ -14,7 +14,7 @@
 
   .header {
     padding: 0;
-    min-height: calc(90vh - 2em);
+    min-height: calc(92vh - 2em);
 
     @media (max-width: $small-vp) {
       min-height: unset;
