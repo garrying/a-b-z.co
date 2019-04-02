@@ -1,11 +1,11 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   context: path.join(__dirname, './_js'),
   entry: './main.js',
   output: {
     path: path.join(__dirname, './js'),
-    filename: 'main.js',
+    filename: 'main.js'
   },
   module: {
     rules: [
@@ -14,12 +14,12 @@ module.exports = {
         exclude: /node_modules/,
         loaders: 'babel-loader',
         query: {
-          presets: ['env'],
-        },
-      },
-    ],
+          presets: ['@babel/preset-env']
+        }
+      }
+    ]
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
-  },
-};
+    extensions: ['.js', '.jsx']
+  }
+}

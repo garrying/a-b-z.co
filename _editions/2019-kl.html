@@ -1,0 +1,65 @@
+<div class="panel-header">
+  <div class="container">
+    <h1>LUM-<br><span class="hidden-chars">20</span>19</h1>
+  </div>
+</div>
+
+{% include 2019/header.html %}
+
+<div class="container">
+
+  <div class="content-container heading-one">
+    <p>
+      <span class="solid">¤</span> Join us if you are a visual artist or designer, a student or {% include link.html text="professional" url="http://thegoodproject.org/wp-content/uploads/2016/01/Mehta_Paradox-of-the-Professions.pdf" %}.
+    </p>
+  </div>
+
+  <div class="content-container heading-one">
+    <p>
+      <span class="solid">¤</span> {% include link.html text="The $75 CAD fee" url="https://www.currencyconverterrate.com/cad/75-cad-to-usd.html" %} will cover an evening talk on May 24 and an afternoon workshop on May 25. Apply before May 3.
+    </p>
+  </div>
+
+  <div class="content-container heading-one">
+    <p>
+      <span class="solid">¤</span> A-B-Z-LUM is organized in association with {% include link.html text="Artexte" url="https://artexte.ca" %}, and the talk is co-presented by {% include link.html text="Concordia" url="https://www.concordia.ca/press.html" %} University Press. 
+  </div>
+
+  <div class="content-container">
+    <p class="heading-one">
+      <a href="{{site.submissionurl}}" rel="noopener" class="btn form-item" target="_blank" title="A-B-Z-TXT Application Form">
+      Apply now!
+      </a>
+    </p>
+  </div>
+</div>
+
+<section class="container">
+  {% assign program_masterclass_sorted = site.program_masterclass | sort:'order'  %}
+  {% for speaker in program_masterclass_sorted %}
+    {% include 2019/speaker-unit.html speaker=speaker %}
+  {% endfor %}
+</section>
+
+<div class="container">
+  <p class="heading-one"><span class="solid">¤</span> {% include link.html text="Thank you" url="https://vimeo.com/166639790" %}<br /><span class="solid">¤</span> to our partners.</p>
+
+  <div class="unit">
+    <h2 class="heading-two sponsors">Cultural partner</h2>
+    <ul class="horizontal">
+      <li><img class="logo" width="180" height="100" src="/img/abz-artexte-bw.png" alt="Artexte" /></li>
+    </ul>
+  </div>
+  <div class="unit">
+    <h2 class="heading-two sponsors">Public talk co-presenter</h2>
+    <ul class="horizontal">
+      <li><img class="logo" width="180" height="100" src="/img/abz-concordia.png" alt="Concordia University Press logo"></li>
+    </ul>
+  </div>
+  <div class="unit">
+    <h2 class="heading-two sponsors">Media partner</h2>
+    <ul class="horizontal">
+      <li><img class="logo" width="180" height="100" src="/img/abz-cult.png" alt="Cult MTL logo"></li>
+    </ul>
+  </div>
+</div>

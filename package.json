@@ -4,7 +4,7 @@
   "description": "a-b-z.co",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src _js",
+    "lint": "standard _js/*.js",
     "jekyll:serve": "bundle exec jekyll serve --livereload",
     "watch": "npm run jekyll:serve | webpack --mode development --progress --colors --watch",
     "watch-build": "webpack --mode development --progress --colors --watch",
@@ -23,21 +23,16 @@
   },
   "homepage": "http://a-b-z.co",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.6",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^5.2.0",
-    "eslint-config-airbnb": "^17.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.10.0",
-    "webpack": "^4.16.2",
-    "webpack-cli": "^3.1.0"
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "standard": "^12.0.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   },
   "dependencies": {
-    "idle-js": "^0.1.3",
+    "idle-js": "^1.1.2",
     "jquery": "^3.3.1",
-    "vh-check": "^1.1.3"
+    "vh-check": "^2.0.5"
   }
 }
