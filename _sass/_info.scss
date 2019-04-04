@@ -21,6 +21,7 @@
   color: $black;
   padding: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   .panel-header {
     position: relative;
@@ -49,6 +50,10 @@
   @media (max-width: $small-vp) {
     overflow-y: scroll;
     height: unset;
+  }
+
+  .panel-focus & {
+    overflow-y: auto;
   }
 }
 
